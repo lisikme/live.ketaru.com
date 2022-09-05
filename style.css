@@ -101,7 +101,7 @@ body {
   transition: 0.3s ease all;
   box-shadow: 0 0 0 10px #181818, 0 0px 20px 0px #181818;
   background: #181818;
-  border-radius: 10px;
+  border-radius: 5px;
   transform: scale(0.8);
   overflow: hidden;
 }
@@ -109,7 +109,7 @@ body {
 #album-art.active {
   transform: scale(1.0);
   top: -75px;
-  border-radius: 10px;
+  border-radius: 5px;
   background: #ffffff;
   box-shadow: 0 0 0 4px #ffffff, 0 0px 20px 0px #ffffff;
 }
