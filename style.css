@@ -5,7 +5,7 @@
 body {
   font-family: Helvetica, Arial;
   margin: 0;
-  background-color: #ffeff5;
+  background-color: #000000;
 }
 
 #app-cover {
@@ -46,7 +46,7 @@ body {
 
 #player {
   position: relative;
-  height: 100%;
+  height: 80%;
   z-index: 3;
 }
 
@@ -58,12 +58,13 @@ body {
   padding: 13px 0px 0px 13px;
   background-color: #1b1c1c;
   border-radius: 10px;
-  transition: 0.3s ease top;
+  transition: 0.5s ease top;
   z-index: 1;
 }
 
 #player-track.active {
   top: -80px;
+  box-shadow: 0 0px 10px 0px #000000;
 }
 
 #album-name {
@@ -74,7 +75,7 @@ body {
 }
 
 #track-name {
-  color: #9de28f;
+  color: #ff6f6f;
   font-size: 13px;
   font-weight: 900;
   margin: 2px 0 13px 0;
@@ -84,7 +85,7 @@ body {
   position: relative;
   height: 100%;
   background-color: rgb(24, 24, 24);
-  box-shadow: 0 30px 80px #656565;
+  box-shadow: 0 0px 10px 0px #000000;
   border-radius: 10px;
   z-index: 2;
 }
@@ -98,7 +99,7 @@ body {
   margin-left: 40px;
   transform: rotateZ(0);
   transition: 0.3s ease all;
-  box-shadow: 0 0 0 10px #181818;
+  box-shadow: 0 0 0 10px #181818, 0 0px 20px 0px #181818;
   background: #181818;
   border-radius: 10px;
   transform: scale(0.8);
@@ -107,10 +108,10 @@ body {
 
 #album-art.active {
   transform: scale(1.0);
-  top: -60px;
+  top: -75px;
   border-radius: 10px;
   background: #ffffff;
-  box-shadow: 0 0 0 4px #ffffff, 0 0px 20px -0px #afb7c1;
+  box-shadow: 0 0 0 4px #ffffff, 0 0px 20px 0px #ffffff;
 }
 
 #album-art img {
@@ -178,8 +179,8 @@ body {
 
 #album-art.buffering img.active {
   opacity: 1.0;
-  filter: blur(2px);
-  -webkit-filter: blur(6px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 #album-art.buffering #buffer-box {
@@ -203,16 +204,16 @@ body {
 .button {
   width: 26px;
   height: 26px;
-  padding: 25px;
-  background-color: rgb(65, 65, 65);
-  border-radius: 6px;
+  padding: 15px 25px;
+  background-color: #282828;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .button i {
   display: block;
-  color: #6bb0ff;
-  font-size: 25px;
+  color: #64ffc3;
+  font-size: 27px;
   text-align: center;
   line-height: 1;
 }
@@ -223,9 +224,11 @@ body {
 }
 
 .button:hover {
-  background-color: #39398f;
+  background-color: #006151;
 }
 
 .button:hover i {
-  color: #fff;
+  color: rgb(255, 255, 255);
+  transform: scale(1.2);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
