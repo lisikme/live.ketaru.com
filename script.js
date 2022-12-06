@@ -30,7 +30,7 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Радио GoLive",
+      "GoLiveFM",
       "TNT Radio",
       "Remix FM",
       "DFM",
