@@ -49,7 +49,7 @@ $(function () {
       "GtaRP FM",
     ],
     trackNames = [
-      "Онлайн v2.0",
+      "Разработано AledCreatik",
       "Онлайн     ",
       "Онлайн     ",
       "Онлайн     ",
