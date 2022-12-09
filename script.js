@@ -86,7 +86,7 @@ $(function () {
       "http://radio-holding.ru:9000/rfm",
       "http://pub0302.101.ru:8000/stream/reg/mp3/128/region_energy_84",
       "https://listen7.myradio24.com/nazarik",
-      "http://a7.radioheart.ru:8030/RH60337",
+      "https://s0.radioheart.ru:8000/RH65841",
 
     ],
     playPreviousTrackButton = $("#play-previous"),
