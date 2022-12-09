@@ -77,7 +77,7 @@ $(function () {
       "http://ic4.101.ru:8000/v12_1",
       "http://radio.promodj.com/top100-192",
       "https://hfm.amgradio.ru/HypeFM",
-      "https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=314FCB976C429CE2FC63EB595B965B9B",
+      "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_128",
       "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3",
       "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
       "http://emg02.hostingradio.ru/ep-new128.mp3",
