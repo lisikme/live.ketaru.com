@@ -16,6 +16,7 @@ body {
   width: 430px;
   height: 100px;
   margin: -4px auto;
+  z-index: -2000;
 }
 
 #bg-artwork {
@@ -24,13 +25,14 @@ body {
   right: -30px;
   bottom: -30px;
   left: -30px;
-  background-image: url("https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   filter: blur(30px);
   -webkit-filter: blur(30px);
-  z-index: 1;
+  opacity: calc(.5);
+  z-index: 3;
 }
 
 #bg-layer {
@@ -40,33 +42,34 @@ body {
   bottom: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
-  opacity: 0.50;
+  opacity: calc(.5);
   z-index: 2;
 }
 
 #player {
   position: relative;
-  height: 80%;
+  height: 0%;
   z-index: 3;
 }
 
 #player-track {
   position: absolute;
-  top: 10px;
+  top: 50px;
   right: 0px;
+  line-height: 23px;
   left: 166px;
-  padding: 13px 0px 0px 13px;
+  padding: 15px 0px 0px 13px;
   background: #141c24;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #364758;
+  border: 2px solid #364758;
   border-radius: 10px;
   transition: 0.5s ease top;
+  box-shadow: none;
   z-index: 1;
 }
 
 #player-track.active {
-  top: -87px;
+
+  top: -37px;
   box-shadow: 0 0px 10px 0px #000000;
 }
 
@@ -81,24 +84,24 @@ body {
   color: #ff4040;
   font-size: 12px;
   font-weight: 900;
+  line-height: 17px;
   border-radius: 3px;
+  padding: 3px 0px 0px 0px;
   margin: 0px 0 13px 0;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
    -khtml-user-select: none; /* Konqueror HTML */
      -moz-user-select: none; /* Old versions of Firefox */
       -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome, Edge, Opera and Firefox */
+          user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 #player-content {
   position: relative;
-  height: 100%;
+  height: 84px;
+  top: 50px;
   background: #141c24;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #364758;
+  border: 2px solid #364758;
   box-shadow: 0 0px 10px 0px #000000;
   border-radius: 10px;
   z-index: 2;
@@ -155,7 +158,7 @@ body {
 
 #album-art img.active {
   opacity: 1;
-  z-index: 1;
+  z-index: 1100;
 }
 
 
@@ -206,7 +209,7 @@ body {
 }
 
 #album-art.buffering img.active {
-  opacity: 1.0;
+  opacity: .0;
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -230,8 +233,8 @@ body {
 }
 
 .button {
-  width: 26px;
-  height: 26px;
+  width: 76px;
+  height: 56px;
   padding: 14px 24px;
   background-color: #2c3a50;
   box-shadow: 5px 5px 4px #0e141a;
@@ -281,4 +284,3 @@ body {
   transform: scale(1.2);
   text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
- 
