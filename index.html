@@ -17,13 +17,11 @@
 <meta property="og:image:width" content="900">
 <meta property="og:image:height" content="900">
 <meta name="theme-color" content="#e43f79">
-
 <!-- beta -->
 <link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
 <link rel="stylesheet" href="css/Header.css">      <!-- Дизайн шапки сайта --> 
 <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
 <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
-
 <style>
     :root {
     --NamePage: "Radio";
@@ -33,19 +31,15 @@
         font-size: 16.6px;
         position: relative;
         bottom: 2.4px;
-
-
     }
     .em-logo{
         background-image: url("https://i.imgur.com/K98MRfw.png")
     }
 </style>
-
 <!-- JavasCript -->
 <script src="index.js"></script>
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-
 <!-- Шапка страницы -->
 <div class="body-wrap">
     <header class="site-header">
@@ -58,62 +52,62 @@
                                 <span class="LogoBox"><i class="em em-logo"></i><ui class="LogoName"></span></a><ui class="LogoPage"><ui class="LogoVersion"></ui></h4>
                             </head>
                         </header>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style.css">
-
-
 <meta name="yandex-verification" content="bef8770f64b65879" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Слушать радиостанции онлайн">
 <meta name="keywords" content="aledgg, aledcreatik, aledproject, fist89, golive, radio, live, music, discord, bot, bots, aledgg.ru">
-  
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <!-- Tracks used in this music/audio player application are free to use. I downloaded them from Soundcloud and NCS websites. I am not the owner of these tracks. -->
 <div id="app-cover">
 <div id="bg-artwork"></div>
-<div id="bg-layer"></div>
+<!-- <div id="bg-layer"></div> -->
 <div id="player">
 <div id="player-track">
 <div id="album-name"></div>
 <div id="track-name"></div>
 <div id="s-area">
-<div id="ins-time"></div>
-<div id="s-hover"></div>
-<div id="seek-bar"></div>
+<!-- <div id="ins-time"></div> -->
+<!-- <div id="s-hover"></div> -->
+<!-- <div id="seek-bar"></div> -->
 </div>
 </div>
 <div id="player-content">
 <div id="album-art">
-<img src="img/golive.png" class="active" id="_1">
-<img src="img/tnt.png" class="active" id="_2">
-<img src="img/remix.png" class="active" id="_3">
-<img src="img/dfm.png" class="active" id="_4">
-<img src="img/like.png" class="active" id="_5">
-<img src="img/top100.png" class="active" id="_6">
-<img src="img/hype.png" class="active" id="_7">
-<img src="img/love.png" class="active" id="_8">
-<img src="img/muz.png" class="active" id="_9">
-<img src="img/ep.png" class="active" id="_10">
-<img src="img/ep_new.png" class="active" id="_11">
-<img src="img/ep_light.png" class="active" id="_12">
-<img src="img/ep_fresh.png" class="active" id="_13">
-<img src="img/hit.png" class="active" id="_14">
-<img src="img/rfm.png" class="active" id="_15">
-<img src="img/nrg.png" class="active" id="_16">
-<img src="img/radmir.png" class="active" id="_17">
-<img src="img/srp.png" class="active" id="_18">
-<img src="img/relax.png" class="active" id="_19">
-<img src="img/record.png" class="active" id="_20">
-<img src="img/record_phonk.png" class="active" id="_21">
-<div id="buffer-box">Не в сети</div>
+
+<img src="img/golive.png" class="active" id="_1" onerror="this.style.visibility = 'hidden'">
+<img src="img/tnt.png" class="active" id="_2" onerror="this.style.visibility = 'hidden'">
+<img src="img/remix.png" class="active" id="_3" onerror="this.style.visibility = 'hidden'">
+<img src="img/dfm.png" class="active" id="_4" onerror="this.style.visibility = 'hidden'">
+<img src="img/like.png" class="active" id="_5" onerror="this.style.visibility = 'hidden'">
+<img src="img/top100.png" class="active" id="_6" onerror="this.style.visibility = 'hidden'">
+<img src="img/hype.png" class="active" id="_7" onerror="this.style.visibility = 'hidden'">
+<img src="img/love.png" class="active" id="_8" onerror="this.style.visibility = 'hidden'">
+<img src="img/muz.png" class="active" id="_9" onerror="this.style.visibility = 'hidden'">
+<img src="img/ep.png" class="active" id="_10" onerror="this.style.visibility = 'hidden'">
+<img src="img/ep_new.png" class="active" id="_11" onerror="this.style.visibility = 'hidden'">
+<img src="img/ep_light.png" class="active" id="_12" onerror="this.style.visibility = 'hidden'">
+<img src="img/ep_fresh.png" class="active" id="_13" onerror="this.style.visibility = 'hidden'">
+<img src="img/hit.png" class="active" id="_14" onerror="this.style.visibility = 'hidden'">
+<img src="img/rfm.png" class="active" id="_15" onerror="this.style.visibility = 'hidden'">
+<img src="img/nrg.png" class="active" id="_16" onerror="this.style.visibility = 'hidden'">
+<img src="img/radmir.png" class="active" id="_17" onerror="this.style.visibility = 'hidden'">
+<img src="img/srp.png" class="active" id="_18" onerror="this.style.visibility = 'hidden'">
+<img src="img/relax.png" class="active" id="_19" onerror="this.style.visibility = 'hidden'">
+<img src="img/record.png" class="active" id="_20" onerror="this.style.visibility = 'hidden'">
+<img src="img/record_phonk.png" class="active" id="_21" onerror="this.style.visibility = 'hidden'">
+<!-- <div id="buffer-box">Не в сети</div> -->
 </div>
+<div class="addbutton">
+    <a href="https://live.aledgg.ru/add" id="item1">Добавить бота</a><a href="https://aledgg.ru/join" id="item2">Сервер</a>
+    </div>
 <div id="player-controls">
 <div class="control">
 <div class="button" id="play-previous">

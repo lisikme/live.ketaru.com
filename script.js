@@ -53,7 +53,7 @@ $(function () {
       "Radio Record Phonk"
     ],
     trackNames = [
-      "Разработано AledCreatik",
+      "AledCreatik",
       "Онлайн     ",
       "Онлайн     ",
       "Онлайн     ",
