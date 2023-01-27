@@ -37,6 +37,7 @@
     margin-right: 9px;
     transition: 0.2s all;
     padding: 5px 20px;
+    cursor: pointer;
 }
 #item1:hover, #item2:hover{
     box-shadow: 0 0px 3px 0px #000000;
