@@ -82,27 +82,36 @@
 <div id="player-content">
 <div id="album-art">
 
-<img src="img/golive.png" class="active" id="_1" onerror="this.style.visibility = 'hidden'">
-<img src="img/tnt.png" class="active" id="_2" onerror="this.style.visibility = 'hidden'">
-<img src="img/remix.png" class="active" id="_3" onerror="this.style.visibility = 'hidden'">
-<img src="img/dfm.png" class="active" id="_4" onerror="this.style.visibility = 'hidden'">
-<img src="img/like.png" class="active" id="_5" onerror="this.style.visibility = 'hidden'">
-<img src="img/top100.png" class="active" id="_6" onerror="this.style.visibility = 'hidden'">
-<img src="img/hype.png" class="active" id="_7" onerror="this.style.visibility = 'hidden'">
-<img src="img/love.png" class="active" id="_8" onerror="this.style.visibility = 'hidden'">
-<img src="img/muz.png" class="active" id="_9" onerror="this.style.visibility = 'hidden'">
-<img src="img/ep.png" class="active" id="_10" onerror="this.style.visibility = 'hidden'">
-<img src="img/ep_new.png" class="active" id="_11" onerror="this.style.visibility = 'hidden'">
-<img src="img/ep_light.png" class="active" id="_12" onerror="this.style.visibility = 'hidden'">
-<img src="img/ep_fresh.png" class="active" id="_13" onerror="this.style.visibility = 'hidden'">
-<img src="img/hit.png" class="active" id="_14" onerror="this.style.visibility = 'hidden'">
-<img src="img/rfm.png" class="active" id="_15" onerror="this.style.visibility = 'hidden'">
-<img src="img/nrg.png" class="active" id="_16" onerror="this.style.visibility = 'hidden'">
-<img src="img/radmir.png" class="active" id="_17" onerror="this.style.visibility = 'hidden'">
-<img src="img/srp.png" class="active" id="_18" onerror="this.style.visibility = 'hidden'">
-<img src="img/relax.png" class="active" id="_19" onerror="this.style.visibility = 'hidden'">
-<img src="img/record.png" class="active" id="_20" onerror="this.style.visibility = 'hidden'">
-<img src="img/record_phonk.png" class="active" id="_21" onerror="this.style.visibility = 'hidden'">
+
+
+<img id="01" class="active" onerror="this.style.visibility='hidden'" src="img/golive.png">
+<img id="02" class="active" onerror="this.style.visibility='hidden'" src="img/tnt.png">
+<img id="03" class="active" onerror="this.style.visibility='hidden'" src="img/remix.png">
+<img id="04" class="active" onerror="this.style.visibility='hidden'" src="img/dfm.png">
+<img id="04" class="active" onerror="this.style.visibility='hidden'" src="img/like.png">
+
+<img id="05" class="active" onerror="this.style.visibility='hidden'" src="img/top100.png">
+<img id="06" class="active" onerror="this.style.visibility='hidden'" src="img/hype.png">
+<img id="07" class="active" onerror="this.style.visibility='hidden'" src="img/love.png">
+<img id="08" class="active" onerror="this.style.visibility='hidden'" src="img/muz.png">
+<img id="09" class="active" onerror="this.style.visibility='hidden'" src="img/ep.png">
+
+<img id="10" class="active" onerror="this.style.visibility='hidden'" src="img/ep_new.png">
+<img id="12" class="active" onerror="this.style.visibility='hidden'" src="img/ep_light.png">
+<img id="13" class="active" onerror="this.style.visibility='hidden'" src="img/ep_fresh.png">
+<img id="14" class="active" onerror="this.style.visibility='hidden'" src="img/hit.png">
+<img id="15" class="active" onerror="this.style.visibility='hidden'" src="img/rfm.png">
+
+<img id="16" class="active" onerror="this.style.visibility='hidden'" src="img/nrg.png">
+<img id="17" class="active" onerror="this.style.visibility='hidden'" src="img/radmir.png">
+<img id="18" class="active" onerror="this.style.visibility='hidden'" src="img/srp.png">
+<img id="19" class="active" onerror="this.style.visibility='hidden'" src="img/relax.png">
+<img id="20" class="active" onerror="this.style.visibility='hidden'" src="img/record.png">
+
+<img id="21" class="active" onerror="this.style.visibility='hidden'" src="img/record_phonk.png">
+<img id="22" class="active" onerror="this.style.visibility='hidden'" src="img/rus.png">
+<img id="23" class="active" onerror="this.style.visibility='hidden'" src="img/umor.png">
+
 <!-- <div id="buffer-box">Не в сети</div> -->
 </div>
     <div class="addbutton">
@@ -111,18 +120,18 @@
     <script>
         function NewTab(){
             var options={
-                height: 820, // sets the height in pixels of the window.
-                width: 680, // sets the width in pixels of the window.
-                toolbar: 0, // determines whether a toolbar (includes the forward and back buttons) is displayed {1 (YES) or 0 (NO)}.
-                scrollbars: 0, // determines whether scrollbars appear on the window {1 (YES) or 0 (NO)}.
-                status: 0, // whether a status line appears at the bottom of the window {1 (YES) or 0 (NO)}.
-                resizable: 0, // whether the window can be resized {1 (YES) or 0 (NO)}. Can also be overloaded using resizable.
-                left: (screen.width-680)/2, // left position when the window appears.
-                top: (screen.height-890)/2, // top position when the window appears.
-                center: 1, // should we center the window? {1 (YES) or 0 (NO)}. overrides top and left
-                createnew: 0, // should we create a new window for each occurance {1 (YES) or 0 (NO)}.
-                location: 0, // determines whether the address bar is displayed {1 (YES) or 0 (NO)}.
-                menubar: 0 // determines whether the menu bar is displayed {1 (YES) or 0 (NO)}.
+                height: 820, // устанавливает высоту окна в пикселях.
+                width: 680, // устанавливает ширину окна в пикселях.
+                toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
+                scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
+                status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
+                resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
+                left: (screen.width-680)/2, // левое положение при появлении окна.
+                top: (screen.height-890)/2, // верхнее положение при появлении окна.
+                center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
+                createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
+                location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
+                menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
             };
             var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
             var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  

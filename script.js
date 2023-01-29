@@ -1,108 +1,113 @@
 $(function () {
-  var playerTrack = $("#player-track"),
-    bgArtwork = $("#bg-artwork"),
-    bgArtworkUrl,
-    albumName = $("#album-name"),
-    trackName = $("#track-name"),
-    albumArt = $("#album-art"),
-    sArea = $("#s-area"),
-    seekBar = $("#seek-bar"),
-    trackTime = $("#track-time"),
-    insTime = $("#ins-time"),
-    sHover = $("#s-hover"),
-    playPauseButton = $("#play-pause-button"),
-    i = playPauseButton.find("i"),
-    tProgress = $("#current-time"),
-    tTime = $("#track-length"),
-    seekT,
-    seekLoc,
-    seekBarPos,
-    cM,
-    ctMinutes,
-    ctSeconds,
-    curMinutes,
-    curSeconds,
-    durMinutes,
-    durSeconds,
-    playProgress,
-    bTime,
-    nTime = 0,
-    buffInterval = null,
-    tFlag = false,
-    albums = [
+  var playerTrack=$("#player-track"),
+    bgArtwork=$("#bg-artwork"),bgArtworkUrl,
+    albumName=$("#album-name"),
+    trackName=$("#track-name"),
+    albumArt=$("#album-art"),
+    sArea=$("#s-area"),
+    seekBar=$("#seek-bar"),
+    trackTime=$("#track-time"),
+    insTime=$("#ins-time"),
+    sHover=$("#s-hover"),
+    playPauseButton=$("#play-pause-button"),
+    i=playPauseButton.find("i"),
+    tProgress=$("#current-time"),
+    tTime=$("#track-length"),
+    seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
+    albums=[
       "GoLiveFM",
       "TNT Radio",
       "Remix FM",
       "DFM",
       "Like FM",
+
       "Top100 FM",
       "Хайп FM",
       "Love Radio",
       "MuzTV",
       "EuropaPlus",
+
       "EuropaPlus New",
       "EuropaPlus Lisht",
       "Свежее радио",
       "Хит FM",
       "Radio Free Music",
+
       "Energy FM",
       "Radmir FM",
       "Радио SRP",
       "Relax FM",
       "Radio Record",
-      "Radio Record Phonk"
+
+      "Radio Record Phonk",
+      "Русское Радио",
+      "Юмор FM",
     ],
-    trackNames = [
+    trackNames=[
       "AledCreatik",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",   
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     ",
-      "Онлайн     "
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+
+      "Онлайн",   
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
+
+      "Онлайн",
+      "Онлайн",
+      "Онлайн",
     ],
-    albumArtworks = ["_1", "_2", "_3", "_4", "_5", "_6", "_7", "_8", "_9", "_10", "_11", "_12", "_13", "_14", "_15", "_16", "_17", "_18", "_19", "_20", "_21"],
-    trackUrl = [
+    albumArtworks=[
+      "01", "02", "03", "04", "05",
+      "06", "07", "08", "09", "10",
+      "11", "12", "13", "14", "15",
+      "16", "17", "18", "19", "20",
+      "21", "22", "23"],
+    trackUrl=[
       "http://s0.radioheart.ru:8000/RH65841",
       "http://tntradio.hostingradio.ru:8027/tntradio128.mp3?radiostatistica=tntmusic.ru",
       "http://rmx.amgradio.ru/RemixFM",
       "http://dfm.hostingradio.ru/dfm128.mp3",
       "http://ic4.101.ru:8000/v12_1",
+
       "http://radio.promodj.com/top100-192",
       "http://hfm.amgradio.ru/HypeFM",
       "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_128",
-      "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3",
+      "https://online-3.gkvr.ru:8000/muztvradio_original_128.mp3",
       "http://ep256.hostingradio.ru:8052/europaplus256.mp3",
+
       "http://emg02.hostingradio.ru/ep-new128.mp3",
       "http://emg02.hostingradio.ru/ep-light128.mp3",
       "http://emg02.hostingradio.ru/fresh64.aac",
       "http://hitfm.hostingradio.ru/hitfm128.mp3",
       "http://radio-holding.ru:9000/rfm",
+
       "http://pub0302.101.ru:8000/stream/reg/mp3/128/region_energy_84",
       "http://listen7.myradio24.com/nazarik",
       "http://a7.radioheart.ru:8066/RH6629",
       "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
       "http://radiorecord.hostingradio.ru/rr_main96.aacp",
-      "http://radiorecord.hostingradio.ru/phonk96.aacp"
 
+      "http://radiorecord.hostingradio.ru/phonk96.aacp",
+      "http://online-1.gkvr.ru:8000/rusradio96.aac",
+      "http://online-1.gkvr.ru:8000/s12_a44_64.aac",
     ],
-    playPreviousTrackButton = $("#play-previous"),
-    playNextTrackButton = $("#play-next"),
-    currIndex = -1;
+    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
   function playPause() {
     setTimeout(function () {
@@ -112,7 +117,7 @@ $(function () {
         checkBuffering();
         i.attr("class", "fas fa-pause");
         audio.play();
-        audio.volume = 0.2;
+        audio.volume=0.2;
       } else {
         playerTrack.removeClass("active");
         albumArt.removeClass("active");
