@@ -79,7 +79,7 @@ $(function () {
       "16", "17", "18", "19", "20",
       "21", "22", "23"],
     trackUrl=[
-      "http://s0.radioheart.ru:8000/RH65841",
+      "http://s0.radioheart.ru:8000/livegolive",
       "http://tntradio.hostingradio.ru:8027/tntradio128.mp3?radiostatistica=tntmusic.ru",
       "http://rmx.amgradio.ru/RemixFM",
       "http://dfm.hostingradio.ru/dfm128.mp3",
