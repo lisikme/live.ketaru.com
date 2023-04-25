@@ -85,7 +85,7 @@ $(function () {
       "http://radiorecord.hostingradio.ru/phonk96.aacp",
       "http://online-1.gkvr.ru:8000/rusradio96.aac",
       "http://ic5.101.ru:8000/v5_1",
-      "http://icecast.newradio.cdnvideo.ru/newradio3",
+      "http://icecast.newradio.cdnvideo.ru/newradio2",
     ],
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
