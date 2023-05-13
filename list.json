@@ -60,61 +60,66 @@
         "Url":   "http://emg02.hostingradio.ru/ep-light128.mp3"
     },
     "13": {
+        "Name":  "EuropaPlus Top40",
+        "Image": "http://live.aledgg.ru/img/ep_top40.png",
+        "Url":   "http://emg02.hostingradio.ru/ep-light128.mp3"
+    },
+    "14": {
         "Name":  "Свежее радио",
         "Image": "http://live.aledgg.ru/img/ep_fresh.png",
         "Url":   "http://emg02.hostingradio.ru/fresh64.aac"
     },
-    "14": {
+    "15": {
         "Name":  "Хит FM",
         "Image": "http://live.aledgg.ru/img/hit.png",
         "Url":   "http://hitfm.hostingradio.ru/hitfm128.mp3"
     },
-    "15": {
+    "16": {
         "Name":  "Radio Free Music",
         "Image": "http://live.aledgg.ru/img/rfm.png",
         "Url":   "http://radio-holding.ru:9000/rfm"
     },
-    "16": {
+    "17": {
         "Name":  "Energy FM",
         "Image": "http://live.aledgg.ru/img/nrg.png",
         "Url":   "http://pub0302.101.ru:8000/stream/reg/mp3/128/region_energy_84"
     },
-    "17": {
+    "18": {
         "Name":  "Radmir FM",
         "Image": "http://live.aledgg.ru/img/radmir.png",
         "Url":   "http://listen7.myradio24.com/nazarik"
     },
-    "18": {
+    "19": {
         "Name":  "Радио SRP",
         "Image": "http://live.aledgg.ru/img/srp.png",
         "Url":   "https://a7.radioheart.ru:8066/RH6629"
     },
-    "19": {
+    "20": {
         "Name":  "Relax FM",
         "Image": "http://live.aledgg.ru/img/relax.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/200"
     },
-    "20": {
+    "21": {
         "Name":  "Radio Record",
         "Image": "http://live.aledgg.ru/img/record.png",
         "Url":   "http://radiorecord.hostingradio.ru/rr_main96.aacp"
     },
-    "21": {
+    "22": {
         "Name":  "Radio Record Phonk",
         "Image": "http://live.aledgg.ru/img/record_phonk.png",
         "Url":   "http://radiorecord.hostingradio.ru/phonk96.aacp"
     },
-    "22": {
+    "23": {
         "Name":  "Русское Радио",
         "Image": "http://live.aledgg.ru/img/rus.png",
         "Url":   "https://rusradio.hostingradio.ru/rusradio96.aacp"
     },
-    "23": {
+    "24": {
         "Name":  "Юмор FM",
         "Image": "http://live.aledgg.ru/img/umor.png",
         "Url":   "http://ic5.101.ru:8000/v5_1"
     },
-    "24": {
+    "25": {
         "Name":  "Новое радио",
         "Image": "http://live.aledgg.ru/img/newradio.png",
         "Url":   "http://icecast.newradio.cdnvideo.ru/newradio2"

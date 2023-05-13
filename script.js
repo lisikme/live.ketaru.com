@@ -29,16 +29,17 @@ $(function () {
 
       "EuropaPlus New",
       "EuropaPlus Lisht",
+      "EuropaPlus Top40",
       "Свежее радио",
       "Хит FM",
-      "Radio Free Music",
 
+      "Radio Free Music",
       "Energy FM",
       "Radmir FM",
       "Радио SRP",
       "Relax FM",
-      "Radio Record",
 
+      "Radio Record",
       "Radio Record Phonk",
       "Русское Радио",
       "Юмор FM",
@@ -49,14 +50,15 @@ $(function () {
       "Онлайн", "Онлайн", "Онлайн", "Онлайн", "Онлайн",
       "Онлайн", "Онлайн", "Онлайн", "Онлайн", "Онлайн",
       "Онлайн", "Онлайн", "Онлайн", "Онлайн", "Онлайн",
-      "Онлайн", "Онлайн", "Онлайн", "Онлайн",
+      "Онлайн", "Онлайн", "Онлайн", "Онлайн", "Онлайн",
     ],
     albumArtworks=[
       "01", "02", "03", "04", "05",
       "06", "07", "08", "09", "10",
       "11", "12", "13", "14", "15",
       "16", "17", "18", "19", "20",
-      "21", "22", "23", "24"],
+      "21", "22", "23", "24", "25"
+    ],
     trackUrl=[
       "http://s0.radioheart.ru:8000/livegolive",
       "http://tntradio.hostingradio.ru:8027/tntradio128.mp3?radiostatistica=tntmusic.ru",
@@ -72,16 +74,17 @@ $(function () {
 
       "http://emg02.hostingradio.ru/ep-new128.mp3",
       "http://emg02.hostingradio.ru/ep-light128.mp3",
+      "http://eptop128server.streamr.ru:8033/eptop128",
       "http://emg02.hostingradio.ru/fresh64.aac",
       "http://hitfm.hostingradio.ru/hitfm128.mp3",
-      "http://radio-holding.ru:9000/rfm",
 
+      "http://radio-holding.ru:9000/rfm",
       "http://pub0302.101.ru:8000/stream/reg/mp3/128/region_energy_84",
       "http://listen7.myradio24.com/nazarik",
       "http://a7.radioheart.ru:8066/RH6629",
       "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
-      "http://radiorecord.hostingradio.ru/rr_main96.aacp",
 
+      "http://radiorecord.hostingradio.ru/rr_main96.aacp",
       "http://radiorecord.hostingradio.ru/phonk96.aacp",
       "http://online-1.gkvr.ru:8000/rusradio96.aac",
       "http://ic5.101.ru:8000/v5_1",
@@ -97,7 +100,7 @@ $(function () {
         checkBuffering();
         i.attr("class", "fas fa-pause");
         audio.play();
-        audio.volume=0.2;
+        audio.volume=0.50;
       } else {
         playerTrack.removeClass("active");
         albumArt.removeClass("active");
