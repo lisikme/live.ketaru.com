@@ -25,6 +25,10 @@
 <script>
     let default_vol = 100 // Стандартный уровень громкости
     let step_vol = 2 // Шаг уровня громкости
+
+    $(window).scroll(function(){
+        $('html').scrollTop(0);
+    });
 </script>
 <style>
     :root {

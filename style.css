@@ -2,11 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 
+*{
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
 html{
   width: 10000px;
   height: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
 }
 .addbutton {
     position: absolute;
