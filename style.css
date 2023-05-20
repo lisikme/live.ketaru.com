@@ -6,6 +6,7 @@ html{
   width: 10000px;
   height: 100%;
   overflow: hidden;
+  overflow-x: hidden;
 }
 .addbutton {
     position: absolute;
@@ -56,6 +57,7 @@ html{
 }
 
 body {
+    position: relative;
     font-family: Helvetica, Arial;
     margin: 0;
     background-color: #000000;
