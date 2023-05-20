@@ -75,12 +75,13 @@ body {
     transition: 0.4s all;
     animation: bg .9s forwards;
     position: fixed;
-    top: -30px;
-    right: -30px;
-    bottom: -30px;
-    left: -30px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     /* background-repeat: no-repeat; */
     background-size: 100%;
+    height: 100%;
     background-position: 50%;
     filter: blur(40px);
     -webkit-filter: blur(40px);
