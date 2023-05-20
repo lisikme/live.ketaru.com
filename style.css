@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+
+html{
+  width: 10000px;
+}
 .addbutton {
     position: absolute;
     top: 90px;

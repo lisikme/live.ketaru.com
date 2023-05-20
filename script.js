@@ -1,3 +1,30 @@
+$(function() {
+  var fontSize = 12;
+  var imgScales = { small: 0.25, normal: 0.50, large: 1.00 }
+
+  function setFontSize(fontSize) {
+    var zoomLevel = 'normal';
+    if (fontSize <= 9)
+      zoomLevel = 'small';
+    else if (fontSize >= 15)
+      zoomLevel = 'large';
+    var imgScale = imgScales[zoomLevel];
+    $('#root').css('font-size', fontSize + 'pt');
+    $('#root').removeClass('zoom-small zoom-normal zoom-large');
+    $('#root').addClass('zoom-' + zoomLevel);    
+    $('img.scalable').each(function() {
+      $(this).css('width', this.naturalWidth * imgScale);
+      $(this).css('height', this.naturalHeight * imgScale);
+    });
+  }
+  $('#plus').on('click', function() {
+    setFontSize(++fontSize);
+  });
+  $('#minus').on('click', function() {
+    setFontSize(--fontSize);
+  });
+});
+
 $(function () {
   var playerTrack=$("#player-track"),
     bgArtwork=$("#bg-artwork"),bgArtworkUrl,
