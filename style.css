@@ -4,6 +4,8 @@
 
 html{
   width: 10000px;
+  height: 100%;
+  overflow: hidden;
 }
 .addbutton {
     position: absolute;
