@@ -2,14 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 
-*{
-  overflow: hidden;
-  overflow-x: hidden;
-}
-
 html{
   width: 10000px;
-  height: 100%;
 }
 .addbutton {
     position: absolute;
@@ -60,7 +54,6 @@ html{
 }
 
 body {
-    position: relative;
     font-family: Helvetica, Arial;
     margin: 0;
     background-color: #000000;
@@ -82,10 +75,10 @@ body {
     transition: 0.4s all;
     animation: bg .9s forwards;
     position: fixed;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: -0px;
+    right: -0px;
+    bottom: -0px;
+    left: -0px;
     /* background-repeat: no-repeat; */
     background-size: 100%;
     height: 100%;
