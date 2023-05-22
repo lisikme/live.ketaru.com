@@ -22,15 +22,6 @@
 <link rel="stylesheet" href="css/Header.css">      <!-- Дизайн шапки сайта --> 
 <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
 <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
-<script>
-    let default_vol = 100 // Стандартный уровень громкости
-    let step_vol = 2 // Шаг уровня громкости
-
-    $(window).scroll(function(){
-        $('html').scrollTop(0);
-    });
-    document.body.addEventListener('touchstart', function(e){ e.preventDefault(); });
-</script>
 <style>
     :root {
     --NamePage: "Radio";
@@ -93,7 +84,7 @@
     <div class="addbutton">
     <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a><a href="https://aledgg.ru/join" id="item2" target="_blank">Сервер</a>
     <div class="range-input">
-        <input type="range" min="0" max="100" value="100" step="1">
+        <input type="range" id="range" min="0" max="100" value="0" step="1">
         <div class="value">
             <div></div>
         </div>
@@ -144,7 +135,5 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </body>
 </html>
+<script  src="./config.js"></script>
 <script  src="./script.js"></script>
-
-
-

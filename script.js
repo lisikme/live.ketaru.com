@@ -216,8 +216,6 @@ $(function () {
       }
       seekBar.width(0);
       trackTime.removeClass("active");
-      tProgress.text("00:00");
-      tTime.text("00:00");
       currAlbum = albums[currIndex];
       currImage = './'+active[currIndex];
       currTrackName = trackNames[currIndex];
@@ -267,10 +265,22 @@ $(function () {
   }
   initPlayer();
 });
-
+// ---------------------------------------------------------------------------------------
 document.querySelector('.range-input .value div').innerHTML = default_vol
 document.querySelector(".range-input input").value = default_vol;
 document.querySelector(".range-input input").step = step_vol;
+
+let css = getComputedStyle(document.documentElement)
+let bar_start = css.getPropertyValue('--bar_color_start')
+let bar_end = css.getPropertyValue('--bar_color_end')
+
+let sliderEl = document.querySelector("#range")
+let sliderValue = document.querySelector(".value")
+let tempSliderValue = default_vol; 
+let progress = (tempSliderValue / sliderEl.max) * 100;
+sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
+// ---------------------------------------------------------------------------------------
+
 
 let rangeInput = document.querySelector(".range-input input");
 let rangeValue = document.querySelector(".range-input .value div");
@@ -286,4 +296,8 @@ rangeInput.addEventListener("input",function(){
     
 });
 
-
+sliderEl.addEventListener("input", (event) => {
+  let tempSliderValue = event.target.value; 
+  let progress = (tempSliderValue / sliderEl.max) * 100;
+  sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
+})
