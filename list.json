@@ -2,37 +2,37 @@
     "1": {
         "Name":  "GoLiveFM",
         "Image": "http://live.aledgg.ru/img/golivefm.png",
-        "Url":   "http://s0.radioheart.ru:8000/RH72212"
+        "Url":   "https://s0.radioheart.ru:8000/RH72212"
     },
     "2": {
         "Name":  "TNT Radio",
         "Image": "http://live.aledgg.ru/img/tnt.png",
-        "Url":   "http://tntradio.hostingradio.ru:8027/tntradio128.mp3"
+        "Url":   "https://tntradio.hostingradio.ru:8027/tntradio128.mp3"
     },
     "3": {
         "Name":  "Remix FM",
         "Image": "http://live.aledgg.ru/img/remix.png",
-        "Url":   "http://rmx.amgradio.ru/RemixFM"
+        "Url":   "https://rmx.amgradio.ru/RemixFM"
     },
     "4": {
         "Name":  "DFM",
         "Image": "http://live.aledgg.ru/img/dfm.png",
-        "Url":   "http://dfm.hostingradio.ru/dfm128.mp3"
+        "Url":   "https://dfm.hostingradio.ru/dfm128.mp3"
     },
     "5": {
         "Name":  "Like FM",
         "Image": "http://live.aledgg.ru/img/like.png",
-        "Url":   "http://ic4.101.ru:8000/v12_1"
+        "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/219"
     },
     "6": {
         "Name":  "Хайп FM",
         "Image": "http://live.aledgg.ru/img/hype.png",
-        "Url":   "http://hfm.amgradio.ru/HypeFM"
+        "Url":   "https://hfm.amgradio.ru/HypeFM"
     },
     "7": {
         "Name":  "Love Radio",
         "Image": "http://live.aledgg.ru/img/love.png",
-        "Url":   "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_128"
+        "Url":   "https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=EAB84010784F57958CCE883F0BCEEA48"
     },
     "8": {
         "Name":  "MuzTV",
@@ -42,42 +42,42 @@
     "9": {
         "Name":  "EuropaPlus",
         "Image": "http://live.aledgg.ru/img/ep.png",
-        "Url":   "http://ep256.hostingradio.ru:8052/europaplus256.mp3"
+        "Url":   "https://ep256.hostingradio.ru:8052/europaplus256.mp3"
     },
     "10": {
         "Name":  "EuropaPlus New",
         "Image": "http://live.aledgg.ru/img/ep_new.png",
-        "Url":   "http://emg02.hostingradio.ru/ep-new128.mp3"
+        "Url":   "https://europaplus.hostingradio.ru:8014/ep-new128.mp3"
     },
     "11": {
         "Name":  "EuropaPlus Lisht",
         "Image": "http://live.aledgg.ru/img/ep_light.png",
-        "Url":   "http://emg02.hostingradio.ru/ep-light128.mp3"
+        "Url":   "https://europaplus.hostingradio.ru:8014/ep-light128.mp3"
     },
     "12": {
         "Name":  "EuropaPlus Top40",
         "Image": "http://live.aledgg.ru/img/ep_top40.png",
-        "Url":   "http://emg02.hostingradio.ru/ep-light128.mp3"
+        "Url":   "https://europaplus.hostingradio.ru:8014/ep-top256.mp3"
     },
     "13": {
         "Name":  "Свежее радио",
         "Image": "http://live.aledgg.ru/img/ep_fresh.png",
-        "Url":   "http://emg02.hostingradio.ru/fresh64.aac"
+        "Url":   "https://epdop.hostingradio.ru:8033/fresh64.aac"
     },
     "14": {
         "Name":  "Хит FM",
         "Image": "http://live.aledgg.ru/img/hit.png",
-        "Url":   "http://hitfm.hostingradio.ru/hitfm128.mp3"
+        "Url":   "https://hitfm.hostingradio.ru/hitfm96.aacp"
     },
     "15": {
         "Name":  "Radio Free Music",
         "Image": "http://live.aledgg.ru/img/rfm.png",
-        "Url":   "http://radio-holding.ru:9000/rfm"
+        "Url":   "https://radio-holding.ru:9000/rfm"
     },
     "16": {
         "Name":  "Energy FM",
         "Image": "http://live.aledgg.ru/img/nrg.png",
-        "Url":   "http://pub0302.101.ru:8000/stream/reg/mp3/128/region_energy_84"
+        "Url":   "https://pub0102.101.ru:8443/stream/air/mp3/256/99"
     },
     "17": {
         "Name":  "Radmir FM",
@@ -97,17 +97,17 @@
     "20": {
         "Name":  "Radio Record",
         "Image": "http://live.aledgg.ru/img/record.png",
-        "Url":   "http://radiorecord.hostingradio.ru/rr_main96.aacp"
+        "Url":   "https://radiorecord.hostingradio.ru/rr_main96.aacp"
     },
     "21": {
         "Name":  "Radio Record Phonk",
         "Image": "http://live.aledgg.ru/img/record_phonk.png",
-        "Url":   "http://radiorecord.hostingradio.ru/phonk96.aacp"
+        "Url":   "https://radiorecord.hostingradio.ru/phonk96.aacp"
     },
     "22": {
         "Name":  "Radio Record Remix",
         "Image": "http://live.aledgg.ru/img/record_remix.png",
-        "Url":   "http://radiorecord.hostingradio.ru/rmx96.aacp"
+        "Url":   "https://radiorecord.hostingradio.ru/rmx96.aacp"
     },
     "23": {
         "Name":  "Русское Радио",
@@ -117,11 +117,11 @@
     "24": {
         "Name":  "Юмор FM",
         "Image": "http://live.aledgg.ru/img/umor.png",
-        "Url":   "http://ic5.101.ru:8000/v5_1"
+        "Url":   "https://ic5.101.ru:8000/v5_1"
     },
     "25": {
         "Name":  "Новое радио",
         "Image": "http://live.aledgg.ru/img/newradio.png",
-        "Url":   "http://icecast.newradio.cdnvideo.ru/newradio2"
+        "Url":   "https://icecast.newradio.cdnvideo.ru/newradio3"
     }
 }
