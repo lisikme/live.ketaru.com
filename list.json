@@ -1,127 +1,127 @@
 {
     "1": {
         "Name":  "GoLiveFM",
-        "Image": "http://live.aledgg.ru/img/golivefm.png",
+        "Image": "http://live.ketaru.com/img/golivefm.png",
         "Url":   "https://s0.radioheart.ru:8000/RH72212"
     },
     "2": {
         "Name":  "TNT Radio",
-        "Image": "http://live.aledgg.ru/img/tnt.png",
+        "Image": "http://live.ketaru.com/img/tnt.png",
         "Url":   "https://tntradio.hostingradio.ru:8027/tntradio128.mp3"
     },
     "3": {
         "Name":  "Remix FM",
-        "Image": "http://live.aledgg.ru/img/remix.png",
+        "Image": "http://live.ketaru.com/img/remix.png",
         "Url":   "https://rmx.amgradio.ru/RemixFM"
     },
     "4": {
         "Name":  "DFM",
-        "Image": "http://live.aledgg.ru/img/dfm.png",
+        "Image": "http://live.ketaru.com/img/dfm.png",
         "Url":   "https://dfm.hostingradio.ru/dfm128.mp3"
     },
     "5": {
         "Name":  "Like FM",
-        "Image": "http://live.aledgg.ru/img/like.png",
+        "Image": "http://live.ketaru.com/img/like.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/219"
     },
     "6": {
         "Name":  "Хайп FM",
-        "Image": "http://live.aledgg.ru/img/hype.png",
+        "Image": "http://live.ketaru.com/img/hype.png",
         "Url":   "https://hfm.amgradio.ru/HypeFM"
     },
     "7": {
         "Name":  "Love Radio",
-        "Image": "http://live.aledgg.ru/img/love.png",
+        "Image": "http://live.ketaru.com/img/love.png",
         "Url":   "https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=EAB84010784F57958CCE883F0BCEEA48"
     },
     "8": {
         "Name":  "MuzTV",
-        "Image": "http://live.aledgg.ru/img/muz.png",
+        "Image": "http://live.ketaru.com/img/muz.png",
         "Url":   "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3"
     },
     "9": {
         "Name":  "EuropaPlus",
-        "Image": "http://live.aledgg.ru/img/ep.png",
+        "Image": "http://live.ketaru.com/img/ep.png",
         "Url":   "https://ep256.hostingradio.ru:8052/europaplus256.mp3"
     },
     "10": {
         "Name":  "EuropaPlus New",
-        "Image": "http://live.aledgg.ru/img/ep_new.png",
+        "Image": "http://live.ketaru.com/img/ep_new.png",
         "Url":   "https://europaplus.hostingradio.ru:8014/ep-new128.mp3"
     },
     "11": {
         "Name":  "EuropaPlus Lisht",
-        "Image": "http://live.aledgg.ru/img/ep_light.png",
+        "Image": "http://live.ketaru.com/img/ep_light.png",
         "Url":   "https://europaplus.hostingradio.ru:8014/ep-light128.mp3"
     },
     "12": {
         "Name":  "EuropaPlus Top40",
-        "Image": "http://live.aledgg.ru/img/ep_top40.png",
+        "Image": "http://live.ketaru.com/img/ep_top40.png",
         "Url":   "https://europaplus.hostingradio.ru:8014/ep-top256.mp3"
     },
     "13": {
         "Name":  "Свежее радио",
-        "Image": "http://live.aledgg.ru/img/ep_fresh.png",
+        "Image": "http://live.ketaru.com/img/ep_fresh.png",
         "Url":   "https://epdop.hostingradio.ru:8033/fresh64.aac"
     },
     "14": {
         "Name":  "Хит FM",
-        "Image": "http://live.aledgg.ru/img/hit.png",
+        "Image": "http://live.ketaru.com/img/hit.png",
         "Url":   "https://hitfm.hostingradio.ru/hitfm96.aacp"
     },
     "15": {
         "Name":  "Radio Free Music",
-        "Image": "http://live.aledgg.ru/img/rfm.png",
+        "Image": "http://live.ketaru.com/img/rfm.png",
         "Url":   "https://radio-holding.ru:9000/rfm"
     },
     "16": {
         "Name":  "Energy FM",
-        "Image": "http://live.aledgg.ru/img/nrg.png",
+        "Image": "http://live.ketaru.com/img/nrg.png",
         "Url":   "https://pub0102.101.ru:8443/stream/air/mp3/256/99"
     },
     "17": {
         "Name":  "Radmir FM",
-        "Image": "http://live.aledgg.ru/img/radmir.png",
+        "Image": "http://live.ketaru.com/img/radmir.png",
         "Url":   "http://listen7.myradio24.com/nazarik"
     },
     "18": {
         "Name":  "Радио SRP",
-        "Image": "http://live.aledgg.ru/img/srp.png",
+        "Image": "http://live.ketaru.com/img/srp.png",
         "Url":   "https://a7.radioheart.ru:8066/RH6629"
     },
     "19": {
         "Name":  "Relax FM",
-        "Image": "http://live.aledgg.ru/img/relax.png",
+        "Image": "http://live.ketaru.com/img/relax.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/200"
     },
     "20": {
         "Name":  "Radio Record",
-        "Image": "http://live.aledgg.ru/img/record.png",
+        "Image": "http://live.ketaru.com/img/record.png",
         "Url":   "https://radiorecord.hostingradio.ru/rr_main96.aacp"
     },
     "21": {
         "Name":  "Radio Record Phonk",
-        "Image": "http://live.aledgg.ru/img/record_phonk.png",
+        "Image": "http://live.ketaru.com/img/record_phonk.png",
         "Url":   "https://radiorecord.hostingradio.ru/phonk96.aacp"
     },
     "22": {
         "Name":  "Radio Record Remix",
-        "Image": "http://live.aledgg.ru/img/record_remix.png",
+        "Image": "http://live.ketaru.com/img/record_remix.png",
         "Url":   "https://radiorecord.hostingradio.ru/rmx96.aacp"
     },
     "23": {
         "Name":  "Русское Радио",
-        "Image": "http://live.aledgg.ru/img/rus.png",
+        "Image": "http://live.ketaru.com/img/rus.png",
         "Url":   "https://rusradio.hostingradio.ru/rusradio96.aacp"
     },
     "24": {
         "Name":  "Юмор FM",
-        "Image": "http://live.aledgg.ru/img/umor.png",
+        "Image": "http://live.ketaru.com/img/umor.png",
         "Url":   "https://ic5.101.ru:8000/v5_1"
     },
     "25": {
         "Name":  "Новое радио",
-        "Image": "http://live.aledgg.ru/img/newradio.png",
+        "Image": "http://live.ketaru.com/img/newradio.png",
         "Url":   "https://icecast.newradio.cdnvideo.ru/newradio3"
     }
 }
