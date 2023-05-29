@@ -80,7 +80,7 @@ $(function () {
       "Играет", "Играет", "Играет", "Играет", "Играет",
     ],
     trackUrl=[
-      "https://s0.radioheart.ru:8000/livegolive",
+      "https://s0.radioheart.ru:8000/aledweb",
       "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
       "https://rmx.amgradio.ru/RemixFM",
       "https://dfm.hostingradio.ru/dfm128.mp3",
