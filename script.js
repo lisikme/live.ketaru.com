@@ -87,7 +87,7 @@ $(function () {
       "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
 
       "https://hfm.amgradio.ru/HypeFM",
-      "https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=EAB84010784F57958CCE883F0BCEEA48",
+      "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_64",
       "https://ep256.hostingradio.ru:8052/europaplus256.mp3",
       "https://europaplus.hostingradio.ru:8014/ep-new128.mp3",
       "https://europaplus.hostingradio.ru:8014/ep-light128.mp3",
