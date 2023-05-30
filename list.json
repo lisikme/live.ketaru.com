@@ -2,7 +2,7 @@
     "1": {
         "Name":  "GoLiveFM",
         "Image": "http://live.ketaru.com/img/golivefm.png",
-        "Url":   "https://77.222.60.70:8000/ketarubot"
+        "Url":   "https://m.ketaru.com:8000/ketarubot"
     },
     "2": {
         "Name":  "TNT Radio",

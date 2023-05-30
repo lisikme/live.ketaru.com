@@ -80,7 +80,7 @@ $(function () {
       "Radio Record Lo-Fi",
     ],
     trackUrl=[
-      "https://s0.radioheart.ru:8000/ketaruweb",
+      "https://m.ketaru.com:8000/ketaruweb",
       "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
       "https://rmx.amgradio.ru/RemixFM",
       "https://dfm.hostingradio.ru/dfm128.mp3",
