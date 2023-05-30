@@ -41,6 +41,13 @@ $(function () {
     tProgress=$("#current-time"),
     tTime=$("#track-length"),
     seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
+    // trackNames=[
+    //   "Играет", "Играет", "Играет", "Играет", "Играет",
+    //   "Играет", "Играет", "Играет", "Играет", "Играет",
+    //   "Играет", "Играет", "Играет", "Играет", "Играет",
+    //   "Играет", "Играет", "Играет", "Играет", "Играет",
+    //   "Играет", "Играет", "Играет", "Играет", "Играет",
+    // ],
     albums=[ // Название Трека
       "GoLiveFM",
       "TNT Radio",
@@ -50,65 +57,58 @@ $(function () {
 
       "Хайп FM",
       "Love Radio",
-      "MuzTV",
       "EuropaPlus",
       "EuropaPlus New",
-
       "EuropaPlus Lisht",
+
       "EuropaPlus Top40",
       "Свежее радио",
       "Хит FM",
-      "Radio Free Music",
-
       "Energy FM",
       "Radmir FM",
+
       "Радио SRP",
       "Relax FM",
-      "Radio Record",
-
-      "Radio Record Phonk",
-      "Radio Record Remix",
       "Русское Радио",
       "Юмор FM",
       "Новое радио",
-    ],
-    trackNames=[
-      "Играет", "Играет", "Играет", "Играет", "Играет",
-      "Играет", "Играет", "Играет", "Играет", "Играет",
-      "Играет", "Играет", "Играет", "Играет", "Играет",
-      "Играет", "Играет", "Играет", "Играет", "Играет",
-      "Играет", "Играет", "Играет", "Играет", "Играет",
+      
+      "Radio Record",
+      "Radio Record Phonk",
+      "Radio Record Remix",
+      "Radio Record Trap",
+      "Radio Record Lo-Fi",
     ],
     trackUrl=[
-      "https://s0.radioheart.ru:8000/ketaruweb",
-      "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
-      "https://rmx.amgradio.ru/RemixFM",
-      "https://dfm.hostingradio.ru/dfm128.mp3",
-      "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
+      "http://77.222.60.70:8000/ketaruweb",
+      "http://23.111.107.252:8027/tntradio128.mp3",
+      "http://146.185.208.240/RemixFM",
+      "http://23.105.253.76/dfm128.mp3",
+      "https://91.207.58.130:8443/stream/air/mp3/256/219",
 
-      "https://hfm.amgradio.ru/HypeFM",
-      "https://stream2.n340.com/12_love_64_reg_44?type=aac&UID=EAB84010784F57958CCE883F0BCEEA48",
-      "https://online-3.gkvr.ru:8000/muztvradio_original_128.mp3",
-      "https://ep256.hostingradio.ru:8052/europaplus256.mp3",
-      "https://europaplus.hostingradio.ru:8014/ep-new128.mp3",
+      "http://146.185.208.240/HypeFM",
+      "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_64",
+      "http://212.92.98.145:8052/europaplus256.mp3",
+      "http://92.53.91.212:8014/ep-new128.mp3",
+      "http://92.53.91.212:8014/ep-light128.mp3",
 
-      "https://europaplus.hostingradio.ru:8014/ep-light128.mp3",
-      "https://europaplus.hostingradio.ru:8014/ep-top256.mp3",
-      "https://epdop.hostingradio.ru:8033/fresh64.aac",
-      "https://hitfm.hostingradio.ru/hitfm96.aacp",
-      "https://radio-holding.ru:9433/rfm",
-      
-      "https://pub0102.101.ru:8443/stream/air/mp3/256/99",
+      "http://92.53.91.212:8014/ep-top256.mp3",
+      "http://31.41.157.66:8033/fresh64.aac",
+      "http://88.212.237.12/hitfm96.aacp",
+      "https://91.207.58.130:8443/stream/air/mp3/256/99",
       "http://listen7.myradio24.com/nazarik",
-      "https://a7.radioheart.ru:8066/RH6629",
-      "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
-      "https://radiorecord.hostingradio.ru/rr_main96.aacp",
       
-      "https://radiorecord.hostingradio.ru/phonk96.aacp",
-      "https://radiorecord.hostingradio.ru/rmx96.aacp",
-      "https://rusradio.hostingradio.ru/rusradio96.aacp",
-      "https://ic5.101.ru:8000/v5_1",
+      "http://5.188.118.122:8066/RH6629",
+      "https://91.207.58.130:8443/stream/air/mp3/256/200",
+      "http://23.105.238.4/rusradio96.aacp",
+      "https://91.207.58.130:8000/v5_1",
       "https://icecast-newradio.cdnvideo.ru/newradio3",
+
+      "http://23.111.104.100/rr_main96.aacp",
+      "http://23.111.104.100/phonk96.aacp",
+      "http://23.111.104.100/rmx96.aacp",
+      "http://23.111.104.100/trap96.aacp",
+      "http://23.111.104.100/lofi96.aacp",
     ],
     active=[
       "img/golive.png",
@@ -119,27 +119,27 @@ $(function () {
       
       "img/hype.png",
       "img/love.png",
-      "img/muz.png",
       "img/ep.png",
       "img/ep_new.png",
-
       "img/ep_light.png",
+
       "img/ep_top40.png",
       "img/ep_fresh.png",
       "img/hit.png",
-      "img/rfm.png",
-      
       "img/nrg.png",
       "img/radmir.png",
+      
       "img/srp.png",
       "img/relax.png",
-      "img/record.png",
-      
-      "img/record_phonk.png",
-      "img/record_remix.png",
       "img/rus.png",
       "img/umor.png",
       "img/newradio.png",
+
+      "img/record.png",
+      "img/record_phonk.png",
+      "img/record_remix.png",
+      "img/record_trap.png",
+      "img/record_lofi.png",
     ],
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
@@ -218,7 +218,8 @@ $(function () {
       trackTime.removeClass("active");
       currAlbum = albums[currIndex];
       currImage = './'+active[currIndex];
-      currTrackName = trackNames[currIndex];
+      // currTrackName = trackNames[currIndex];
+      currTrackName = 'Играет';
       audio.src = trackUrl[currIndex];
       nTime = 0;
       bTime = new Date();
