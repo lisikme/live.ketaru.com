@@ -2,7 +2,7 @@
     "1": {
         "Name":  "GoLiveFM",
         "Image": "http://live.ketaru.com/img/golive.png",
-        "Url":   "https://localhost:80"
+        "Url":   "http://localhost:8000"
     },
     "2": {
         "Name":  "TNT Radio",
