@@ -49,7 +49,7 @@ $(function () {
     //   "Играет", "Играет", "Играет", "Играет", "Играет",
     // ],
     albums=[ // Название Трека
-      "GoLiveFM",
+      "FlyFox",
       "TNT Radio",
       "Remix FM",
       "DFM",
