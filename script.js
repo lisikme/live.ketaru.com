@@ -102,7 +102,7 @@ $(function () {
       "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
       "https://rusradio.hostingradio.ru/rusradio96.aacp",
       "https://ic5.101.ru:8000/v5_1",
-      "https://icecast-newradio.cdnvideo.ru/newradio3",
+      "https://stream.newradio.ru/novoe96.aacp",
       
       "https://radiorecord.hostingradio.ru/rr_main96.aacp",
       "https://radiorecord.hostingradio.ru/phonk96.aacp",
