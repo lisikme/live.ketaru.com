@@ -97,7 +97,7 @@
     "20": {
         "Name":  "Новое радио",
         "Image": "http://live.ketaru.com/img/newradio.png",
-        "Url":   "https://icecast.newradio.cdnvideo.ru/newradio3"
+        "Url":   "https://stream.newradio.ru/novoe96.aacp"
     },
     "21": {
         "Name":  "Radio Record",
