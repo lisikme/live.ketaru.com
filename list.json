@@ -75,58 +75,53 @@
         "Url":   "http://listen7.myradio24.com/nazarik"
     },
     "16": {
-        "Name":  "Радио SRP",
-        "Image": "http://live.ketaru.com/img/srp.png",
-        "Url":   "http://5.188.118.122:8066/RH6629"
-    },
-    "17": {
         "Name":  "Relax FM",
         "Image": "http://live.ketaru.com/img/relax.png",
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/200"
     },
-    "18": {
+    "17": {
         "Name":  "Русское Радио",
         "Image": "http://live.ketaru.com/img/rus.png",
         "Url":   "http://23.105.238.4/rusradio96.aacp"
     },
-    "19": {
+    "18": {
         "Name":  "Юмор FM",
         "Image": "http://live.ketaru.com/img/umor.png",
         "Url":   "https://91.207.58.130:8000/v5_1"
     },
-    "20": {
+    "19": {
         "Name":  "Новое радио",
         "Image": "http://live.ketaru.com/img/newradio.png",
         "Url":   "https://stream.newradio.ru/novoe96.aacp"
     },
-    "21": {
+    "20": {
         "Name":  "Radio Record",
         "Image": "http://live.ketaru.com/img/record.png",
         "Url":   "http://23.111.104.100/rr_main96.aacp"
     },
-    "22": {
+    "21": {
         "Name":  "Radio Record Phonk",
         "Image": "http://live.ketaru.com/img/record_phonk.png",
         "Url":   "http://23.111.104.100/phonk96.aacp"
     },
-    "23": {
+    "22": {
         "Name":  "Radio Record Remix",
         "Image": "http://live.ketaru.com/img/record_remix.png",
         "Url":   "http://23.111.104.100/rmx96.aacp"
     },
-    "24": {
+    "23": {
         "Name":  "Radio Record Trap",
         "Image": "http://live.ketaru.com/img/record_trap.png",
         "Url":   "http://23.111.104.100/trap96.aacp"
     },
-    "25": {
+    "24": {
         "Name":  "Radio Record Lo-Fi",
         "Image": "http://live.ketaru.com/img/record_lofi.png",
         "Url":   "http://23.111.104.100/lofi96.aacp"
     },
-    "26": {
+    "25": {
         "Name":  "Radio Record Rock",
         "Image": "http://live.ketaru.com/img/record_rock.png",
         "Url":   "http://23.111.104.100/rock96.aacp"
     }
-    }
+}
