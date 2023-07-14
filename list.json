@@ -123,5 +123,10 @@
         "Name":  "Radio Record Lo-Fi",
         "Image": "http://live.ketaru.com/img/record_lofi.png",
         "Url":   "http://23.111.104.100/lofi96.aacp"
+    },
+    "26": {
+        "Name":  "Radio Record Rock",
+        "Image": "http://live.ketaru.com/img/record_rock.png",
+        "Url":   "http://23.111.104.100/rock96.aacp"
     }
     }

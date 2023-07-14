@@ -78,6 +78,8 @@ $(function () {
       "Radio Record Remix",
       "Radio Record Trap",
       "Radio Record Lo-Fi",
+
+      "Radio Record Rock",
     ],
     trackUrl=[
       "https://m.ketaru.com:8000/ketaruweb",
@@ -109,6 +111,8 @@ $(function () {
       "https://radiorecord.hostingradio.ru/rmx96.aacp",
       "https://radiorecord.hostingradio.ru/trap96.aacp",
       "https://radiorecord.hostingradio.ru/lofi96.aacp",
+
+      "https://radiorecord.hostingradio.ru/rock96.aacp",
     ],
     active=[
       "img/golive.png",
@@ -140,6 +144,8 @@ $(function () {
       "img/record_remix.png",
       "img/record_trap.png",
       "img/record_lofi.png",
+
+      "img/record_rock.png",
     ],
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
