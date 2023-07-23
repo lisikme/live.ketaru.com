@@ -2,7 +2,7 @@
     "1": {
         "Name":  "FlyFox",
         "Image": "http://live.ketaru.com/img/golive.png",
-        "Url":   "http://localhost:8000"
+        "Url":   "https://m.ketaru.com:8000/ketarubot"
     },
     "2": {
         "Name":  "TNT Radio",
