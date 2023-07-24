@@ -82,7 +82,7 @@ $(function () {
       "Radio Record Rock",
     ],
     trackUrl=[
-      "http://m.ketaru.com:8000/ketaruweb",
+      "http://host.ketaru.com:8000",
       "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
       "https://rmx.amgradio.ru/RemixFM",
       "https://dfm.hostingradio.ru/dfm128.mp3",
