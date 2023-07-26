@@ -49,7 +49,7 @@ $(function () {
     //   "Играет", "Играет", "Играет", "Играет", "Играет",
     // ],
     albums=[ // Название Трека
-      "FlyFox (Offline WEB)",
+      "FlyFox (Offline)",
       "TNT Radio",
       "Remix FM",
       "DFM",
