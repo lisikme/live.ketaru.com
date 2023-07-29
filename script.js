@@ -115,7 +115,7 @@ $(function () {
       "https://radiorecord.hostingradio.ru/rock96.aacp",
     ],
     active=[
-      "img/golive.png",
+      //"img/golive.png",
       "img/tnt.png",
       "img/remix.png",
       "img/dfm.png",
