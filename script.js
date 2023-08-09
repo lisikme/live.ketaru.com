@@ -49,7 +49,7 @@ $(function () {
     //   "Играет", "Играет", "Играет", "Играет", "Играет",
     // ],
     albums=[ // Название Трека
-      //"FlyFox (Offline)",
+      "FlyFox",
       "TNT Radio",
       "Remix FM",
       "DFM",
@@ -82,7 +82,7 @@ $(function () {
       "Radio Record Rock",
     ],
     trackUrl=[
-      //"https://m.ketaru.com:8000/ketaruweb",
+      "https://m.ketaru.com:8000/ketaruweb",
       "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
       "https://rmx.amgradio.ru/RemixFM",
       "https://dfm.hostingradio.ru/dfm128.mp3",
@@ -115,7 +115,7 @@ $(function () {
       "https://radiorecord.hostingradio.ru/rock96.aacp",
     ],
     active=[
-      //"img/golive.png",
+      "img/golive.png",
       "img/tnt.png",
       "img/remix.png",
       "img/dfm.png",
