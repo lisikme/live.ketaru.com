@@ -65,7 +65,8 @@ $(function () {
       "Свежее радио",
       "Хит FM",
       "Energy FM",
-      "Radmir FM",
+      // "Radmir FM",
+      "МУЗ РАДИО",
 
       "Радио SRP",
       "Relax FM",
@@ -82,7 +83,7 @@ $(function () {
       "Radio Record Rock",
     ],
     trackUrl=[
-      "http://host.ketaru.com/radio",
+      "https://m.ketaru.com:8000/ketaruweb",
       "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
       "https://rmx.amgradio.ru/RemixFM",
       "https://dfm.hostingradio.ru/dfm128.mp3",
@@ -98,7 +99,8 @@ $(function () {
       "https://epdop.hostingradio.ru:8033/fresh64.aac",
       "https://hitfm.hostingradio.ru/hitfm96.aacp",
       "https://pub0102.101.ru:8443/stream/air/mp3/256/99",
-      "http://listen7.myradio24.com/nazarik",
+      // "http://listen7.myradio24.com/nazarik",
+      "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3",
       
       "https://a7.radioheart.ru:8066/RH6629",
       "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
@@ -131,7 +133,8 @@ $(function () {
       "img/ep_fresh.png",
       "img/hit.png",
       "img/nrg.png",
-      "img/radmir.png",
+      // "img/radmir.png",
+      "img/muz.png",
       
       "img/srp.png",
       "img/relax.png",
