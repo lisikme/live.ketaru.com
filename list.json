@@ -70,9 +70,9 @@
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/99"
     },
     "15": {
-        "Name":  "Radmir FM",
-        "Image": "http://live.ketaru.com/img/radmir.png",
-        "Url":   "http://listen7.myradio24.com/nazarik"
+        "Name":  "МУЗ Радио",
+        "Image": "http://live.ketaru.com/img/muz.png",
+        "Url":   "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3"
     },
     "16": {
         "Name":  "Relax FM",
