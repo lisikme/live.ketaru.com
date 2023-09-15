@@ -90,7 +90,7 @@ $(function () {
       "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
 
       "https://hfm.amgradio.ru/HypeFM",
-      "https://microit2.n340.com:8443/bmK1m0QZsfbArN6R_12_love_64",
+      "https://www.liveradio.es/dfmsaransk.sv-veter.ru:8095/love_saransk?128",
       "https://ep256.hostingradio.ru:8052/europaplus256.mp3",
       "https://europaplus.hostingradio.ru:8014/ep-new128.mp3",
       "https://europaplus.hostingradio.ru:8014/ep-light128.mp3",
