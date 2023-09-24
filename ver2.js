@@ -184,7 +184,7 @@ $(function () {
       "img/record_rock.png",
       "Играет",
     ],
-    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-3;
+    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
   function playPause() {
     setTimeout(function () {
@@ -303,10 +303,10 @@ $(function () {
     sArea.on("click", playFromClickedPos);
     $(audio).on("timeupdate", updateCurrTime);
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-1);
+      selectTrack(-4);
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(1);
+      selectTrack(4);
     });
   }
   initPlayer();
