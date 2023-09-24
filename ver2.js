@@ -251,7 +251,7 @@ $(function () {
   function selectTrack(flag) {
     if (flag == 0 || flag == 1) ++currIndex;
     else --currIndex;
-    if (currIndex > -1 && currIndex < albums.length) {
+    if (currIndex > -1 && currIndex < fm_list.length) {
       if (flag == 0) i.attr("class", "fa fa-play");
       else {
         albumArt.removeClass("buffering");
