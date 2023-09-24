@@ -261,9 +261,9 @@ $(function () {
       trackTime.removeClass("active");
       
       currAlbum = fm_list[currIndex]; // Radio Name
-      audio.src = fm_list[currIndex]+1; // Radio Server
-      currImage = './'+fm_list[currIndex]+2; // Radio Image
-      currTrackName = fm_list[currIndex]+3; // Radio Status
+      audio.src = fm_list[currIndex+1]; // Radio Server
+      currImage = './'+fm_list[currIndex+2]; // Radio Image
+      currTrackName = fm_list[currIndex+3]; // Radio Status
       
       
       nTime = 0;
