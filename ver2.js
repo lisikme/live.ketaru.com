@@ -184,7 +184,7 @@ $(function () {
       "img/record_rock.png",
       "Играет",
     ],
-    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-4;
+    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-3;
 
   function playPause() {
     setTimeout(function () {
