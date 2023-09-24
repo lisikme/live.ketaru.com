@@ -251,11 +251,11 @@ $(function () {
   function selectTrack(flag) {
     if (flag == 0 || flag == 1) 
       if (counter < 5){
-        counter++
+        counter++;
         ++currIndex;}
     else 
         if (counter < 5){
-          counter++
+          counter++;
           --currIndex;}
     if (currIndex > -1 && currIndex < fm_list.length) {
       if (flag == 0) i.attr("class", "fa fa-play");
