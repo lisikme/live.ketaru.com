@@ -249,8 +249,8 @@ $(function () {
     }, 3000);
   }
   function selectTrack(flag) {
-    if (flag == 0 || flag == 1) currIndex+Number(3);
-    else currIndex-Number(3);
+    if (flag == 0 || flag == 1) ++currIndex ++currIndex ++currIndex ++currIndex;
+    else --currIndex --currIndex --currIndex --currIndex;
     if (currIndex > -1 && currIndex < fm_list.length) {
       if (flag == 0) i.attr("class", "fa fa-play");
       else {
@@ -261,7 +261,7 @@ $(function () {
       trackTime.removeClass("active");
       
       currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
-      audio.src = fm_list[currIndex+Number("5")]; // Radio Server
+      audio.src = fm_list[currIndex+Number("1")]; // Radio Server
       currImage = './'+fm_list[currIndex+Number("2")]; // Radio Image
       currTrackName = fm_list[currIndex+Number("3")]; // Radio Status
       
