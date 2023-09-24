@@ -303,10 +303,10 @@ $(function () {
     sArea.on("click", playFromClickedPos);
     $(audio).on("timeupdate", updateCurrTime);
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-3);
+      selectTrack(-1);
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(3);
+      selectTrack(1);
     });
   }
   initPlayer();
