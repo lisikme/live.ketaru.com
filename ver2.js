@@ -249,8 +249,8 @@ $(function () {
     }, 3000);
   }
   function selectTrack(flag) {
-    if (flag == 0 || flag == 1) ++currIndex;
-    else --currIndex;
+    if (flag == 0 || flag == 1) currIndex+Number(4);
+    else currIndex-Number(4);
     if (currIndex > -1 && currIndex < fm_list.length) {
       if (flag == 0) i.attr("class", "fa fa-play");
       else {
