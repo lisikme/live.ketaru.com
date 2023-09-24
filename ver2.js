@@ -260,7 +260,7 @@ $(function () {
       seekBar.width(0);
       trackTime.removeClass("active");
       
-      currAlbum = fm_list[currIndex]; // Radio Name
+      currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
       audio.src = fm_list[currIndex+Number("1")]; // Radio Server
       currImage = './'+fm_list[currIndex+Number("2")]; // Radio Image
       currTrackName = fm_list[currIndex+Number("3")]; // Radio Status
@@ -303,10 +303,10 @@ $(function () {
     sArea.on("click", playFromClickedPos);
     $(audio).on("timeupdate", updateCurrTime);
     playPreviousTrackButton.on("click", function () {
-      selectTrack(-4);
+      selectTrack(-3);
     });
     playNextTrackButton.on("click", function () {
-      selectTrack(4);
+      selectTrack(3);
     });
   }
   initPlayer();
