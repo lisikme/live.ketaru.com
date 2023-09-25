@@ -260,7 +260,7 @@ $(function () {
       seekBar.width(0);
       trackTime.removeClass("active");
       
-      currAlbum = '$currIndex'+fm_list[currIndex+Number("0")]; // Radio Name
+      currAlbum = currIndex+fm_list[currIndex+Number("0")]; // Radio Name
       audio.src = fm_list[currIndex+Number("1")]; // Radio Server
       currImage = './'+fm_list[currIndex+Number("2")]; // Radio Image
       currTrackName = fm_list[currIndex+Number("3")]; // Radio Status
