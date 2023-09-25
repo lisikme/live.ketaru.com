@@ -287,7 +287,7 @@ $(function () {
       document.querySelector('img.active').src = currImage;
       bgArtwork.css({ "background-image": "url(" + currImage + ")" });
     } else {
-      if (flag == 0 || flag == 1) currIndex+=4;
+      if (flag == 0 || flag == 1) currIndex++;
       else ++currIndex;
     }
   }
