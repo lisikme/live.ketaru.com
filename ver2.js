@@ -251,7 +251,7 @@ $(function () {
   function selectTrack(flag) {
     if (flag == 0 || flag == 4) currIndex++;
     else currIndex--;
-    if (currIndex > -4 && currIndex < fm_list.length) {
+    if (currIndex > -1 && currIndex < fm_list.length) {
       if (flag == 0) i.attr("class", "fa fa-play");
       else {
         albumArt.removeClass("buffering");
@@ -287,7 +287,7 @@ $(function () {
       document.querySelector('img.active').src = currImage;
       bgArtwork.css({ "background-image": "url(" + currImage + ")" });
     } else {
-      if (flag == 0 || flag == 1) --currIndex;
+      if (flag == 0 || flag == 1) currIndex+Number(4);
       else ++currIndex;
     }
   }
