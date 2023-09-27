@@ -70,6 +70,7 @@
 <div id="bg-artwork"></div>
 <!-- <div id="bg-layer"></div> -->
 <div id="player">
+    <span id="idfm" class="number">ID: 0</span>
 <div id="player-track">
 <div id="album-name"></div>
 <div id="track-name"></div>
@@ -83,7 +84,8 @@
 <div id="buffer-box">Загрузка...</div>
 </div>
     <div class="addbutton">
-    <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a><a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a>
+    <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
+    <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
     <div class="range-input">
         <input type="range" id="range" min="0" max="100" value="0" step="1">
         <div class="value">
@@ -112,6 +114,44 @@
             window.open(target, 'popup', parameters)
         }
     </script>
+<style>
+    #idfm {
+        color: rgb(226, 255, 119);
+        position: absolute;
+        left: 40px;
+        top: 60px;
+        width: 80PX;
+        background: #141c24;
+        border: #364758 2px solid;
+        padding: 0px 15px 0px 22px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 5px;
+        z-index: -1000;
+        transition: 0.3s linear all;
+        box-shadow: 0 0px 10px 0px #000000;
+    }
+    #idfm::before{
+        color: #768eaf;
+        content: 'ID: ';
+    }
+    #idfm.active {
+        color: rgb(169, 255, 57);
+        position: absolute;
+        left: 420px;
+        top: 60px;
+        width: 80PX;
+        background: #141c24;
+        border: #364758 2px solid;
+        padding: 0px 15px 0px 22px;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 5px;
+        z-index: -1000;
+    }
+</style>
+
+
 <div id="player-controls">
 <div class="control">
 <div class="button" id="play-previous">
@@ -125,7 +165,8 @@
 </div>
 <div class="control">
 <div class="button" id="play-next">
-<i class="fas fa-forward"></i>
+    <i class="fas fa-forward"></i>
+
 </div>
 </div>
 </div>
@@ -137,5 +178,6 @@
 </body>
 </html>
 <script  src="./config.js"></script>
+<script  src="./list.js"></script>
 <script  src="./ver2.js"></script>
 <!-- <script  src="./script.js"></script> -->
