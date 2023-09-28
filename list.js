@@ -2,7 +2,7 @@ fm_list=[ // Название Трека
 "FlyFox",
 "https://m.ketaru.com:8000/ketaruweb",
 "golive.png",
-"Играет (Только в Discord)",
+"Играет (Beta)",
 
 "TNT Radio",
 "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
