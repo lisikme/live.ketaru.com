@@ -42,13 +42,6 @@ $(function () {
     tProgress=$("#current-time"),
     tTime=$("#track-length"),
     seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
-    // trackNames=[
-    //   "Играет", "Играет", "Играет", "Играет", "Играет",
-    //   "Играет", "Играет", "Играет", "Играет", "Играет",
-    //   "Играет", "Играет", "Играет", "Играет", "Играет",
-    //   "Играет", "Играет", "Играет", "Играет", "Играет",
-    //   "Играет", "Играет", "Играет", "Играет", "Играет",
-    // ],
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
 
   function playPause() {
@@ -127,8 +120,8 @@ $(function () {
       trackTime.removeClass("active");
       
       currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
-      audio.src = fm_list[currIndex+Number("1")]; // Radio Server
-      currImage = fm_list[currIndex+Number("2")]; // Radio Image
+      currImage = fm_list[currIndex+Number("1")]; // Radio Image
+      audio.src = fm_list[currIndex+Number("2")]; // Radio Server
       currTrack = fm_list[currIndex+Number("3")]; // Radio Status
       currID = (currIndex/4)+1;                       // Radio ID
       
@@ -153,8 +146,8 @@ $(function () {
       // albumName.text(currAlbum);
       trackName.text(currTrack);
       idfm.text(currID);
-      document.querySelector('img.active').src = './img/'+currImage;
-      bgArtwork.css({ "background-image": "url(" + './img/'+currImage + ")" });
+      document.querySelector('img.active').src = './'+currImage;
+      bgArtwork.css({ "background-image": "url(" + './'+currImage + ")" });
     } else {
       if (flag == 0 || flag == 1) currIndex++;
       else ++currIndex;
