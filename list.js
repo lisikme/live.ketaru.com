@@ -141,7 +141,7 @@ fm_list=[
 "https://21220.web.hosting-russia.ru/transmit1046",
 "Играет ➔ Онлайн",
 
-"НАШЕ Радио",
+"Наше Радио",
 "img/nr.png",
 "https://nashe1.hostingradio.ru/nashepunks.mp3",
 "Играет ➔ Онлайн",
