@@ -76,7 +76,7 @@ fm_list=[
 "https://pub0102.101.ru:8443/stream/air/mp3/256/99",
 "Играет ➔ Онлайн",
 
-"МУЗ Радио",
+"МУЗ радио",
 "img/muz.png",
 "https://Онлайн-3.gkvr.ru:8001/muztvradio_original_128.mp3", 
 "Играет ➔ Онлайн",
@@ -86,7 +86,7 @@ fm_list=[
 "https://pub0301.101.ru:8443/stream/air/mp3/256/200",
 "Играет ➔ Онлайн",
 
-"Русское Радио",
+"Русское радио",
 "img/rus.png",
 "https://rusradio.hostingradio.ru/rusradio96.aacp",
 "Играет ➔ Онлайн",
@@ -141,7 +141,7 @@ fm_list=[
 "https://21220.web.hosting-russia.ru/transmit1046",
 "Играет ➔ Онлайн",
 
-"Наше Радио",
+"Наше радио",
 "img/nr.png",
 "https://nashe1.hostingradio.ru/nashepunks.mp3",
 "Играет ➔ Онлайн",
@@ -151,8 +151,23 @@ fm_list=[
 "https://retro.hostingradio.ru:8043/retro256.mp3",
 "Играет ➔ Онлайн",
 
-"Детское Pадио",
+"Детское радио",
 "img/dr.png",
 "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
 "Играет ➔ Онлайн Kids",
+
+"Дорожное радио",
+"img/dor.png",
+"https://dorognoe.hostingradio.ru/dorognoe",
+"Играет ➔ Онлайн",
+
+"Радио дача",
+"img/rd.png",
+"https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_14_dacha_64",
+"Играет ➔ Онлайн",
+
+"Радио Хит",
+"img/rx.png",
+"https://hit.trkeurasia.ru/hit128",
+"Играет ➔ Онлайн",
 ]

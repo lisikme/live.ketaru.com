@@ -70,7 +70,7 @@
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/99"
     },
     "15": {
-        "Name":  "МУЗ Радио",
+        "Name":  "МУЗ радио",
         "Image": "img/muz.png",
         "Url":   "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3"
     },
@@ -80,7 +80,7 @@
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/200"
     },
     "17": {
-        "Name":  "Русское Радио",
+        "Name":  "Русское радио",
         "Image": "img/rus.png",
         "Url":   "http://23.105.238.4/rusradio96.aacp"
     },
@@ -138,7 +138,7 @@
         "Url":   "https://21220.web.hosting-russia.ru/transmit1046"
     },
     "28": {
-        "Name":  "НАШЕ Радио",
+        "Name":  "Наше радио",
         "Image": "img/nr.png",
         "Url":   "https://nashe1.hostingradio.ru/nashepunks.mp3"
     },
@@ -148,24 +148,24 @@
         "Url":   "https://retro.hostingradio.ru:8043/retro256.mp3"
     },
     "30": {
-        "Name":  "Детское Pадио",
+        "Name":  "Детское радио",
         "Image": "img/dr.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/199"
     },
     "31": {
-        "Name":  "Пустой слот",
-        "Image": "img/-.png",
-        "Url":   "none"
+        "Name":  "Дорожное радио",
+        "Image": "img/dor.png",
+        "Url":   "https://dorognoe.hostingradio.ru/dorognoe"
     },
     "32": {
-        "Name":  "Пустой слот",
-        "Image": "img/-.png",
-        "Url":   "none"
+        "Name":  "Радио дача",
+        "Image": "img/rd.png",
+        "Url":   "https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_14_dacha_64"
     },
     "33": {
-        "Name":  "Пустой слот",
-        "Image": "ep.png",
-        "Url":   "none"
+        "Name":  "Радио Хит",
+        "Image": "img/rx.png",
+        "Url":   "https://hit.trkeurasia.ru/hit128"
     },
     "34": {
         "Name":  "Пустой слот",
