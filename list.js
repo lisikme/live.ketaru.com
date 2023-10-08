@@ -8,7 +8,7 @@
 fm_list=[
 "FlyFox",
 "img/flyfox.png",
-"https://s00.radioheart.ru:8000/ketaruweb",
+"https://s0.radioheart.ru:8000/ketaruweb",
 "Играет ➔ Онлайн Beta",
 
 "TNT Radio",
