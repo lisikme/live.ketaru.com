@@ -65,7 +65,7 @@ $(function () {
       "Свежее радио",
       "Хит FM",
       "Energy FM",
-      // "Radmir FM",
+      "Radmir FM",
       "МУЗ Радио",
 
       "Радио SRP",

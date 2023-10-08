@@ -2,7 +2,7 @@
     "1": {
         "Name":  "FlyFox",
         "Image": "img/flyfox.png",
-        "Url":   "http://host.ketaru.com/radio"
+        "Url":   "https://s0.radioheart.ru:8000/ketarubot"
     },
     "2": {
         "Name":  "TNT Radio",

@@ -70,7 +70,7 @@
 <div id="bg-artwork"></div>
 <!-- <div id="bg-layer"></div> -->
 <div id="player">
-    <span id="idfm" class="number">ID: 0</span>
+    <span id="idfm" class="number">ID: 1</span>
 <div id="player-track">
 <div id="album-name"></div>
 <div id="track-name"></div>
@@ -78,10 +78,9 @@
 </div>
 </div>
 <div id="player-content">
-<div id="album-art">
-<img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px">
+<div id="album-art" style="background-image: url(img/flyfox.png); background-size: cover;">
+<!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
 
-<div id="buffer-box">Загрузка...</div>
 </div>
     <div class="addbutton">
     <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
@@ -120,7 +119,7 @@
         position: absolute;
         left: 40px;
         top: 60px;
-        width: 80PX;
+        width: 80px;
         background: #141c24;
         border: #364758 2px solid;
         padding: 0px 15px 0px 22px;
@@ -140,10 +139,10 @@
         position: absolute;
         left: 420px;
         top: 60px;
-        width: 80PX;
+        width: 70px;
         background: #141c24;
         border: #364758 2px solid;
-        padding: 0px 15px 0px 22px;
+        padding: 0px 0px 0px 18px;
         font-size: 14px;
         font-weight: 700;
         border-radius: 5px;

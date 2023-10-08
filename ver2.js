@@ -26,8 +26,26 @@ $(function() {
 });
 
 $(function () {
+  // var img = document.createElement("img");
+  // img.src = `${fm_list[5]}`;
+  // img.textContent = `${fm_list[5]}`;
+  // document.body.appendChild(img);
+
+  var result = ''; var i = -3; do {i += 4; {
+    var img = document.createElement("img");
+    img.src = `${fm_list[i]}`;
+    img.style = `display: none`;
+    document.body.appendChild(img);
+    document.head.appendChild(img);
+  }
+  } while (i < (fm_list.length-4));
+  
+  // document.write(result);
+
   var playerTrack=$("#player-track"),
-    bgArtwork=$("#bg-artwork"),bgArtworkUrl,
+    bgback=$("#bg-artwork"),
+    bglogo=$("#album-art"),
+    bgArtworkUrl,
     albumName=$("#album-name"),
     trackName=$("#track-name"),
     albumArt=$("#album-art"),
@@ -146,8 +164,9 @@ $(function () {
       // albumName.text(currAlbum);
       trackName.text(currTrack);
       idfm.text(currID);
-      document.querySelector('img.active').src = './'+currImage;
-      bgArtwork.css({ "background-image": "url(" + './'+currImage + ")" });
+      // document.querySelector('img.active').src = './'+currImage;
+      bgback.css({ "background-image": "url(" + './'+currImage + ")" });
+      bglogo.css({ "background-image": "url(" + './'+currImage + ")" });
     } else {
       if (flag == 0 || flag == 1) currIndex++;
       else ++currIndex;
