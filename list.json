@@ -1,127 +1,127 @@
 {
     "1": {
         "Name":  "FlyFox",
-        "Image": "img/golive.png",
+        "Image": "img/_golive.png",
         "Url":   "http://host.ketaru.com/radio"
     },
     "2": {
         "Name":  "TNT Radio",
-        "Image": "img/tnt.png",
+        "Image": "img/_tnt.png",
         "Url":   "https://23.111.107.252:8027/tntradio128.mp3"
     },
     "3": {
         "Name":  "Remix FM",
-        "Image": "img/remix.png",
+        "Image": "img/_remix.png",
         "Url":   "http://146.185.208.240/RemixFM"
     },
     "4": {
         "Name":  "DFM",
-        "Image": "img/dfm.png",
+        "Image": "img/_dfm.png",
         "Url":   "http://23.105.253.76/dfm128.mp3"
     },
     "5": {
         "Name":  "Like FM",
-        "Image": "img/like.png",
+        "Image": "img/_like.png",
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/219"
     },
     "6": {
         "Name":  "Хайп FM",
-        "Image": "img/hype.png",
+        "Image": "img/_hype.png",
         "Url":   "http://146.185.208.240/HypeFM"
     },
     "7": {
         "Name":  "Love Radio",
-        "Image": "img/love.png",
+        "Image": "img/_love.png",
         "Url":   "https://www.liveradio.es/dfmsaransk.sv-veter.ru:8095/love_saransk?128"
     },
     "8": {
         "Name":  "EuropaPlus",
-        "Image": "img/ep.png",
+        "Image": "img/_ep.png",
         "Url":   "http://212.92.98.145:8052/europaplus256.mp3"
     },
     "9": {
         "Name":  "EuropaPlus New",
-        "Image": "img/ep_new.png",
+        "Image": "img/_ep_new.png",
         "Url":   "http://92.53.91.212:8014/ep-new128.mp3"
     },
     "10": {
         "Name":  "EuropaPlus Lisht",
-        "Image": "img/ep_light.png",
+        "Image": "img/_ep_light.png",
         "Url":   "http://92.53.91.212:8014/ep-light128.mp3"
     },
     "11": {
         "Name":  "EuropaPlus Top40",
-        "Image": "img/ep_top40.png",
+        "Image": "img/_ep_top40.png",
         "Url":   "http://92.53.91.212:8014/ep-top256.mp3"
     },
     "12": {
         "Name":  "Свежее радио",
-        "Image": "img/ep_fresh.png",
+        "Image": "img/_ep_fresh.png",
         "Url":   "http://31.41.157.66:8033/fresh64.aac"
     },
     "13": {
         "Name":  "Хит FM",
-        "Image": "img/hit.png",
+        "Image": "img/_hit.png",
         "Url":   "http://88.212.237.12/hitfm96.aacp"
     },
     "14": {
         "Name":  "Energy FM",
-        "Image": "img/nrg.png",
+        "Image": "img/_nrg.png",
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/99"
     },
     "15": {
         "Name":  "МУЗ Радио",
-        "Image": "img/muz.png",
+        "Image": "img/_muz.png",
         "Url":   "https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3"
     },
     "16": {
         "Name":  "Relax FM",
-        "Image": "img/relax.png",
+        "Image": "img/_relax.png",
         "Url":   "https://91.207.58.130:8443/stream/air/mp3/256/200"
     },
     "17": {
         "Name":  "Русское Радио",
-        "Image": "img/rus.png",
+        "Image": "img/_rus.png",
         "Url":   "http://23.105.238.4/rusradio96.aacp"
     },
     "18": {
         "Name":  "Юмор FM",
-        "Image": "img/umor.png",
+        "Image": "img/_umor.png",
         "Url":   "https://91.207.58.130:8000/v5_1"
     },
     "19": {
         "Name":  "Новое радио",
-        "Image": "img/newradio.png",
+        "Image": "img/_newradio.png",
         "Url":   "https://stream.newradio.ru/novoe96.aacp"
     },
     "20": {
         "Name":  "Radio Record",
-        "Image": "img/record.png",
+        "Image": "img/_record.png",
         "Url":   "http://23.111.104.100/rr_main96.aacp"
     },
     "21": {
         "Name":  "Radio Record Phonk",
-        "Image": "img/record_phonk.png",
+        "Image": "img/_record_phonk.png",
         "Url":   "http://23.111.104.100/phonk96.aacp"
     },
     "22": {
         "Name":  "Radio Record Remix",
-        "Image": "img/record_remix.png",
+        "Image": "img/_record_remix.png",
         "Url":   "http://23.111.104.100/rmx96.aacp"
     },
     "23": {
         "Name":  "Radio Record Trap",
-        "Image": "img/record_trap.png",
+        "Image": "img/_record_trap.png",
         "Url":   "http://23.111.104.100/trap96.aacp"
     },
     "24": {
         "Name":  "Radio Record Lo-Fi",
-        "Image": "img/record_lofi.png",
+        "Image": "img/_record_lofi.png",
         "Url":   "http://23.111.104.100/lofi96.aacp"
     },
     "25": {
         "Name":  "Radio Record Rock",
-        "Image": "img/record_rock.png",
+        "Image": "img/_record_rock.png",
         "Url":   "http://23.111.104.100/rock96.aacp"
     },
 
@@ -129,37 +129,37 @@
     
     "26": {
         "Name":  "Радио SRP",
-        "Image": "img/srp.png",
+        "Image": "img/_srp.png",
         "Url":   "https://a7.radioheart.ru:8066/RH6629"
     },
     "27": {
         "Name":  "Радио Трансмит",
-        "Image": "img/rts.png",
+        "Image": "img/_rts.png",
         "Url":   "https://21220.web.hosting-russia.ru/transmit1046"
     },
     "28": {
         "Name":  "НАШЕ Радио",
-        "Image": "img/nr.png",
+        "Image": "img/_nr.png",
         "Url":   "https://nashe1.hostingradio.ru/nashepunks.mp3"
     },
     "29": {
         "Name":  "Ретро FM",
-        "Image": "img/rfm.png",
+        "Image": "img/_rfm.png",
         "Url":   "https://retro.hostingradio.ru:8043/retro256.mp3"
     },
     "30": {
         "Name":  "Детское Pадио",
-        "Image": "img/dr.png",
+        "Image": "img/_dr.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/199"
     },
     "31": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "32": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "33": {
@@ -169,87 +169,87 @@
     },
     "34": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "35": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "36": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "37": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "38": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "39": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "40": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "41": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "42": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "43": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "44": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "45": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "46": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "47": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "48": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "49": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     },
     "50": {
         "Name":  "Пустой слот",
-        "Image": "img/-.png",
+        "Image": "img/_-.png",
         "Url":   "none"
     }
 }
