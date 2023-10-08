@@ -7,7 +7,7 @@
 // Список радиостанций
 fm_list=[
 "FlyFox",
-"img/golive.png",
+"img/flyfox.png",
 "https://m.ketaru.com:8000/ketaruweb",
 "Играет ➔ Онлайн Beta",
 
