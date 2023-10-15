@@ -101,36 +101,6 @@ fm_list=[
 "https://stream.newradio.ru/novoe96.aacp",
 "Играет ➔ Онлайн",
 
-"Radio Record",
-"img/record.png",
-"https://radiorecord.hostingradio.ru/rr_main96.aacp",
-"Играет ➔ Онлайн",
-
-"Radio Record Phonk",
-"img/record_phonk.png",
-"https://radiorecord.hostingradio.ru/phonk96.aacp",
-"Играет ➔ Онлайн",
-
-"Radio Record Remix",
-"img/record_remix.png",
-"https://radiorecord.hostingradio.ru/rmx96.aacp",
-"Играет ➔ Онлайн",
-
-"Radio Record Trap",
-"img/record_trap.png",
-"https://radiorecord.hostingradio.ru/trap96.aacp",
-"Играет ➔ Онлайн",
-
-"Radio Record Lo-Fi",
-"img/record_lofi.png",
-"https://radiorecord.hostingradio.ru/lofi96.aacp",
-"Играет ➔ Онлайн",
-
-"Radio Record Rock",
-"img/record_rock.png",
-"https://radiorecord.hostingradio.ru/rock96.aacp",
-"Играет ➔ Онлайн",
-
 "Радио SRP",
 "img/srp.png",
 "https://a7.radioheart.ru:8066/RH6629",
@@ -159,6 +129,48 @@ fm_list=[
 "Дорожное радио",
 "img/dor.png",
 "https://dorognoe.hostingradio.ru/dorognoe",
+"Играет ➔ Онлайн",
+
+
+
+"Radio Record",
+"img/record.png",
+"https://radiorecord.hostingradio.ru/rr_main96.aacp",
+"Играет ➔ Онлайн",
+
+"Record Phonk",
+"img/record_phonk.png",
+"https://radiorecord.hostingradio.ru/phonk96.aacp",
+"Играет ➔ Онлайн",
+
+"Record Remix",
+"img/record_remix.png",
+"https://radiorecord.hostingradio.ru/rmx96.aacp",
+"Играет ➔ Онлайн",
+
+"Record Trap",
+"img/record_trap.png",
+"https://radiorecord.hostingradio.ru/trap96.aacp",
+"Играет ➔ Онлайн",
+
+"Record Lo-Fi",
+"img/record_lofi.png",
+"https://radiorecord.hostingradio.ru/lofi96.aacp",
+"Играет ➔ Онлайн",
+
+"Record Rock",
+"img/record_rock.png",
+"https://radiorecord.hostingradio.ru/rock96.aacp",
+"Играет ➔ Онлайн",
+
+"Record ChillHouse",
+"img/record_chillhouse.png",
+"https://radiorecord.hostingradio.ru/chillhouse96.aacp",
+"Играет ➔ Онлайн",
+
+"Record ChillOut",
+"img/record_chill.png",
+"https://radiorecord.hostingradio.ru/chil96.aacp",
 "Играет ➔ Онлайн",
 
 "Радио дача",

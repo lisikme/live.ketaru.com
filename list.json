@@ -95,87 +95,87 @@
         "Url":   "https://stream.newradio.ru/novoe96.aacp"
     },
     "20": {
-        "Name":  "Radio Record",
-        "Image": "img/record.png",
-        "Url":   "http://23.111.104.100/rr_main96.aacp"
-    },
-    "21": {
-        "Name":  "Radio Record Phonk",
-        "Image": "img/record_phonk.png",
-        "Url":   "http://23.111.104.100/phonk96.aacp"
-    },
-    "22": {
-        "Name":  "Radio Record Remix",
-        "Image": "img/record_remix.png",
-        "Url":   "http://23.111.104.100/rmx96.aacp"
-    },
-    "23": {
-        "Name":  "Radio Record Trap",
-        "Image": "img/record_trap.png",
-        "Url":   "http://23.111.104.100/trap96.aacp"
-    },
-    "24": {
-        "Name":  "Radio Record Lo-Fi",
-        "Image": "img/record_lofi.png",
-        "Url":   "http://23.111.104.100/lofi96.aacp"
-    },
-    "25": {
-        "Name":  "Radio Record Rock",
-        "Image": "img/record_rock.png",
-        "Url":   "http://23.111.104.100/rock96.aacp"
-    },
-
-
-    
-    "26": {
         "Name":  "Радио SRP",
         "Image": "img/srp.png",
         "Url":   "https://a7.radioheart.ru:8066/RH6629"
     },
-    "27": {
+    "21": {
         "Name":  "Радио Трансмит",
         "Image": "img/rts.png",
         "Url":   "https://21220.web.hosting-russia.ru/transmit1046"
     },
-    "28": {
+    "22": {
         "Name":  "Наше радио",
         "Image": "img/nr.png",
         "Url":   "https://nashe1.hostingradio.ru/nashepunks.mp3"
     },
-    "29": {
+    "23": {
         "Name":  "Ретро FM",
         "Image": "img/rfm.png",
         "Url":   "https://retro.hostingradio.ru:8043/retro256.mp3"
     },
-    "30": {
+    "24": {
         "Name":  "Детское радио",
         "Image": "img/dr.png",
         "Url":   "https://pub0301.101.ru:8443/stream/air/mp3/256/199"
     },
-    "31": {
+    "25": {
         "Name":  "Дорожное радио",
         "Image": "img/dor.png",
         "Url":   "https://dorognoe.hostingradio.ru/dorognoe"
     },
+    
+    
+    
+    "26": {
+        "Name":  "Radio Record",
+        "Image": "img/record.png",
+        "Url":   "http://23.111.104.100/rr_main96.aacp"
+    },
+    "27": {
+        "Name":  "Record Phonk",
+        "Image": "img/record_phonk.png",
+        "Url":   "http://23.111.104.100/phonk96.aacp"
+    },
+    "28": {
+        "Name":  "Record Remix",
+        "Image": "img/record_remix.png",
+        "Url":   "http://23.111.104.100/rmx96.aacp"
+    },
+    "29": {
+        "Name":  "Record Trap",
+        "Image": "img/record_trap.png",
+        "Url":   "http://23.111.104.100/trap96.aacp"
+    },
+    "30": {
+        "Name":  "Record Lo-Fi",
+        "Image": "img/record_lofi.png",
+        "Url":   "http://23.111.104.100/lofi96.aacp"
+    },
+    "31": {
+        "Name":  "Record Rock",
+        "Image": "img/record_rock.png",
+        "Url":   "http://23.111.104.100/rock96.aacp"
+    },
     "32": {
+        "Name":  "Record Chill House",
+        "Image": "img/record_chillhouse.png",
+        "Url":   "https://radiorecord.hostingradio.ru/chillhouse96.aacp"
+    },
+    "33": {
+        "Name":  "Record Chill-Out",
+        "Image": "img/record_chill.png",
+        "Url":   "https://radiorecord.hostingradio.ru/chil96.aacp"
+    },
+    "34": {
         "Name":  "Радио дача",
         "Image": "img/rd.png",
         "Url":   "https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_14_dacha_64"
     },
-    "33": {
+    "35": {
         "Name":  "Радио Хит",
         "Image": "img/rx.png",
         "Url":   "https://hit.trkeurasia.ru/hit128"
-    },
-    "34": {
-        "Name":  "---",
-        "Image": "img/-.png",
-        "Url":   "none"
-    },
-    "35": {
-        "Name":  "---",
-        "Image": "img/-.png",
-        "Url":   "none"
     },
     "36": {
         "Name":  "---",
