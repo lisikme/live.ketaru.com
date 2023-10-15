@@ -134,42 +134,42 @@ fm_list=[
 
 
 "Radio Record",
-"img/record.png",
+"img/rec.png",
 "https://radiorecord.hostingradio.ru/rr_main96.aacp",
 "Играет ➔ Онлайн",
 
 "Record Phonk",
-"img/record_phonk.png",
+"img/rec_phonk.png",
 "https://radiorecord.hostingradio.ru/phonk96.aacp",
 "Играет ➔ Онлайн",
 
 "Record Remix",
-"img/record_remix.png",
+"img/rec_remix.png",
 "https://radiorecord.hostingradio.ru/rmx96.aacp",
 "Играет ➔ Онлайн",
 
 "Record Trap",
-"img/record_trap.png",
+"img/rec_trap.png",
 "https://radiorecord.hostingradio.ru/trap96.aacp",
 "Играет ➔ Онлайн",
 
 "Record Lo-Fi",
-"img/record_lofi.png",
+"img/rec_lofi.png",
 "https://radiorecord.hostingradio.ru/lofi96.aacp",
 "Играет ➔ Онлайн",
 
 "Record Rock",
-"img/record_rock.png",
+"img/rec_rock.png",
 "https://radiorecord.hostingradio.ru/rock96.aacp",
 "Играет ➔ Онлайн",
 
 "Record ChillHouse",
-"img/record_chillhouse.png",
+"img/rec_chillhouse.png",
 "https://radiorecord.hostingradio.ru/chillhouse96.aacp",
 "Играет ➔ Онлайн",
 
 "Record ChillOut",
-"img/record_chill.png",
+"img/rec_chill.png",
 "https://radiorecord.hostingradio.ru/chil96.aacp",
 "Играет ➔ Онлайн",
 

@@ -129,42 +129,42 @@
     
     "26": {
         "Name":  "Radio Record",
-        "Image": "img/record.png",
+        "Image": "img/rec.png",
         "Url":   "http://23.111.104.100/rr_main96.aacp"
     },
     "27": {
         "Name":  "Record Phonk",
-        "Image": "img/record_phonk.png",
+        "Image": "img/rec_phonk.png",
         "Url":   "http://23.111.104.100/phonk96.aacp"
     },
     "28": {
         "Name":  "Record Remix",
-        "Image": "img/record_remix.png",
+        "Image": "img/rec_remix.png",
         "Url":   "http://23.111.104.100/rmx96.aacp"
     },
     "29": {
         "Name":  "Record Trap",
-        "Image": "img/record_trap.png",
+        "Image": "img/rec_trap.png",
         "Url":   "http://23.111.104.100/trap96.aacp"
     },
     "30": {
         "Name":  "Record Lo-Fi",
-        "Image": "img/record_lofi.png",
+        "Image": "img/rec_lofi.png",
         "Url":   "http://23.111.104.100/lofi96.aacp"
     },
     "31": {
         "Name":  "Record Rock",
-        "Image": "img/record_rock.png",
+        "Image": "img/rec_rock.png",
         "Url":   "http://23.111.104.100/rock96.aacp"
     },
     "32": {
         "Name":  "Record Chill House",
-        "Image": "img/record_chillhouse.png",
+        "Image": "img/rec_chillhouse.png",
         "Url":   "https://radiorecord.hostingradio.ru/chillhouse96.aacp"
     },
     "33": {
         "Name":  "Record Chill-Out",
-        "Image": "img/record_chill.png",
+        "Image": "img/rec_chill.png",
         "Url":   "https://radiorecord.hostingradio.ru/chil96.aacp"
     },
     "34": {
