@@ -183,10 +183,3 @@ fm_list=[
 "https://hit.trkeurasia.ru/hit128",
 "Играет ➔ Онлайн",
 ]
-
-fm_list_error=[
-"---",
-"img/-.png",
-"none",
-"Недоступно",
-]
