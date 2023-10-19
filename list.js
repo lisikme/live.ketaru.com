@@ -184,7 +184,7 @@ fm_list=[
 "Играет ➔ Онлайн",
 ]
 
-fm_list=[
+fm_list_error=[
 "---",
 "img/-.png",
 "none",
