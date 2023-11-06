@@ -51,7 +51,7 @@
     z-index: 1000;
 }
 .LogoPage:after{
-    content: "App (v1.2 Alpha)";
+    content: "v.2.0";
     font-weight: 600;
     font-size: 12px;
     margin-left: 2px;
