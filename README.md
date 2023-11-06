@@ -1,2 +1,2 @@
 # Radio KetaRu 
-[X]
+- [X]
