@@ -6,10 +6,10 @@
 
 // Список радиостанций
 fm_list=[
-"FlyFox",
-"img/flyfox.png",
-"https://s0.radioheart.ru:8000/ketaruweb",
-"Онлайн Beta",
+// "FlyFox",
+// "img/flyfox.png",
+// "https://s0.radioheart.ru:8000/ketaruweb",
+// "Онлайн Beta",
 
 "TNT Radio",
 "img/tnt.png",
