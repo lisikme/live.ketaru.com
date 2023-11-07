@@ -51,7 +51,7 @@
     z-index: 1000;
 }
 .LogoPage:after{
-    content: "Web";
+    content: "";
     font-weight: 600;
     font-size: 12px;
     margin-left: 2px;

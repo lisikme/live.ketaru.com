@@ -70,8 +70,8 @@
 <div id="bg-artwork"></div>
 <!-- <div id="bg-layer"></div> -->
 <div id="player">
-    <span id="idfm" class="number">ID: 1</span>
 <div id="player-track">
+<span id="idfm" class="number">ID: 1</span>
 <div id="album-name"></div>
 <div id="track-name"></div>
 <div id="s-area">
@@ -114,39 +114,33 @@
         }
     </script>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
     #idfm {
-        color: rgb(226, 255, 119);
+        color: #c9e74e !important;
         position: absolute;
-        left: 40px;
-        top: 60px;
-        width: 80px;
-        background: #141c24;
-        border: #364758 2px solid;
-        padding: 0px 15px 0px 22px;
-        font-size: 14px;
+        width: 30px;
+        text-align: center;
+        background: #354657;
+        /* border: #364758 1px solid; */
+        bottom: 0;
+        right: 0;
+        line-height: 1;
+        border-top: 4px solid #00000000;
+        border-bottom: 2px solid #00000000;
+        border-left: 2px solid #00000000;
+        font-size: 10px;
         font-weight: 700;
-        border-radius: 5px;
+        padding: 0;
+        border-radius: 3px 0px 0px 0px;
         z-index: -1000;
-        transition: 0.3s linear all;
-        box-shadow: 0 0px 10px 0px #000000;
-    }
-    #idfm::before{
-        color: #768eaf;
-        content: 'ID: ';
-    }
-    #idfm.active {
-        color: rgb(169, 255, 57);
-        position: absolute;
-        left: 420px;
-        top: 60px;
-        width: 70px;
-        background: #141c24;
-        border: #364758 2px solid;
-        padding: 0px 0px 0px 18px;
-        font-size: 14px;
-        font-weight: 700;
-        border-radius: 5px;
-        z-index: -1000;
+        /* box-shadow: 0 0px 10px 0px #000000; */
     }
 </style>
 

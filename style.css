@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 html{
   width: 10000px;
@@ -37,7 +42,7 @@ html{
     border-left: 2px solid #31435e;
     border-right: 0px solid #31435e;
     border-bottom: 0px solid #2c3b51;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-right: 9px;
     transition: 0.2s all;
     padding: 5px 20px;
@@ -91,6 +96,7 @@ body {
 }
 
 #bg-layer {
+    
     position: fixed;
     top: 0;
     right: 0;
@@ -117,30 +123,44 @@ body {
     padding: 15px 0px 0px 13px;
     background: #141c24;
     border: 2px solid #364758;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.5s ease top;
     box-shadow: none;
     z-index: 1;
-    height: 75px;
+    height: 60px;
 }
 
 #player-track.active {
-    top: -37px;
+    top: -20px;
     box-shadow: 0 0px 10px 0px #000000;
 }
-
 #album-name {
+    font-family: 'Quicksand', "Comfortaa";
+    /* font-family: 'Jura', sans-serif; */
+    /* font-family: 'Calibri'; */
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Manrope', sans-serif; */
+    /* font-family: 'Overpass'; */
     color: #f4f5ff;
-    font-family: 'Calibri';
-    font-size: 25px;
+    font-size: 20px;
+    /* font-weight: 700; */
     transition: 0.3s ease top;
     font-weight: bold;
+    top: -5px;
+    position: relative;
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    color: #ff4040;
-    font-size: 12px;
-    font-weight: 900;
+    /* font-family: 'Quicksand', "Comfortaa"; */
+    /* font-family: 'Jura', sans-serif; */
+    /* font-family: 'Calibri'; */
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #dfff53;
+    position: relative;
+    font-size: 10px;
+    top: -10px;
+    font-weight: 700;
     line-height: 17px;
     border-radius: 3px;
     padding: 3px 0px 0px 0px;
@@ -152,6 +172,10 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+#track-name::before{
+    content: "Играет ➔ ";
+    color: #7d97bb;
+}
 
 #player-content {
     position: relative;
@@ -160,7 +184,7 @@ body {
     background: #141c24;
     border: 2px solid #364758;
     box-shadow: 0 0px 10px 0px #000000;
-    border-radius: 5px;
+    border-radius: 3px;
     z-index: 2;
 }
 
@@ -176,7 +200,7 @@ body {
     box-shadow: 0 0px 40px 0px #141c24;
     border: 2px solid #364758;
     background: #0c1116;
-    border-radius: 5px;
+    border-radius: 3px;
     transform: scale(0.8);
     overflow: hidden;
     -webkit-touch-callout: none;
@@ -189,8 +213,8 @@ body {
 
 #album-art.active {
     transform: scale(1.0);
-    top: -89px;
-    border-radius: 5px;
+    top: -72px;
+    border-radius: 3px;
     background: #10161d;
     box-shadow: 0 0px 20px 0px #ffffff;
     border: 2px solid #ffffff;
@@ -359,7 +383,7 @@ body {
     padding-right: 5px;
     display: flex;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: 0.2s all;
     box-shadow: 0 0px 10px 0px #000000;
 }
