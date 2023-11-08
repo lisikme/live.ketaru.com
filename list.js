@@ -5,12 +5,13 @@
 // 4. Статус радиостанции
 
 // Список радиостанций
-fm_list=[
-"FlyFox",
-"img/flyfox.png",
-"https://s0.radioheart.ru:8000/ketaruweb",
-"Онлайн Beta",
 
+// "FlyFox",
+// "img/flyfox.png",
+// "https://s0.radioheart.ru:8000/ketaruweb",
+// "Онлайн Beta",
+
+fm_list=[
 "TNT Radio",
 "img/tnt.png",
 "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
