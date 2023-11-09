@@ -62,6 +62,11 @@ fm_list=[
 "https://europaplus.hostingradio.ru:8014/ep-top256.mp3",
 "Онлайн",
 
+"EuropaPlus Urban",
+"img/ep_urban.png",
+"https://epdop.hostingradio.ru:8033/ep-urban128.mp3",
+"Онлайн",
+
 "Свежее радио",
 "img/ep_fresh.png",
 "https://epdop.hostingradio.ru:8033/fresh64.aac",
@@ -127,11 +132,6 @@ fm_list=[
 "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
 "Онлайн Kids",
 
-"Дорожное радио",
-"img/dor.png",
-"https://dorognoe.hostingradio.ru/dorognoe",
-"Онлайн",
-
 
 
 "Radio Record",
@@ -174,6 +174,11 @@ fm_list=[
 "https://radiorecord.hostingradio.ru/chil96.aacp",
 "Онлайн",
 
+"Дорожное радио",
+"img/dor.png",
+"https://dorognoe.hostingradio.ru/dorognoe",
+"Онлайн",
+
 "Радио дача",
 "img/rd.png",
 "https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_14_dacha_64",
@@ -182,5 +187,30 @@ fm_list=[
 "Радио Хит",
 "img/rx.png",
 "https://hit.trkeurasia.ru/hit128",
+"Онлайн",
+
+"Русский Хит",
+"img/rrx.png",
+"https://microit.n340.ru:8443/VgMv0WV17ZVx1uuo_19_ruhit_64_reg_1",
+"Онлайн",
+
+"Радио Юнитон",
+"img/ur.png",
+"https://online.uniton.ru/uniton",
+"Онлайн",
+
+"Макс FM",
+"img/mf.png",
+"https://pub0302.101.ru:8000/stream/air/aac/64/202?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiI5MDFhNTgyOGM2MzQzOWY3NDk1YTI4YzEyOTQ1ODQxOCIsIklQIjoiMjMuMTA1LjI1My4xOTciLCJVQSI6Im5vZGUtZmV0Y2gvMS4wICgraHR0cHM6Ly9naXRodWIuY29tL2JpdGlubi9ub2RlLWZldGNoKSIsIlJlZiI6IiIsInVpZF9jaGFubmVsIjoiMjAyIiwidHlwZV9jaGFubmVsIjoiY2hhbm5lbCIsInR5cGVEZXZpY2UiOiJQQyIsIkJyb3dzZXIiOiIiLCJCcm93c2VyVmVyc2lvbiI6IiIsIlN5c3RlbSI6IlVua25vd24iLCJleHAiOjE2OTk1NzAwNTR9.12PWouwSTqDUANe7L4EO7apR8ZKtdFVQlb7IfeYPoVA",
+"Онлайн",
+
+"Авторадио",
+"img/ar.png",
+"https://pub0101.101.ru/stream/air/aac/64/100?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIwN2FjZmRlNTUxMzA5MGM4Yzk4MGFmNTI4YjQ4YmJmYyIsIklQIjoiMjMuMTA1LjI1My4xOTciLCJVQSI6Im5vZGUtZmV0Y2gvMS4wICgraHR0cHM6Ly9naXRodWIuY29tL2JpdGlubi9ub2RlLWZldGNoKSIsIlJlZiI6IiIsInVpZF9jaGFubmVsIjoiMTAwIiwidHlwZV9jaGFubmVsIjoiY2hhbm5lbCIsInR5cGVEZXZpY2UiOiJQQyIsIkJyb3dzZXIiOiIiLCJCcm93c2VyVmVyc2lvbiI6IiIsIlN5c3RlbSI6IlVua25vd24iLCJleHAiOjE2OTk1NzA5NDR9.U0FYDnZLuaHJk7wAudUqMKtRLj5o-ZB5tJ92cG0GCAI",
+"Онлайн",
+
+"Радио Шоколад",
+"img/cr.png",
+"https://choco.hostingradio.ru:10010/fm",
 "Онлайн",
 ]
