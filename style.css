@@ -111,7 +111,7 @@ body {
 }
 
 #player-track.active {
-    top: -20px;
+    top: -18px;
     box-shadow: 0 0px 10px 0px #000000;
 }
 #album-name {
@@ -193,7 +193,7 @@ body {
 
 #album-art.active {
     transform: scale(1.0);
-    top: -72px;
+    top: -70px;
     border-radius: 3px;
     background: #10161d;
     box-shadow: 0 0px 20px 0px #ffffff;
