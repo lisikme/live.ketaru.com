@@ -69,7 +69,7 @@ f'''
         color=0x2b2d31
         )
         GUI.set_author(name=self.client.user.name, icon_url=self.client.user.avatar)
-        GUI.set_thumbnail(url="https://i.imgur.com/hyHNBhW.png")
+        GUI.set_thumbnail(url=self.client.user.avatar)
         components =[
             [
             disnake.ui.Button(
