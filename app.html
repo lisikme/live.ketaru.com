@@ -106,10 +106,30 @@
             z-index: 1000;
         }
     </style>
-    <button id="rel2" class="le" onclick='window.location.replace("https:\\ketaru.com/join")'>Discord Проекта</button>
+    <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord Проекта</button>
     <button id="rel3" class="le" onclick='window.location.replace("https:\\ketaru.com")'>Сайт Проекта</button>
     <button id="rel1" onclick="rel()">Перезагрузить</button>
     <script>
+        var discord = 'https://ketaru.com/join'
+        function NewTab(){
+            var options={
+                height: 820, // устанавливает высоту окна в пикселях.
+                width: 680, // устанавливает ширину окна в пикселях.
+                toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
+                scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
+                status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
+                resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
+                left: (screen.width-680)/2, // левое положение при появлении окна.
+                top: (screen.height-890)/2, // верхнее положение при появлении окна.
+                center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
+                createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
+                location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
+                menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
+            };
+            var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
+            var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
+            window.open(target, 'popup', parameters)
+        }
         window.onload = function() {
             document.getElementById('rel1').addEventListener('click', function() {
                 var ifr = document.getElementsByName('rel')[0];
