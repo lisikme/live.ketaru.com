@@ -67,35 +67,27 @@
 <!-- partial:index.partial.html -->
 <!-- Tracks used in this music/audio player application are free to use. I downloaded them from Soundcloud and NCS websites. I am not the owner of these tracks. -->
 <div id="app-cover">
-<div id="bg-artwork"></div>
-<!-- <div id="bg-layer"></div> -->
-<div id="player">
-<div id="player-track">
-<span id="idfm" class="number">ID: 1</span>
-<div id="album-name"></div>
-<div id="track-name"></div>
-<div id="s-area">
-</div>
-</div>
-<div id="player-content">
-<div id="album-art" style="background-image: url(img/flyfox.png); background-size: cover;">
-<!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
-
-</div>
-    <div class="addbutton">
-    <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
-    <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
-    <div class="range-input">
-        <input type="range" id="range" min="0" max="100" value="0" step="1">
-        <div class="value">
-            <div></div>
+    <div id="bg-artwork"></div>
+    <!-- <div id="bg-layer"></div> -->
+    <div id="player">
+        <div id="player-track">
+            <span id="idfm" class="number">ID: 1</span>
+            <div id="album-name"></div>
+            <div id="track-name"></div>
+            <div id="s-area">
+            </div>
         </div>
-    </div>
-</div>
-    <script>
-        function NewTab(){
-            var options={
-                height: 820, // устанавливает высоту окна в пикселях.
+        <div id="player-content">
+            <div id="album-art" style="background-image: url(img/flyfox.png); background-size: cover;">
+                <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
+            
+        </div>
+        <div class="addbutton">
+        </div>
+        <script>
+            function NewTab(){
+                var options={
+                    height: 820, // устанавливает высоту окна в пикселях.
                 width: 680, // устанавливает ширину окна в пикселях.
                 toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
                 scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
@@ -147,22 +139,29 @@
 
 
 <div id="player-controls">
+    <div class="control">
+        <div class="button" id="play-previous">
+            <i class="fas fa-backward"></i>
+        </div>
+    </div>
 <div class="control">
-<div class="button" id="play-previous">
-<i class="fas fa-backward"></i>
-</div>
-</div>
-<div class="control">
-<div class="button" id="play-pause-button">
-<i class="fas fa-play"></i>
-</div>
+    <div class="button" id="play-pause-button">
+        <i class="fas fa-play"></i>
+    </div>
 </div>
 <div class="control">
-<div class="button" id="play-next">
-    <i class="fas fa-forward"></i>
-
+    <div class="button" id="play-next">
+        <i class="fas fa-forward"></i>
+        
+    </div>
 </div>
 </div>
+</div><div class="addbuttonn">
+<a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
+<!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
+<div class="range-input">
+    <input type="range" id="range" min="0" max="100" value="0" step="1"><a id="curs"></a>
+    <div class="value"><div></div></div></div>
 </div>
 </div>
 </div>

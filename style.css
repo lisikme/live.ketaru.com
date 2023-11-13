@@ -8,18 +8,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 html{
-  width: 10000px;
+    width: 10000px;
 }
+
 .addbutton {
     position: absolute;
     top: 90px;
     width: 1000px;
-    animation: bt .9s forwards;
-}
-
-@keyframes bt {
-    0%   {left: -20px; opacity: .0;}
-    100% {left: -2px; opacity: 1;}
+    z-index: -1000;
 }
 
 @keyframes ani {
@@ -28,7 +24,7 @@ html{
 }
 @keyframes bg {
     0%   {opacity: .0; transform: scale(2);}
-    100% {opacity: .4;}
+    100% {opacity: .3;}
 }
 *:focus {
     outline: none;
@@ -127,7 +123,7 @@ body {
     /* font-weight: 700; */
     transition: 0.3s ease top;
     font-weight: bold;
-    top: -5px;
+    top: -7px;
     position: relative;
     animation: topToBottom 25s infinite 20s;
 }
@@ -167,8 +163,8 @@ body {
     border-radius: 3px;
     z-index: 2;
 }
-
 #album-art {
+    /* animation: art .9s forwards; */
     position: absolute;
     top: -42px;
     width: 115px;
@@ -342,19 +338,44 @@ body {
 
 
 
+@keyframes ar {
+    0%   {
+        top: 102px;
+        /* box-shadow: none; */
+    }
+    100% {
+        top: 142px;
+    }
+}
+@keyframes arr {
+    0%   {
+        box-shadow: none;
+        /* box-shadow: none; */
+    }
+    100% {
+        box-shadow: 0 0px 10px 0px #000000;
+    }
+}
 
-
-
+.addbuttonn {
+    animation: ar .9s forwards;
+    position: absolute;
+    /* top: 90px; */
+    /* width: 1000px; */
+    z-index: -1000 !important;
+}
 
 #item1, #item2{
+    animation: arr .9s forwards;
     font-family: 'Quicksand', "Comfortaa";
     background: #141c23;
     color: #7f97bb;
     position: relative;
     top: -2px;
+    left: 0px;
     font-weight: 600;
     font-size: 12px;
-    box-shadow: 0 0px 10px 0px #000000;
+    /* box-shadow: 0 0px 10px 0px #000000; */
     border: 2px solid #354657;
     border-radius: 3px;
     margin-right: 9px;
@@ -369,9 +390,8 @@ body {
     color: #ffffff;
 }
 
-
-
 .range-input {
+    animation: arr .9s forwards;
     position: absolute;
     /* bottom: 50%; */
     /* margin-bottom: 0px; */
@@ -386,7 +406,7 @@ body {
     align-items: center;
     border-radius: 3px;
     transition: 0.2s all;
-    box-shadow: 0 0px 10px 0px #000000;
+    /* box-shadow: 0 0px 10px 0px #000000; */
 }
 .range-input input {
     appearance: none;
@@ -402,19 +422,16 @@ body {
     appearance: none;
     width: 16px;
     height: 16px;
-    background: var(--bar_color_marker);
-    background: #7d97bb;
+    top: 5.5px;
     border-radius: 2px;
+    background: var(--bar_color_marker);
     box-shadow: 0 0px 30px 0px #141c24;
-    /* box-shadow: 0 0px 5px 0px #000000; */
 }
+.range-input input::-webkit-slider-thumb:hover{
+        background: var(--bar_color_marker_cur);
+        box-shadow: 0 0px 20px 0px #ffffff;
+    }
 
-.range-input input::-webkit-slider-thumb:hover {
-    border-radius: 3px;
-    background: var(--bar_color_marker_cur);
-    box-shadow: 0 0px 20px 0px #ffffff;
-    /* box-shadow: 0 0px 3px 0px #000000; */
-}
 .range-input .value {
     font-family: 'Manrope', sans-serif;
     color: #c9e74e;
@@ -430,6 +447,12 @@ body {
     margin-left: 10px;
     border-radius: 3px;
 }
+/* #curs:active{
+        pointer-events: none;
+        background: var(--bar_color_marker_cur);
+        box-shadow: 0 0px 20px 0px #ffffff;
+    } */
+
 .range-input .value div {
     transition: all 0ms ease-in-out;
 }
