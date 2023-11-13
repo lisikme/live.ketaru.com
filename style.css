@@ -343,6 +343,10 @@ body {
         top: 102px;
         /* box-shadow: none; */
     }
+    50%   {
+        top: 102px;
+        /* box-shadow: none; */
+    }
     100% {
         top: 142px;
     }
@@ -358,7 +362,7 @@ body {
 }
 
 .addbuttonn {
-    animation: ar .9s forwards;
+    animation: ar 0.9s forwards;
     position: absolute;
     /* top: 90px; */
     /* width: 1000px; */
