@@ -53,9 +53,71 @@
 </head>
 
 <body>
-    <iframe id="q" src="./page.html">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+        #rel1{
+            font-family: 'Quicksand', "Comfortaa";
+            background: #00000099;
+            position: absolute;
+            /* left: 10px; */
+            left: calc(50% - 100px);
+            bottom: 10px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #7d97bb;
+            border: 0px solid #36475877;
+            padding: 10px 0px;
+            width: 200px;
+            border-radius: 3px;
+            transition: ease all .2s;
+        }
+        #rel1:hover{
+            background: #00000066;
+            color: #fff;
+        }
+        #rel2{
+            right: 7px;
+            top: 7px;
+        }
+        #rel2:hover{
+            background: #31435e;
+        }
+        #rel3{
+            right: 7px;
+            top: 43px;
+        }
+        #rel3:hover{
+            background: #31435e;
+        }
+        .le{
+            position: absolute;
+            transition: ease all .3s;
+            font-family: 'Quicksand', "Comfortaa";
+            border: 1px solid #36475899;
+            background: #00000099;
+            color: #dfff53;
+            text-align: center;
+            border-radius: 3px;
+            padding: 2px 10px;
+            width: 90px;
+            font-weight: 600;
+            font-size: 10px;
+            z-index: 1000;
+        }
+    </style>
+    <button id="rel2" class="le" href="https://ketaru.com/join">Discord Проекта</button>
+    <button id="rel3" class="le" href="https://ketaru.com">Автор Проекта</button>
+    <button id="rel1" onclick="rel()">Перезагрузить</button>
+    <script>
+        window.onload = function() {
+            document.getElementById('rel1').addEventListener('click', function() {
+                var ifr = document.getElementsByName('rel')[0];
+                ifr.src = ifr.src;
+        });}
+    </script>
+    <iframe id="q" name="rel" src="./page.html">
     </iframe>
-
     <style>
         #ii{
             position: relative;
