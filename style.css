@@ -188,7 +188,7 @@ body {
 
 #album-art.active {
     transform: scale(1.0);
-    top: -70px;
+    top: -69px;
     border-radius: 3px;
     background: #10161d;
     box-shadow: 0 0px 20px 0px #ffffff;
