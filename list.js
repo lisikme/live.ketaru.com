@@ -12,6 +12,11 @@
 // "Онлайн Beta",
 
 fm_list=[
+"Radio FlyFox",
+"img/ff.png",
+"https://s0.radioheart.ru:8000/ketaruweb",
+"Онлайн - KetaruCorp",
+
 "TNT Radio",
 "img/tnt.png",
 "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
