@@ -141,7 +141,7 @@ $(function () {
       currImage = fm_list[currIndex+Number("1")]; // Radio Image
       audio.src = fm_list[currIndex+Number("2")]; // Radio Server
       currTrack = fm_list[currIndex+Number("3")]; // Radio Status
-      currID = (currIndex/4)+1;                       // Radio ID
+      currID = (currIndex/4)+1;                   // Radio ID
       
       
       nTime = 0;
