@@ -89,7 +89,7 @@ fm_list=[
 
 "МУЗ радио",
 "img/muz.png",
-"https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3", 
+"https://s0.radioheart.ru:8000/muzradio", 
 "Онлайн",
 
 "Relax FM",
