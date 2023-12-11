@@ -19,7 +19,7 @@ class url:
     add_bot  = f'&scope=bot&permissions=8&scope=applications.commands%20bot'
     site     = f'https://ketaru.com'
     server   = f'https://discord.gg/5BM4XD3qxM'
-    donat    = f'https://www.donationalerts.com/r/aled_project'
+    donat    = f'https://www.donationalerts.com/r/kerarudev'
     web      = f'https://live.ketaru.com'
 class Help(commands.Cog):
     def __init__(self, client: commands.Bot):
