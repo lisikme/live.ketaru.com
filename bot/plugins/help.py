@@ -17,7 +17,7 @@ class sitker:
     WEB      = 1016852784815013968
 class url:
     add_bot  = f'&scope=bot&permissions=8&scope=applications.commands%20bot'
-    site     = f'https://apps.ketaru.com/radio'
+    site     = f'https://ketaru.com'
     server   = f'https://discord.gg/5BM4XD3qxM'
     donat    = f'https://www.donationalerts.com/r/aled_project'
     web      = f'https://live.ketaru.com'
@@ -92,7 +92,7 @@ f'''
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.web,
-                label='Сайт Radio KetaRu',
+                label='Radio KetaRu Web',
                 emoji=BU4),
             ]
         ]
