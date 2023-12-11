@@ -82,18 +82,18 @@ f'''
                 url=f'https://discord.com/oauth2/authorize?client_id={self.client.user.id}{url.add_bot}',
                 label='Добавить бота',
                 emoji=BU2),
-            disnake.ui.Button(
-                style=disnake.ButtonStyle.link,
-                url=url.site,
-                label='Сайт проета',
-                emoji=BU3)
             ],
             [
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
+                url=url.site,
+                label='Сайт проекта33',
+                emoji=BU3),
+            disnake.ui.Button(
+                style=disnake.ButtonStyle.link,
                 url=url.web,
                 label='Сайт Radio KetaRu',
-                emoji=BU4)
+                emoji=BU4),
             ]
         ]
         await inter.response.send_message(embed=GUI, components=components)
