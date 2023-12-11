@@ -1,5 +1,5 @@
 # ———————————— Импорт библиотек Python —————————————
-from conf import *
+from conf import * #type: ignore
 import disnake as discord
 from disnake import ApplicationCommandInteraction as aci
 from disnake.ext import commands as cmd, commands
@@ -13,8 +13,8 @@ import ssl
 import os
 ssl._create_default_https_context = ssl._create_unverified_context
 import requests as req
-from rich import print
-from rich.console import Console
+from rich import print #type: ignore
+from rich.console import Console #type: ignore
 print = Console().print
 import json
 from configparser import ConfigParser; cfg = ConfigParser()
@@ -42,8 +42,8 @@ class STAT:
     on    = 1014255927643357304
     off   = 1014255889508745266
 # ——————————————— Цвета для консоли ————————————————
-from rich import print
-from rich.console import Console; cn = Console()
+from rich import print #type: ignore
+from rich.console import Console; cn = Console() #type: ignore
 class ColorFormat: # цвета
     Красный      = '[bold red]'     # 🔴| Красный
     ЯркоКрасный  = '[bold #E32636]' # 🔴| Ярко красный

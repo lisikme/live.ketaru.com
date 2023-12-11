@@ -28,6 +28,15 @@ class Status(cmd.Cog):
     def __init__(self, app: discord.Client):
         self.app = app
 
+        Статус = статус.Статус; Режим = статус.Режим; Шарды = статус.Шарды; ID = app.user.id
+        if Режим == 1: Режим = discord.Status.online
+        if Режим == 2: Режим = discord.Status.idle
+        if Режим == 3: Режим = discord.Status.dnd
+        if Режим == 4: Режим = discord.Status.offline
+        await app.change_presence(activity = discord.Activity(
+            type = discord.ActivityType.listening,
+            name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
+            
     @cmd.Cog.listener()
     async def on_ready(self):
         app = self.app; Статус = статус.Статус; Режим = статус.Режим; Шарды = статус.Шарды; ID = app.user.id
@@ -35,9 +44,9 @@ class Status(cmd.Cog):
         if Режим == 2: Режим = discord.Status.idle
         if Режим == 3: Режим = discord.Status.dnd
         if Режим == 4: Режим = discord.Status.offline
-        await app.change_presence(
-            activity = discord.Activity(
-                type = discord.ActivityType.listening, name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
+        await app.change_presence(activity = discord.Activity(
+            type = discord.ActivityType.listening,
+            name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
 
     async def on_guild_join(self, guild: discord.Guild):
         app = self.app; Статус = статус.Статус; Режим = статус.Режим; Шарды = статус.Шарды; ID = app.user.id
@@ -46,7 +55,8 @@ class Status(cmd.Cog):
         if Режим == 3: Режим = discord.Status.dnd
         if Режим == 4: Режим = discord.Status.offline
         await app.change_presence(activity = discord.Activity(
-            type = discord.ActivityType.listening, name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
+            type = discord.ActivityType.listening,
+            name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
 
     async def on_guild_remove(self, guild: discord.Guild):
         app = self.app; Статус = статус.Статус; Режим = статус.Режим; Шарды = статус.Шарды; ID = app.user.id
@@ -55,7 +65,8 @@ class Status(cmd.Cog):
         if Режим == 3: Режим = discord.Status.dnd
         if Режим == 4: Режим = discord.Status.offline
         await app.change_presence(activity = discord.Activity(
-            type = discord.ActivityType.listening, name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
+            type = discord.ActivityType.listening,
+            name = Статус.format(len(app.guilds))), status = Режим) # type: ignore
 
 
 def setup(app: cmd.Bot):
