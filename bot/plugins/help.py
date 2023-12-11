@@ -85,14 +85,14 @@ f'''
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.site,
-                label='Сайт',
+                label='Сайт проета',
                 emoji=BU3)
             ],
             [
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.web,
-                label='Web версия Radio KetaRu',
+                label='Сайт Radio KetaRu',
                 emoji=BU4)
             ]
         ]
