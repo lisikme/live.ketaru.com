@@ -87,7 +87,7 @@ f'''
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.site,
-                label='Сайт проекта33',
+                label='Сайт проекта',
                 emoji=BU3),
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
