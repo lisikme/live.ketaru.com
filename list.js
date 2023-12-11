@@ -179,6 +179,16 @@ fm_list=[
 "https://radiorecord.hostingradio.ru/chil96.aacp",
 "Онлайн",
 
+"Record BassHouse",
+"img/rec_bh.png",
+"https://radiorecord.hostingradio.ru/jackin96.aacp",
+"Онлайн",
+
+"Record FutureBass",
+"img/rec_fb.png",
+"https://radiorecord.hostingradio.ru/fbass96.aacp",
+"Онлайн",
+
 "Дорожное радио",
 "img/dor.png",
 "https://dorognoe.hostingradio.ru/dorognoe",
