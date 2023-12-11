@@ -75,7 +75,7 @@ f'''
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.server,
-                label='Сервер поддержки',
+                label='Discord проекта',
                 emoji=BU1),
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
