@@ -1,5 +1,5 @@
 # ———————————— Импорт библиотек Python —————————————
-from conf import * #type: ignore
+from conf import * #type: ignore 
 import disnake as discord
 from disnake import ApplicationCommandInteraction as aci
 from disnake.ext import commands as cmd, commands
