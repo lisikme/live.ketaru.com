@@ -152,7 +152,7 @@ class Radio(commands.Cog):
 # ———————————— Пользователь не в канале ————————————
         if not user:
             STATS = f'Пользователь не в канале'
-            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать бота, зайдите в голосовой канал', color=colors.gold)
+            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать команду, зайдите в голосовой канал', color=colors.gold)
             await ctx.send(embed=GUI)
 # ———————————————————— Собщения ————————————————————
         else:
@@ -238,7 +238,7 @@ class Radio(commands.Cog):
 # ———————————— Пользователь не в канале ————————————
         if not user:
             STATS = f'Пользователь не в канале'
-            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать бота, зайдите в голосовой канал', color=colors.gold)
+            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать команду, зайдите в голосовой канал', color=colors.gold)
             await ctx.send(embed=GUI)
 # ———————————————————— Собщения ————————————————————
         else:
@@ -329,7 +329,7 @@ class Radio(commands.Cog):
 # ———————————— Пользователь не в канале ————————————
         if not user:
             STATS = f'Пользователь не в канале'
-            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать бота, зайдите в голосовой канал', color=colors.gold)
+            GUI = embed_not_user(title='Вы не в голосовом канале', description='Для того что-бы использовать команду, зайдите в голосовой канал', color=colors.gold)
             await ctx.send(embed=GUI)
             return
 # ————————————————— Бот не в канале ————————————————
