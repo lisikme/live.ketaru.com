@@ -11,6 +11,11 @@
 // "https://s0.radioheart.ru:8000/ketaruweb",
 // "Онлайн Beta",
 
+// "МУЗ радио",
+// "img/muz.png",
+// "https://s0.radioheart.ru:8000/muzradio", 
+// "Онлайн",
+
 fm_list=[
 "Radio FlyFox",
 "img/ff.png",
@@ -89,7 +94,7 @@ fm_list=[
 
 "МУЗ радио",
 "img/muz.png",
-"https://s0.radioheart.ru:8000/muzradio", 
+"https://online-3.gkvr.ru:8001/muztvradio_original_128.mp3", 
 "Онлайн",
 
 "Relax FM",
