@@ -49,7 +49,7 @@ fm_list=[
 
 "Love Radio",
 "img/love.png",
-"https://www.liveradio.es/dfmsaransk.sv-veter.ru:8095/love_saransk?128",
+"https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_12_love_64?st=3cc39a25-d509-56d0-ae0b-da158cdd56b5&gts=1704173324",
 "Онлайн",
 
 "EuropaPlus",
