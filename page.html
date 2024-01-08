@@ -7,35 +7,35 @@
         <meta charset="utf-8">
         <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-<!-- Интеграция Embed -->
-<title>Radio KetaRu Web</title>
-<meta property="og:title" content="Radio KetaRu Web">
-<meta property="og:site_name" content="KetaRu">
-<meta property="og:url" content="https://live.ketaru.com">
-<meta property="og:description" content="Наше онлайн версия радио бота">
-<link rel="shortcut icon" href="https://i.imgur.com/yDm8NLA.png">
-<meta property="og:image" content="https://i.imgur.com/yDm8NLA.png">
-<meta property="og:image:width" content="900">
-<meta property="og:image:height" content="900">
-<meta name="theme-color" content="#e43f79">
-<!-- beta -->
-<link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
-<link rel="stylesheet" href="css/Header.css">      <!-- Дизайн шапки сайта --> 
-<link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
-<link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
-<style>
-    :root {
-        --NamePage: "Radio";
-        --VerPage: "Keta";
-    }
-    .em{
-        font-size: 16.6px;
-        position: relative;
-        bottom: 2.4px;
-    }
-    .em-logo{
-        background-image: url("https://i.imgur.com/K98MRfw.png")
-    }
+        <!-- Интеграция Embed -->
+        <title>Radio KetaRu Web</title>
+        <meta property="og:title" content="Radio KetaRu Web">
+        <meta property="og:site_name" content="KetaRu">
+        <meta property="og:url" content="https://live.ketaru.com">
+        <meta property="og:description" content="Наше онлайн версия радио бота">
+        <link rel="shortcut icon" href="https://i.imgur.com/yDm8NLA.png">
+        <meta property="og:image" content="https://i.imgur.com/yDm8NLA.png">
+        <meta property="og:image:width" content="900">
+        <meta property="og:image:height" content="900">
+        <meta name="theme-color" content="#e43f79">
+        <!-- beta -->
+        <link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
+        <link rel="stylesheet" href="css/Header.css">      <!-- Дизайн шапки сайта --> 
+        <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
+        <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+        <style>
+            :root {
+                --NamePage: "Radio";
+                --VerPage: "Keta";
+            }
+            .em{
+                font-size: 16.6px;
+                position: relative;
+                bottom: 2.4px;
+            }
+            .em-logo{
+                background-image: url("https://i.imgur.com/K98MRfw.png")
+            }
 </style>
 <!-- JavasCript -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
@@ -78,33 +78,33 @@
                                             </div>
                                         </div>
                                         <div id="player-content">
-                                            <div id="album-art" style="background-image: url(img/flyfox.png); background-size: cover;">
+                                            <div id="album-art" style="background-image: url(img/error.png); background-size: cover;">
                                                 <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
                                                 
                                             </div>
                                             <div class="addbutton">
-        </div>
-        <script>
-            function NewTab(){
-                var options={
-                    height: 820, // устанавливает высоту окна в пикселях.
-                    width: 680, // устанавливает ширину окна в пикселях.
-                    toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
-                    scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
-                    status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
-                    resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
-                    left: (screen.width-680)/2, // левое положение при появлении окна.
+                                            </div>
+                                            <script>
+                                                function NewTab(){
+                                                    var options={
+                                                        height: 820, // устанавливает высоту окна в пикселях.
+                                                        width: 680, // устанавливает ширину окна в пикселях.
+                                                        toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
+                                                        scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
+                                                        status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
+                                                        resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
+                                                        left: (screen.width-680)/2, // левое положение при появлении окна.
                     top: (screen.height-890)/2, // верхнее положение при появлении окна.
                     center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
                     createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
                     location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
                     menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
                 };
-            var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
-            var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
-            window.open(target, 'popup', parameters)
-        }
-        </script>
+                var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
+                var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
+                window.open(target, 'popup', parameters)
+            }
+            </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
@@ -170,29 +170,29 @@
                     }
                     div[conf="0"] i {
                         color: #3C4859;
-    text-shadow: 0px 0px 5px rgb(43, 43, 43);
-}
-div[conf="0"]:hover i {
-    color: #506178;
-    text-shadow: 0px 0px 5px #506178;
-}
-</style>
+                        text-shadow: 0px 0px 5px rgb(43, 43, 43);
+                    }
+                    div[conf="0"]:hover i {
+                        color: #506178;
+                        text-shadow: 0px 0px 5px #506178;
+                    }
+                    </style>
 </div>
 </div><div class="addbuttonn">
-<a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
-<!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
-<div class="range-input">
-    <input type="range" id="range" min="0" max="100" value="0" step="1"><a id="curs"></a>
-    <div class="value"><div></div></div></div>
-</div>
+    <a target ='additional' onclick="NewTab()" id="item1">Добавить бота</a>
+    <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
+    <div class="range-input">
+        <input type="range" id="range" min="0" max="100" value="0" step="1"><a id="curs"></a>
+        <div class="value"><div></div></div></div>
+    </div>
 </div>
 </div>
 </div>
 <!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </body>
 </html>
-<script  src="./config.js"></script>
-<script  src="./list.js"></script>
-<script  src="./ver2.js"></script>
 <!-- <script  src="./script.js"></script> -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="./config.js"></script>
+<script src="./list.js"></script>
+<script src="./ver2.js"></script>
