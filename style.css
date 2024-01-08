@@ -162,7 +162,7 @@ body {
     border-radius: 3px;
     z-index: 2;
 }
-#album-art {
+#album-art, #album-arts {
     /* animation: art .9s forwards; */
     position: absolute;
     top: -47px;
@@ -186,7 +186,7 @@ body {
     user-select: none;
 }
 
-#album-art.active {
+#album-art.active, #album-arts.active {
     transform: scale(1.0);
     top: -69px;
     border-radius: 3px;
