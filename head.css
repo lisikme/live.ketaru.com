@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+#site-bg{
+    background: #0d1218;
+}
+#site-header{
+    height: 58px;
+    background: #151c24;
+    margin: 50% auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #374758;
+    box-shadow: 2px 2px 4px #080c0f70;
+}
+#site-header-box{
+    padding: 10px 10px 5px 10px;
+    width: 1315px;
+    height: 58px;
+    margin: 50% auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#site-logo-box{
+    background: #2c3a50;
+    display: inline-flex;
+    padding: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+#site-logo-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    /* position: absolute; */
+}
+#site-logo-name{
+    /* font-family: 'Quicksand', "Comfortaa"; */
+    /* font-family: 'Jura', sans-serif; */
+    /* font-family: 'Calibri'; */
+    font-family: 'Alegreya Sans SC', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Manrope', sans-serif; */
+    /* font-family: 'Overpass'; */
+    color: #00ffea;
+    font-weight: 600;
+    padding: 0px 5px 0px 10px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 0px; 
+    padding-top: 15px;
+    position: relative;
+}
+#page-name{
+    left: 0px;
+    /* font-family: 'Quicksand', "Comfortaa"; */
+    /* font-family: 'Jura', sans-serif; */
+    /* font-family: 'Calibri'; */
+    font-family: 'Alegreya Sans SC', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Manrope', sans-serif; */
+    /* font-family: 'Overpass'; */
+    color: #9ebcff;
+    font-weight: 600;
+    /* text-align: center; */
+    vertical-align: middle;
+    line-height: 10px; 
+    padding-top: 0px;
+    text-align: center;
+    width: 100%;
+    top: 24px;
+    position: absolute;
+}
+html, body {font-family: 'Alegreya Sans SC', sans-serif; margin: 0; padding: 0; color: #fff;}
+main{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 15px 25px;
+}
+main> *, #site-logo-box{
+    transform: translateX(); 
+    animation: AnimX .5s forwards;
+}
+#page-name{
+    animation: AnimY .5s forwards;
+}
+header{
+    animation: none;
+    transform: translateX(0); 
+}
+*:hover{
+    transition: .2s infinite linear;
+}
+@keyframes AnimX {
+    0%   {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes AnimY {
+    0%, 50% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+A, A:visited, A:active{
+    color: #fff !important;
+}
+#projects-block{
+    background: #2b427d;
+    border: 1px solid #364758;
+    text-align: center;
+    /* padding: 1px 1px; */
+    border-radius: 3px;
+    /* width: 500px; */
+    max-width: 700px;
+    margin: 50% auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#projects-panel{
+    text-align: left;
+    border-top: 1px solid #364758;
+    background: #141c24;
+    padding: 5px 10px;
+    border-radius: 0 0 3px 3px;
+    /* width: 500px; */
+}
+#pjbox{
+    background: #273449;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+    transition: all .2s;
+    box-shadow: 3px 3px 4px #080c0f;
+}
+#pjbox:hover{
+    background: #3a4c69;
+    box-shadow: 1px 1px 4px #080c0f;
+}
+#pjimg{
+    background: #131924;
+    border-radius: 5px;
+    border: 1px solid #364758;
+    height: 40px;
+    width: 40px;
+}
+#pjname{
+    font-size: 22px;
+    left: 54px;
+    top: -1px;
+    position: absolute;
+}
+#pjdec{
+    background: #0f1720;
+    line-height: 10px;
+    left: 53px;
+    top: 26px;
+    color: #00ffea;
+    padding: 3px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: absolute;
+}

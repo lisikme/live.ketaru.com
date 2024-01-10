@@ -31,20 +31,16 @@
 <!-- JavasCript -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-<!-- Шапка страницы -->
-<!-- <div class="body-wrap"> -->
-    <header class="site-header">
-        <div class="container">
-            <div class="site-header-inner">
-                <div class="brand header-brand">
-                    <ul class="footer-links list-reset">
-                        <h4 class="hero-title mt-0">
-                            <a >
-                                <span class="LogoBox"><i class="em em-logo"></i><ui class="LogoName"></span></a><ui class="LogoPage"><ui class="LogoVersion"></ui></h4>
-                                <!-- <button id="ii">Reload</button> -->
-                            </head>
-                        </header>
-<!DOCTYPE html>
+<body id="site-bg">
+    <link rel="stylesheet" href="./head.css">
+    <header id="site-header">
+        <type id="page-name">Radio KetaRu</type>
+        <div id="site-header-box">
+            <a href="https://ketaru.com"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
+                <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
+            </div>
+        </header>
+    </body>
 <html>
 <head>
 <meta name="yandex-verification" content="bef8770f64b65879" />
@@ -66,12 +62,12 @@
             font-weight: 600;
             font-size: 14px;
             color: #7d97bb;
-            border: 0px solid #36475877;
+            border: 1px solid #3d5b7977;
             padding: 10px 0px;
             /* width: 200px; */
             left: 10px;
             right: 10px;
-            border-radius: 3px;
+            border-radius: 5px;
             transition: ease all .2s;
         }
         #rel1:hover{
@@ -79,15 +75,11 @@
             color: #fff;
         }
         #rel2{
-            right: 7px;
-            top: 7px;
+            right: 10px;
+            top: 10px;
         }
         #rel2:hover{
             background: #31435e;
-        }
-        #rel3{
-            right: 7px;
-            top: 43px;
         }
         #rel3:hover{
             background: #31435e;
@@ -96,20 +88,19 @@
             position: absolute;
             transition: ease all .3s;
             font-family: 'Quicksand', "Comfortaa";
-            border: 1px solid #36475899;
-            background: #00000099;
+            border: 0px solid #36475899;
+            background: #2c3a50;
             color: #dfff53;
             text-align: center;
-            border-radius: 3px;
-            padding: 2px 10px;
-            width: 90px;
+            border-radius: 5px;
+            padding: 9px 0px;
+            width: 100px;
             font-weight: 600;
-            font-size: 10px;
+            font-size: 16px;
             z-index: 1000;
         }
     </style>
-    <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord Проекта</button>
-    <button id="rel3" class="le" onclick="window.open(site, '_blank');">Сайт Проекта</button>
+    <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord</button>
     <button id="rel1" onclick="rel()">Перезагрузить</button>
     <script>
         var discord = 'https://ketaru.com/join'
