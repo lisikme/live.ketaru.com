@@ -20,7 +20,7 @@
 }
 #site-header-box{
     padding: 10px 10px 5px 10px;
-    width: 1315px;
+    max-width: 1315px;
     height: 58px;
     margin: 50% auto;
     margin-top: 0px;
