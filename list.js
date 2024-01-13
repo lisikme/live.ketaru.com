@@ -77,6 +77,11 @@ fm_list=[
 "https://epdop.hostingradio.ru:8033/ep-urban128.mp3",
 "Онлайн",
 
+"EuropaPlus Party",
+"img/none.png",
+"https://epdop.hostingradio.ru:8033/epparty128.mp3",
+"Онлайн Pre-Relese Beta",
+
 "Свежее радио",
 "img/fm_epfresh.png",
 "https://epdop.hostingradio.ru:8033/fresh64.aac",
