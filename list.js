@@ -78,9 +78,9 @@ fm_list=[
 "Онлайн",
 
 "EuropaPlus Party",
-"img/-.png",
+"img/ep_party.png",
 "https://epdop.hostingradio.ru:8033/epparty128.mp3",
-"Онлайн Pre-Relese Beta",
+"Онлайн",
 
 "Свежее радио",
 "img/fm_epfresh.png",
@@ -142,12 +142,14 @@ fm_list=[
 "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
 "Онлайн Kids",
 
+
+
+
+
 "Radio Record",
 "img/fm_rc.png",
 "https://radiorecord.hostingradio.ru/rr_main96.aacp",
 "Онлайн",
-
-
 
 "Record Phonk",
 "img/fm_rcphonk.png",
@@ -237,5 +239,25 @@ fm_list=[
 "Радио SRP",
 "img/fm_srp.png",
 "https://a7.radioheart.ru:8066/RH6629",
+"Онлайн",
+
+"Жара FM",
+"img/fm_jr.png",
+"https://live1.zharafm.ru/internet",
+"Онлайн",
+
+"Радио MAXIMUM",
+"img/fm_max.png",
+"https://maximum.hostingradio.ru/maximum96.aacp",
+"Онлайн",
+
+"Радио MonteCarlo",
+"img/fm_mc.png",
+"https://montecarlo.hostingradio.ru/montecarlo96.aacp",
+"Онлайн",
+
+"Ника FM",
+"img/fm_nika.png",
+"https://montecarlo.hostingradio.ru/montecarlo96.aacp",
 "Онлайн",
 ]
