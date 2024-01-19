@@ -17,8 +17,8 @@
 // "Онлайн",
 
 fm_list=[
-"BiskvitLive",
-"img/fm_flyfox.png",
+"Biskvit Live",
+"img/fm_biskvit.png",
 "https://s0.radioheart.ru:8000/ketaruweb",
 "Онлайн - KetaruCorp",
 
