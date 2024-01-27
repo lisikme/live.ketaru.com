@@ -36,6 +36,35 @@ body {
     background-color: #000000;
 }
 
+.buff::after{
+    transition: all .7s;
+    background: #ff000033 !important;
+    outline: 1px solid #802936;
+    outline-offset: -1px;
+    height: 46px !important;
+    width: 210px !important;
+    content: '' !important;
+    left: -221px !important;
+    top: -31px !important;
+    border-radius: 2px !important;
+    display: inline-block !important;
+    position: absolute !important;
+}
+.buffa::after{
+    transition: all .7s !important;
+    background: #2f3e56 !important;
+    outline: 1px solid #00000000;
+    outline-offset: -1px;
+    height: 46px !important;
+    width: 5px !important;
+    content: '' !important;
+    left: -228px !important;
+    top: -31px !important;
+    border-radius: 1px !important;
+    display: inline-block !important;
+    position: absolute !important;
+}
+
 #app-cover {
     animation: ani .9s forwards;
     position: absolute;
@@ -58,7 +87,7 @@ body {
     left: -0px;
     background-repeat: no-repeat;
     background-size: 100% auto;
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
@@ -67,12 +96,11 @@ body {
     background-position: 50%;
     filter: blur(2vh);
     -webkit-filter: blur(2vh);
+    width: device-width;
     z-index: -3;
     pointer-events: none;
 }
-
 #bg-layer {
-    
     position: fixed;
     top: 0;
     right: 0;
@@ -110,31 +138,22 @@ body {
     box-shadow: 0 0px 10px 0px #000000;
 }
 #album-name {
-    font-family: 'Quicksand', "Comfortaa";
-    /* font-family: 'Jura', sans-serif; */
-    /* font-family: 'Calibri'; */
-    /* font-family: 'Alegreya Sans SC', sans-serif; */
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Manrope', sans-serif; */
-    /* font-family: 'Overpass'; */
-    color: #f4f5ff;
-    font-size: 20px;
+    font-family: 'Overpass';
+    color: #55ffcc;
+    font-size: 22px;
     /* font-weight: 700; */
     transition: 0.3s ease top;
     font-weight: bold;
-    top: -7px;
+    top: -4px;
     position: relative;
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    /* font-family: 'Quicksand', "Comfortaa"; */
-    /* font-family: 'Jura', sans-serif; */
-    /* font-family: 'Calibri'; */
-    font-family: 'Alegreya Sans SC', sans-serif;
-    color: #dfff53;
+    font-family: 'Overpass';
+    color: #ff9de1;
     position: relative;
     font-size: 10px;
-    top: -10px;
+    top: -6px;
     font-weight: 700;
     line-height: 17px;
     border-radius: 3px;
@@ -149,7 +168,7 @@ body {
 }
 #track-name::before{
     content: "Играет ➔ ";
-    color: #7d97bb;
+    color: #76a2e0;
 }
 
 #player-content {
@@ -271,7 +290,7 @@ body {
 }
 
 #player-controls {
-    width: 258px;
+    width: 260px;
     height: 100%;
     margin: 0 0px 0 141px;
     float: right;
@@ -285,7 +304,7 @@ body {
 }
 
 .button {
-    width: 78px;
+    width: 79px;
     height: 48px;
     padding: 11px 24px;
     background-color: #2c3a50;

@@ -116,22 +116,31 @@ $(function () {
       trackTime.addClass("active");
     }
   }
-  function checkBuffering() {
+  var rl1 = $("#idfm")
+  function checkBuffering(){
     clearInterval(buffInterval);
     buffInterval = setInterval(function () {
-      if (nTime == 0 || bTime - nTime > 1000) albumArt.addClass("buffering");
-      else albumArt.removeClass("buffering");
-      bTime = new Date();
-      bTime = bTime.getTime();
-    }, 3000);
+      if (nTime == 0 || bTime - nTime > 1000){
+        rl1.addClass("buff");
+        rl1.removeClass("buffa");
+      }
+      else {
+        rl1.removeClass("buff");
+        rl1.addClass("buffa");
+        bTime = new Date();
+        bTime = bTime.getTime();
+      }
+    }, 1000);
   }
   function selectTrack(flag) {
     if (flag == 0 || flag == 1) currIndex++;
     else currIndex--;
     if (currIndex > -1 && currIndex < fm_list.length) {
-      if (flag == 0) i.attr("class", "fa fa-play");
+      if (flag == 0) {
+        i.attr("class", "fa fa-play")
+      }
       else {
-        albumArt.removeClass("buffering");
+        rl1.removeClass("buff");
         i.attr("class", "fa fa-pause");
       }
       seekBar.width(0);
