@@ -258,6 +258,6 @@ fm_list=[
 
 "Ника FM",
 "img/fm_nika.png",
-"https://montecarlo.hostingradio.ru/montecarlo96.aacp",
+"https://radio.nikatv.ru/;.mp4",
 "Онлайн",
 ]
