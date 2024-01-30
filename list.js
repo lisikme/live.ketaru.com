@@ -19,7 +19,7 @@
 fm_list=[
 "Biskvit Live",
 "img/fm_biskvit.png",
-"https://shaincast.caster.fm:47096/listen.mp3?authnf979df415e5b213b71ed4936e7c891c2",
+"https://s0.radioheart.ru:8000/ketaruweb",
 "Онлайн - KetaruCorp",
 
 "TNT Radio",
