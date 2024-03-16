@@ -34,7 +34,7 @@ fm_list=[
 
     "DFM",
     "img/fm_dfm.png",
-    "https://dfm.hostingradio.ru/dfm128.mp3",
+    "https://dfm.hostingradio.ru/dfm96.aacp?st=be86f20b-2211-56ac-ac97-648f95b28025&gts=1710570240",
     "Онлайн",
 
     "Like FM",
