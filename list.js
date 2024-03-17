@@ -265,4 +265,9 @@ fm_list=[
     "img/fm_vostok.png",
     "https://microit.n340.ru:8443/VgMv0WV17ZVx1uuo_18_vostok_64_reg_1?st=ad5ae106-2a82-5d7d-a3f5-eca201479080&gts=1707602953",
     "Онлайн",
+    
+    "Маруся ФМ",
+    "img/fm_marusya.png",
+    "https://radio-holding.ru/marusya_default?st=bb243c1f-e92b-5266-a2a8-c42f7a4773d1&gts=1710671267",
+    "Онлайн",
 ]
