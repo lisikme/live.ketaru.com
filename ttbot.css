@@ -1,0 +1,23 @@
+#red_error{background: #680b0b; border-color:#FA1A1A}
+#green_info{background: #124D00; border-color:#26A300}
+body{background: linear-gradient(120deg, #065479 0%, #881748 50%, #000438 100%);}
+.men{color: #7289DA; background: #7289da1a; border-radius: 3px; padding: 0 2px;}
+.errorMsg{border: 2px solid; text-align:center; border-radius: 5px; margin-top: 15px; padding: 10px;}
+.botPageAuthor{background:#2d3558;}
+.botSupportRight{background:#191919;}
+.tegSpan{background:#636363;}
+#report{border-radius: 5px; margin: 5px;}
+#commentText{background: #15171a; color: white;}
+.botPageImg{box-shadow: 0 0 20px #00cae3; border-radius: 5px}
+.topLine {background:#262626;}
+.button{border-radius: 0px;}
+.container-fluid, #name1337{background:#212121;}
+.comment.posted{background:#212121;}
+#userCommentCount{margin: 20px}
+#commentList{background:#191919; border-radius: 5px; padding: 1px 15px 15px 15px; margin-top: 40px}
+#commentShowMore{margin: 0px; padding: 4px; border-radius: 5px; top: 10px}
+.botPage{background:#212121; border-radius: 5px;}
+#commentAvatar{border-radius: 10px}
+footer{background: #00000000}
+.botPageDesc{background: #191919; border-radius: 5px; padding: 15px;}
+.hr {margin-top: 15px; border: 0px;}
