@@ -71,15 +71,24 @@
                                     <!-- <div id="bg-layer"></div> -->
                                     <div id="player">
                                         <div id="player-track">
-                                            <span id="idfm" class="number buffa">-1</span>
-                                            <div id="album-name"></div>
-                                            <div id="track-name"></div>
                                             <div id="s-area">
                                             </div>
                                         </div>
                                         <div id="player-content">
-                                            <div id="album-art" style="background-image: url(load.gif); background-size: cover;">
-                                                <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
+                                            <div class="addbuttonn">
+                                            <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a>
+                                            <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
+                                            <!-- <div class="range-input">
+                                                <input type="range" id="range" min="0" max="100" value="0" step="1">
+                                                <div class="value"><div> -->
+                                                </div>
+                                                <div id="box-play">
+                                                    <div id="album-art-bg" style="background-image: url(load.gif); background-size: cover;"></div>
+                                                    <div id="album-art" style="background-image: url(load.gif); background-size: cover;"></div>
+                                                    <div id="album-name" class="buffa"></div>
+                                                    <span id="idfm" class="number">-1</span>
+                                            <div id="track-name"></div>
+                                            <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
                                                 
                                             </div>
                                             <div class="addbutton">
@@ -94,12 +103,12 @@
                                                         status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
                                                         resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
                                                         left: (screen.width-680)/2, // левое положение при появлении окна.
-                    top: (screen.height-890)/2, // верхнее положение при появлении окна.
-                    center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
-                    createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
-                    location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
-                    menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
-                };
+                                                        top: (screen.height-890)/2, // верхнее положение при появлении окна.
+                                                        center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
+                                                        createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
+                                                        location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
+                                                        menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
+                                                    };
                 var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
                 var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
                 window.open(target, 'popup', parameters)
@@ -114,25 +123,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
-    #idfm {
-        font-family: 'Manrope', sans-serif;
-        color: #c9e74e !important;
-        position: absolute;
-        width: 30px;
-        text-align: center;
-        background: #2c3a50;
-        /* border: #364758 1px solid; */
-        bottom: 5px;
-        right: 5px;
-        line-height: 1;
-        font-size: 10px;
-        font-weight: 700;
-        padding: 3px 0px;
-        border-radius: 2px;
-        z-index: -1000;
-        box-shadow: 1px 1px 1px #0e141a;
-        /* box-shadow: 0 0px 10px 0px #000000; */
-    }
+
     </style>
 
 
@@ -142,36 +133,36 @@
     <div class="control"><div class="button" id="play-previous" conf="1">
         <i class="fas fa-backward"></i></div></div>
         
-    <div class="control"><div class="button" id="play-pause-button" conf="1">
-        <i class="fas fa-play"></i></div></div>
-        
-    <div class="control"><div class="button" id="play-next" conf="1">
-        <i class="fas fa-forward" id="true"></i></div></div>
-    <div class="range-input">
-        <input type="range" id="range" min="0" max="100" value="0" step="1">
-        <div class="value"><div>
-    
-    <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a>
-                
-                <style>
-                    div[conf="1"]{
-                        background-color: #2c3a50;
-                        box-shadow: 4px 4px 3px #0e141a;
-                        border-top: 1px solid rgba(255, 255, 255, 0.06);
-                        border-left: 1px solid rgba(255, 255, 255, 0.06);
-                        border-radius: 2px;
-                        cursor: pointer;
-                    }
-                    div[conf="0"]{
-                        background-color: #1C2533;
-                        box-shadow: 1px 1px 1px #0e141a;
-                        border-top: 1px solid rgba(255, 255, 255, 0.06);
-                        border-left: 1px solid rgba(255, 255, 255, 0.06);
-                        cursor: default;
-                    }
-                    div[conf="0"]:hover {
-                        /* box-shadow: 2px 2px 1px #0e141a; */
-                        background-color: #243042;
+        <div class="control"><div class="button" id="play-pause-button" conf="1">
+            <i class="fas fa-play"></i></div></div>
+            
+            <div class="control"><div class="button" id="play-next" conf="1">
+                <i class="fas fa-forward" id="true"></i></div></div>
+                <div class="range-input">
+                    <input type="range" id="range" min="0" max="100" value="0" step="1">
+                    <div class="value"><div>
+                        
+                        <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a>
+                        
+                        <style>
+                            div[conf="1"]{
+                                background-color: #2c3a50;
+                                box-shadow: 4px 4px 3px #0e141a;
+                                border-top: 1px solid rgba(255, 255, 255, 0.06);
+                                border-left: 1px solid rgba(255, 255, 255, 0.06);
+                                border-radius: 2px;
+                                cursor: pointer;
+                            }
+                            div[conf="0"]{
+                                background-color: #1C2533;
+                                box-shadow: 1px 1px 1px #0e141a;
+                                border-top: 1px solid rgba(255, 255, 255, 0.06);
+                                border-left: 1px solid rgba(255, 255, 255, 0.06);
+                                cursor: default;
+                            }
+                            div[conf="0"]:hover {
+                                /* box-shadow: 2px 2px 1px #0e141a; */
+                                background-color: #243042;
                     }
                     div[conf="0"] i {
                         color: #3C4859;
@@ -184,13 +175,6 @@
                     </style>
 </div>
 
-</div><div class="addbuttonn">
-    <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a>
-    <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
-    <!-- <div class="range-input">
-        <input type="range" id="range" min="0" max="100" value="0" step="1">
-        <div class="value"><div> -->
-    </div></div></div>
     </div>
 </div>
 </div>

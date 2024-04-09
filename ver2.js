@@ -45,10 +45,12 @@ $(function () {
   var playerTrack=$("#player-track"),
     bgback=$("#bg-artwork"),
     bglogo=$("#album-art"),
+    bglogobg=$("#album-art-bg"),
     bgArtworkUrl,
     albumName=$("#album-name"),
     trackName=$("#track-name"),
     albumArt=$("#album-art"),
+    albumArtBg=$("#album-art-bg"),
     idfm=$("#idfm"),
     sArea=$("#s-area"),
     seekBar=$("#seek-bar"),
@@ -116,7 +118,7 @@ $(function () {
       trackTime.addClass("active");
     }
   }
-  var rl1 = $("#idfm")
+  var rl1 = $("#album-name")
   function checkBuffering(){
     clearInterval(buffInterval);
     buffInterval = setInterval(function () {
@@ -176,6 +178,7 @@ $(function () {
       // document.querySelector('img.active').src = './'+currImage;
       bgback.css({ "background-image": "url(" + './'+currImage + ")" });
       bglogo.css({ "background-image": "url(" + './'+currImage + ")" });
+      bglogobg.css({ "background-image": "url(" + './'+currImage + ")" });
     } else {
       if (flag == 0 || flag == 1) currIndex++;
       else ++currIndex;

@@ -7,20 +7,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
+@font-face {
+    font-family: onest;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Onest'), url(https://fonts.cdnfonts.com/s/107279/Onest[wght].woff) format('woff')
+}
+
 html{
     width: 10000px;
 }
 
 .addbutton {
-    position: absolute;
+    /* position: absolute; */
     top: 90px;
-    width: 1000px;
+    left: 5px;
+    /* width: 1000px; */
     z-index: -1000;
 }
 
 @keyframes ani {
     0%   {left: -120px}
     100% {left: -2px}
+}
+@keyframes buff {
+    0%   {opacity: 0;}
+    30%   {opacity: 0;}
+    100% {opacity: 1;}
 }
 @keyframes bg {
     0%   {opacity: .0; transform: scale(2);}
@@ -37,32 +50,35 @@ body {
 }
 
 .buff::after{
-    transition: all .7s;
-    background: #ff000033 !important;
-    outline: 1px solid #802936;
-    outline-offset: -1px;
-    height: 46px !important;
-    width: 210px !important;
-    content: '' !important;
-    left: -221px !important;
-    top: -31px !important;
-    border-radius: 2px !important;
-    display: inline-block !important;
-    position: absolute !important;
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    content: 'Offline';
+    font-size: 10px;
+    padding: 0px 5px;
+    top: -13px;
+    left: 3px;
+    color: white;
+    border-radius: 2px;
+    background: #802936 !important;
+    /* outline: 1px solid #; */
+    outline: 1px solid #00000000;
+    position: relative !important;
+    animation: buff .9s forwards;
 }
 .buffa::after{
-    transition: all .7s !important;
+    animation: buff 1s forwards;
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    content: 'Live';
+    font-size: 10px;
+    padding: 0px 5px;
+    top: -13px;
+    left: 3px;
+    color: white;
+    border-radius: 2px;
     background: #2f3e56 !important;
     outline: 1px solid #00000000;
-    outline-offset: -1px;
-    height: 46px !important;
-    width: 5px !important;
-    content: '' !important;
-    left: -228px !important;
-    top: -31px !important;
-    border-radius: 1px !important;
-    display: inline-block !important;
-    position: absolute !important;
+    position: relative !important;
 }
 
 #app-cover {
@@ -118,6 +134,7 @@ body {
 }
 
 #player-track {
+    display: none;
     position: absolute;
     top: 50px;
     right: 0px;
@@ -137,27 +154,55 @@ body {
     top: -18px;
     box-shadow: 0 0px 10px 0px #000000;
 }
+#idfm {
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    color: #c9e74e !important;
+    position: absolute;
+    width: 30px;
+    text-align: center;
+    background: #33333370;
+    box-shadow: 0 0 10px 0px #33333370;
+    /* border: #364758 1px solid; */
+    bottom: 5px;
+    right: 5px;
+    line-height: 1;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 0px;
+    border-radius: 2px;
+    z-index: 1000;
+    /* box-shadow: 0 0px 10px 0px #000000; */
+}
 #album-name {
-    font-family: 'Overpass';
-    color: #55ffcc;
-    font-size: 22px;
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    top: 15px;
+    left: 90px;
+    font-size: 23px;
+    position: absolute;
+    color: #53fbc9;
+    /* font-size: 22px; */
     /* font-weight: 700; */
     transition: 0.3s ease top;
     font-weight: bold;
-    top: -4px;
-    position: relative;
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    font-family: 'Overpass';
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    background: #00000070;
+    top: 15px;
+    left: 90px;
+    top: 45px;
+    position: absolute;
     color: #ff9de1;
-    position: relative;
+    position: absolute;
     font-size: 10px;
-    top: -6px;
     font-weight: 700;
-    line-height: 17px;
+    line-height: normal;
     border-radius: 3px;
-    padding: 3px 0px 0px 0px;
+    padding: 1px 6px;
     margin: 0px 0 13px 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -172,12 +217,40 @@ body {
 }
 
 #album-art, #album-arts {
+    animation: art .5s forwards;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+    transform: rotateZ(0);
+    transition: 0.2s linear all;
+    box-shadow: 0 0px 40px 0px #141c24;
+    border: 1px solid #111;
+    background: #0c1116;
+    border-radius: 5px;
+    /* transform: scale(0.7); */
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#album-art-bg, #album-arts-bg {
+    animation: buff 1s forwards;
+    filter: blur(60px) saturate(5) contrast(100%);
+    /* backdrop-filter: blur(30px); */
+    position: absolute;
+    /* border-radius: 10px; */
     /* animation: art .9s forwards; */
     position: absolute;
-    top: -47px;
-    width: 115px;
-    left: -15px;
-    height: 115px;
+    top: 10px;
+    left: -30px;
+    width: 70px;
+    height: 70px;
     margin-left: 40px;
     transform: rotateZ(0);
     transition: 0.2s linear all;
@@ -185,7 +258,7 @@ body {
     border: #2c3a50 solid 1px;
     background: #0c1116;
     border-radius: 5px;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
     overflow: hidden;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -195,7 +268,7 @@ body {
     user-select: none;
 }
 
-#album-art.active, #album-arts.active {
+/* #album-art.active, #album-arts.active {
     transform: scale(1.0);
     top: -69px;
     border-radius: 3px;
@@ -208,8 +281,8 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-}
-
+} */
+/* 
 #album-art img {
     display: block;
     position: absolute;
@@ -224,7 +297,7 @@ body {
 #album-art img.active {
     opacity: 1;
     z-index: 1100;
-}
+} */
 
 
 @-webkit-keyframes rotateAlbumArt {
@@ -325,15 +398,29 @@ body {
 .addbuttonn {
     /* animation: ar 0.9s forwards; */
     position: absolute;
-    top: -1px;
-    left: -168px;
-    z-index: -1000 !important;
+    top: 162px;
+    /* bottom: 9px; */
+    left: 9px;
+    /* z-index: -1000 !important; */
+}
+#box-play{
+    overflow: hidden;
+    height: 90px;
+    width: calc(100% - 17px);
+    position: absolute;
+    background: #111111;
+    /* border: 1px solid #fff; */
+    margin: 9px;
+    border: 1px solid #2c3a50;
+    border-radius: 3px;
 }
 
 #item1, #item2{
     transition: 0.3s ease all;
     /* animation: arr .9s forwards; */
-    font-family: 'Quicksand', "Comfortaa";
+    /* font-family: 'Quicksand', "Comfortaa"; */
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
     background: #2c3a50;
     color: #7f97bb;
     position: relative;
@@ -350,7 +437,8 @@ body {
     border-radius: 3px;
     margin-right: 9px;
     transition: 0.2s all;
-    padding: 6px 26px;
+    z-index: 10;
+    padding: 6px 37px;
     cursor: pointer;
 }
 #item1:hover, #item2:hover{
@@ -402,6 +490,8 @@ body {
 #player-controls {
     width: 260px;
     height: 100%;
+    position: relative;
+    top: 100px;
     margin: 0 0px 0 148px;
     padding-right: 5px;
     float: right;
@@ -409,8 +499,8 @@ body {
 }
 #player-content {
     position: relative;
-    height: 100px;
-    top: 50px;
+    height: 200px;
+    top: -30px;
     background: #141c24;
     border: #2c3a50 solid 1px;
     box-shadow: 0 0px 10px 0px #000000;
@@ -466,7 +556,8 @@ body {
 }
 
 .range-input .value {
-    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Manrope', sans-serif; */
+    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #c9e74e;
     text-align: center;
     font-weight: 600;
