@@ -22,7 +22,7 @@ fm_list=[
     "https://s0.radioheart.ru:8000/ketaruweb",
     "Онлайн - KetaruCorp",
 
-    "TNT Radio",
+    "TNT Music",
     "img/fm_tnt.png",
     "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
     "Онлайн",
