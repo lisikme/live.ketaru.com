@@ -76,10 +76,13 @@
                                         </div>
                                         <div id="player-content">
                                             <div id="box_apps">
-                                                <div id="boxs">Android</div>
-                                                <div id="boxs">Windows</div>
+                                                <div id="boxs"><a rel="noopener noreferrer" href="https://github.com/lisikme/live.ketaru.com/releases/download/Stable/radio.apk"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
+                                                    >Android</div></a></div>
+                                                <div id="boxs"><a rel="noopener noreferrer" href="https://github.com/lisikme/live.ketaru.com/releases/download/Stable/radio.exe"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
+                                                    >Windows</div></a></div>
                                                 <div id="boxs" style="grid-column: span 2; grid-row: span 2;">
-                                                <a onclick="NewTab()"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;">Приложение в Discord</div></a></div>
+                                                <a onclick="NewTab('https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8')"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
+                                                    >Приложение в Discord</div></a></div>
                                             </div>
                                             <div class="addbuttonn">
                                             <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
@@ -98,24 +101,24 @@
                                             </div>
                                             <div class="addbutton">
                                             </div>
-                                            <script>
-                                                function NewTab(){
-                                                    var options={
-                                                        height: 820, // устанавливает высоту окна в пикселях.
-                                                        width: 680, // устанавливает ширину окна в пикселях.
-                                                        toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
-                                                        scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
-                                                        status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
-                                                        resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
-                                                        left: (screen.width-680)/2, // левое положение при появлении окна.
-                                                        top: (screen.height-890)/2, // верхнее положение при появлении окна.
-                                                        center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
-                                                        createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
-                                                        location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
-                                                        menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
-                                                    };
+            <script>
+                function NewTab(url){
+                    var options={
+                        height: 820, // устанавливает высоту окна в пикселях.
+                        width: 680, // устанавливает ширину окна в пикселях.
+                        toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
+                        scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
+                        status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
+                        resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
+                        left: (screen.width-680)/2, // левое положение при появлении окна.
+                        top: (screen.height-890)/2, // верхнее положение при появлении окна.
+                        center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
+                        createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
+                        location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
+                        menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
+                    };
                 var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
-                var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
+                var target = arguments[0] 
                 window.open(target, 'popup', parameters)
             }
             </script>
