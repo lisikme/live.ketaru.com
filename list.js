@@ -258,7 +258,7 @@ fm_list=[
 
     "Ника FM",
     "img/fm_nika.png",
-    "https://radio.nikatv.ru/;.mp4",
+    "https://stream06.pcradio.ru/nika_fm-med",
     "Онлайн",
 
     "Восток FM",
