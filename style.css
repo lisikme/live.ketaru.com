@@ -254,7 +254,7 @@ body {
     height: 70px;
     margin-left: 40px;
     transform: rotateZ(0);
-    transition: 0.2s linear all;
+    transition: 0.3s linear all;
     border: #2c3a50 solid 1px;
     background: #0c1116;
     border-radius: 5px;
