@@ -1,8 +1,3 @@
-let url = new URL(window.location.href)
-let par = new URLSearchParams(url.search);
-const select = par.get("id");
-console.log(select)
-
 $(function() {
   var fontSize = 12;
   var imgScales = { small: 0.25, normal: 0.50, large: 1.00 }
@@ -68,7 +63,18 @@ $(function () {
     tTime=$("#track-length"),
     seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
-    var currIndex = (select * 4) - 5
+    
+    let url = new URL(window.location.href)
+    let par = new URLSearchParams(url.search);
+    const select = par.get("id");
+    console.log(select)
+    if (`${select}` === `null`) {
+      console.log(`${select}`.replace('null', '1'))
+      var currIndex = (1 * 4) - 5;
+    }
+    else {
+      var currIndex = (select * 4) - 5
+    }
 
   function playPause() {
     setTimeout(function () {

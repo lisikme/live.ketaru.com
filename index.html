@@ -68,7 +68,22 @@
         console.log(select)
 
         function Redirect(){
-            document.getElementById('q').src=`./page.html?id=${select}`;}
+            const queryString = window.location.search;
+            document.getElementById('q').src=`./page.html?id=${select}`;
+            if (`${select}` === `null`) {
+                const url = new URL(window.location);
+                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+            if (select > 50 || select < 1) {
+                if (select > 50){var sell = 50}
+                if (select < 1){var sell = 1}
+                document.getElementById('q').src=`./page.html?id=${sell}`;
+                const url = new URL(window.location);
+                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+        }
     </script>
     <iframe id="q"
     src="./page.html"
