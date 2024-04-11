@@ -60,7 +60,16 @@
 <meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
 </head>
 
-<body>
+<body onLoad="Redirect()">
+    <script>
+        let url = new URL(window.location.href)
+        let par = new URLSearchParams(url.search);
+        const select = par.get("id");
+        console.log(select)
+
+        function Redirect(){
+            document.getElementById('q').src=`./page.html?id=${select}`;}
+    </script>
     <iframe id="q"
     src="./page.html"
     width="100%"

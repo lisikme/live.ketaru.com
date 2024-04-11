@@ -1,3 +1,8 @@
+let url = new URL(window.location.href)
+let par = new URLSearchParams(url.search);
+const select = par.get("id");
+console.log(select)
+
 $(function() {
   var fontSize = 12;
   var imgScales = { small: 0.25, normal: 0.50, large: 1.00 }
@@ -63,6 +68,7 @@ $(function () {
     tTime=$("#track-length"),
     seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
     playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
+    var currIndex = (select * 4) - 5
 
   function playPause() {
     setTimeout(function () {
@@ -147,7 +153,6 @@ $(function () {
       }
       seekBar.width(0);
       trackTime.removeClass("active");
-      
       currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
       currImage = fm_list[currIndex+Number("1")]; // Radio Image
       audio.src = fm_list[currIndex+Number("2")]; // Radio Server
@@ -173,6 +178,7 @@ $(function () {
         $(this).html(currTrack).show(200);
       });
       // albumName.text(currAlbum);
+      
       trackName.text(currTrack);
       idfm.text(currID);
       // document.querySelector('img.active').src = './'+currImage;
