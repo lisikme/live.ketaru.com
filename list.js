@@ -137,7 +137,7 @@ fm_list=[
     "https://retro.hostingradio.ru:8043/retro256.mp3",
     "Онлайн",
 
-    "Plus Vibe",
+    "Radio House",
     "img/pv.png",
     "https://myradio24.org/69034",
     "Онлайн",
