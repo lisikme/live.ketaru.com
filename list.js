@@ -147,7 +147,7 @@ fm_list=[
 
 
     "Radio Record",
- Онлайнg/fm_rc.png",
+    "img/fm_rc.png",
     "https://radiorecord.hostingradio.ru/rr_main96.aacp",
     "Онлайн",
 
