@@ -137,10 +137,10 @@ fm_list=[
     "https://retro.hostingradio.ru:8043/retro256.mp3",
     "Онлайн",
 
-    "Детское радио",
-    "img/fm_kids.png",
-    "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
-    "Онлайн Kids",
+    "Plus Vibe",
+    "img/pv.png",
+    "https://myradio24.org/69034",
+    "Онлайн",
 
 
 
@@ -246,14 +246,14 @@ fm_list=[
     "https://live1.zharafm.ru/internet",
     "Онлайн",
 
+    "Детское радио",
+    "img/fm_kids.png",
+    "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
+    "Онлайн Kids",
+    
     "Радио MAXIMUM",
     "img/fm_max.png",
     "https://maximum.hostingradio.ru/maximum96.aacp",
-    "Онлайн",
-
-    "Радио MonteCarlo",
-    "img/fm_mc.png",
-    "https://montecarlo.hostingradio.ru/montecarlo96.aacp",
     "Онлайн",
 
     "Ника FM",
