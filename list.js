@@ -20,7 +20,7 @@ fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
     "https://s0.radioheart.ru:8000/ketaruweb",
-    "Онлайн - KetaruCorp",
+    "Онлайн - от создателей KetaruCorp",
 
     "TNT Music",
     "img/fm_tnt.png",
@@ -140,14 +140,14 @@ fm_list=[
     "Radio House",
     "img/pv.png",
     "https://myradio24.org/69034",
-    "Онлайн",
+    "Онлайн - Партнёр",
 
 
 
 
 
     "Radio Record",
-    "img/fm_rc.png",
+ Онлайнg/fm_rc.png",
     "https://radiorecord.hostingradio.ru/rr_main96.aacp",
     "Онлайн",
 
