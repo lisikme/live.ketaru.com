@@ -20,26 +20,26 @@ fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
     "https://s0.radioheart.ru:8000/ketaruweb",
-    "Онлайн - KetaruCorp",
+    "Онлайн - Создано KetaruCorp",
     "1232726173470163067",
 
     "TNT Music",
     "img/fm_tnt.png",
     "https://tntradio.hostingradio.ru:8027/tntradio128.mp3",
     "Онлайн",
-    "Онлайн",
+    "1232727697101160531",
 
     "Remix FM",
     "img/fm_remix.png",
     "https://rmx.amgradio.ru/RemixFM",
     "Онлайн",
-    "Онлайн",
+    "1232726146056192122",
 
     "DFM",
     "img/fm_dfm.png",
     "https://dfm.hostingradio.ru/dfm96.aacp?st=be86f20b-2211-56ac-ac97-648f95b28025&gts=1710570240",
     "Онлайн",
-    "Онлайн",
+    "1232726146056192122",
 
     "Like FM",
     "img/fm_like.png",
@@ -164,7 +164,7 @@ fm_list=[
     "Radio House",
     "img/pv.png",
     "https://myradio24.org/69034",
-    "Онлайн",
+    "Онлайн - Парнер проекта",
     "Онлайн",
 
 
