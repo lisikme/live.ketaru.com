@@ -164,7 +164,7 @@ fm_list=[
     "Radio House",
     "img/pv.png",
     "https://myradio24.org/69034",
-    "Онлайн - Парнер проекта",
+    "Онлайн - Парнёр проекта",
     "https://cdn.discordapp.com/emojis/1232725481472917574.webp?size=96&quality=lossless",
 
 
