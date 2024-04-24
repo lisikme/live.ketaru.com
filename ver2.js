@@ -31,14 +31,14 @@ $(function () {
   // img.textContent = `${fm_list[5]}`;
   // document.body.appendChild(img);
 
-  var result = ''; var i = -3; do {i += 4; {
+  var result = ''; var i = -3; do {i += 5; {
     var img = document.createElement("img");
     img.src = `${fm_list[i]}`;
     img.style = `display: none`;
     document.body.appendChild(img);
     document.head.appendChild(img);
   }
-  } while (i < (fm_list.length-4));
+  } while (i < (fm_list.length-5));
   
   // document.write(result);
 
@@ -70,10 +70,10 @@ $(function () {
     console.log(select)
     if (`${select}` === `null`) {
       console.log(`${select}`.replace('null', '1'))
-      var currIndex = (1 * 4) - 5;
+      var currIndex = (1 * 5)-6;
     }
     else {
-      var currIndex = (select * 4) - 5
+      var currIndex = (select * 5)-6
     }
 
   function playPause() {
@@ -163,7 +163,7 @@ $(function () {
       currImage = fm_list[currIndex+Number("1")]; // Radio Image
       audio.src = fm_list[currIndex+Number("2")]; // Radio Server
       currTrack = fm_list[currIndex+Number("3")]; // Radio Status
-      currID = (currIndex/4)+1;                   // Radio ID
+      currID = (currIndex/5)+1;                   // Radio ID
       
       
       nTime = 0;
@@ -209,13 +209,13 @@ $(function () {
     $(audio).on("timeupdate", updateCurrTime);
     playPreviousTrackButton.on("click", function () {
       let i = 0;
-      for (; i < 4; i++) {
+      for (; i < 5; i++) {
         selectTrack(-1);
       }
     });
     playNextTrackButton.on("click", function () {
       let i = 0;
-      let g = 4;
+      let g = 5;
       if (currIndex <= fm_list.length-(g*2)){
         for (; i < g; i++) {
           selectTrack(1);
