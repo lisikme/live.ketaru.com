@@ -31,7 +31,7 @@ $(function () {
   // img.textContent = `${fm_list[5]}`;
   // document.body.appendChild(img);
 
-  var result = ''; var i = -3; do {i += 5; {
+  var result = ''; var i = -4; do {i += 5; {
     var img = document.createElement("img");
     img.src = `${fm_list[i]}`;
     img.style = `display: none`;
