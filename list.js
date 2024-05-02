@@ -161,11 +161,11 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232754777335529492.webp?size=96&quality=lossless",
 
-    "Radio House",
-    "img/pv.png",
+    "Radio PlusVibe",
+    "img/fm_pv.png",
     "https://myradio24.org/69034",
     "Онлайн - Парнёр проекта",
-    "https://cdn.discordapp.com/emojis/1232725481472917574.webp?size=96&quality=lossless",
+    "https://cdn.discordapp.com/emojis/1235656097075826780.webp?size=96&quality=lossless",
 
 
 
