@@ -238,6 +238,69 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760380359573584.webp?size=96&quality=lossless",
 
+
+
+
+    "Record На Хайпе",
+    "img/fm_rcnh.png",
+    "https://radiorecord.hostingradio.ru/hype96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696068443672638.webp?size=96&quality=lossless",
+
+    "Record Nu Dance",
+    "img/fm_rcnd.png",
+    "https://radiorecord.hostingradio.ru/nudance96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696066962952202.webp?size=96&quality=lossless",
+
+    "Record House Hits",
+    "img/fm_rchh.png",
+    "https://radiorecord.hostingradio.ru/househits96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696077046054953.webp?size=96&quality=lossless",
+
+    "Record Electro",
+    "img/fm_rce.png",
+    "https://radiorecord.hostingradio.ru/elect96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696078853931049.webp?size=96&quality=lossless",
+
+    "Record Progressive",
+    "img/fm_rcp.png",
+    "https://radiorecord.hostingradio.ru/progr96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696074869477396.webp?size=96&quality=lossless",
+
+    "Record Gold",
+    "img/fm_rcg.png",
+    "https://radiorecord.hostingradio.ru/gold96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696070884757505.webp?size=96&quality=lossless",
+
+    "Record 10's Dance",
+    "img/fm_rcd.png",
+    "https://radiorecord.hostingradio.ru/201096.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696064551358516.webp?size=96&quality=lossless",
+
+    "Record EDM",
+    "img/fm_rcedm.png",
+    "https://radiorecord.hostingradio.ru/club96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1238696072340308049.webp?size=96&quality=lossless",
+
+
+
+
+
+
+
+
+
+
+
+
+
     "Дорожное радио",
     "img/fm_dor.png",
     "https://dorognoe.hostingradio.ru/dorognoe",
@@ -337,35 +400,23 @@ fm_list=[
     "img/fm_ci.png",
     "https://online.radioc.ru/radioc?v=1715386418941",
     "Онлайн",
-    "none",
+    "https://cdn.discordapp.com/emojis/1238702259148296212.webp?size=96&quality=lossless",
 
     "Радио СИ Gold",
     "img/fm_cig.png",
     "https://online.radioc.ru/radioc_gold?v=1715386436690",
     "Онлайн",
-    "none",
+    "https://cdn.discordapp.com/emojis/1238702235651936376.webp?size=96&quality=lossless",
 
     "Красная Армия",
     "img/fm_ka.png",
     "https://live.rzs.ru/ka.128.mp3?st=0adaed21-acf5-5440-a015-edaa08483823&gts=1715387188",
     "Онлайн",
-    "none",
+    "https://cdn.discordapp.com/emojis/1238702248947617833.webp?size=96&quality=lossless",
 
     "Маяк",
     "img/fm_m.png",
     "https://icecast-vgtrk.cdnvideo.ru/mayakfm_mp3_128kbps?st=51504ea3-fb3c-5d54-92d7-f5955c9a53ed&gts=1715387325",
     "Онлайн",
-    "none",
-    
-    "RFM",
-    "img/fm_rfm.png",
-    "https://radio-holding.ru/rfm?st=4eedbcd0-9231-5c4d-aeee-c825ea5400dd&gts=1715387424",
-    "Онлайн",
-    "none",
-    
-    "RFM",
-    "img/fm_rfm.png",
-    "https://radio-holding.ru/rfm?st=4eedbcd0-9231-5c4d-aeee-c825ea5400dd&gts=1715387424",
-    "Онлайн",
-    "none",
+    "https://cdn.discordapp.com/emojis/1238702247349850212.webp?size=96&quality=lossless",
 ]
