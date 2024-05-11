@@ -16,6 +16,12 @@
 // "https://s0.radioheart.ru:8000/muzradio", 
 // "Онлайн",
 
+// "Like FM",
+// "img/fm_like.png",
+// "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
+// "Онлайн",
+// "https://cdn.discordapp.com/emojis/1232725721714000033.webp?size=96&quality=lossless",
+
 fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
@@ -43,7 +49,7 @@ fm_list=[
     
     "Like FM",
     "img/fm_like.png",
-    "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
+    "https://ic7.101.ru:8000/v12_1",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725721714000033.webp?size=96&quality=lossless",
     
@@ -166,6 +172,7 @@ fm_list=[
     "https://myradio24.org/69034",
     "Онлайн - Парнёр проекта",
     "https://cdn.discordapp.com/emojis/1235656097075826780.webp?size=96&quality=lossless",
+
 
 
 
@@ -314,10 +321,51 @@ fm_list=[
     "https://microit.n340.ru:8443/VgMv0WV17ZVx1uuo_18_vostok_64_reg_1?st=ad5ae106-2a82-5d7d-a3f5-eca201479080&gts=1707602953",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759787939303505.webp?size=96&quality=lossless",
-    
+
     "Маруся ФМ",
     "img/fm_marusya.png",
     "https://radio-holding.ru/marusya_default?st=bb243c1f-e92b-5266-a2a8-c42f7a4773d1&gts=1710671267",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759775708708895.webp?size=96&quality=lossless",
+
+
+
+
+
+
+    "Радио СИ",
+    "img/fm_ci.png",
+    "https://online.radioc.ru/radioc?v=1715386418941",
+    "Онлайн",
+    "none",
+
+    "Радио СИ Gold",
+    "img/fm_cig.png",
+    "https://online.radioc.ru/radioc_gold?v=1715386436690",
+    "Онлайн",
+    "none",
+
+    "Красная Армия",
+    "img/fm_ka.png",
+    "https://live.rzs.ru/ka.128.mp3?st=0adaed21-acf5-5440-a015-edaa08483823&gts=1715387188",
+    "Онлайн",
+    "none",
+
+    "Маяк",
+    "img/fm_m.png",
+    "https://icecast-vgtrk.cdnvideo.ru/mayakfm_mp3_128kbps?st=51504ea3-fb3c-5d54-92d7-f5955c9a53ed&gts=1715387325",
+    "Онлайн",
+    "none",
+    
+    "RFM",
+    "img/fm_rfm.png",
+    "https://radio-holding.ru/rfm?st=4eedbcd0-9231-5c4d-aeee-c825ea5400dd&gts=1715387424",
+    "Онлайн",
+    "none",
+    
+    "RFM",
+    "img/fm_rfm.png",
+    "https://radio-holding.ru/rfm?st=4eedbcd0-9231-5c4d-aeee-c825ea5400dd&gts=1715387424",
+    "Онлайн",
+    "none",
 ]
