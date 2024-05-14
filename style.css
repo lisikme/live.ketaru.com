@@ -101,6 +101,7 @@
     right: 8px;
 }
 .btn {
+    font-size: 14px !important;
     bottom: 0px;
     background-color: #1a2333;
     color: #7d97bb;

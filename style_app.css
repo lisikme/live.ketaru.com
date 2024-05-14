@@ -101,6 +101,7 @@
     right: 8px;
 }
 .btn {
+    font-size: 14px !important;
     bottom: 0px;
     background-color: #1a2333;
     color: #7d97bb;
@@ -112,6 +113,7 @@
     /* padding: 5px 10px; */
     padding-bottom: 3px;
     line-height: 20px;
+    font-size: 1px !important;
     cursor: pointer;
     border-radius: 0px 0px 2px 2px;
     border: none;
