@@ -87,7 +87,7 @@
                                                     <div id="album-art-bg" style="background-image: url(load.gif); background-size: cover;"></div>
                                                     <div id="album-art" style="background-image: url(load.gif); background-size: cover;"></div>
                                                     <div id="album-name" class="buffa"></div>
-                                                    <span id="idfm" class="number">-1</span>
+                                                    <span id="idfm" class="number">-</span>
                                             <div id="track-name"></div>
                                             <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
                                                 
@@ -127,7 +127,15 @@
     
     </style>
 
-
+<div class="container">
+    <button class="btn" id="btn">
+        Выбрать радиостанцию из списка
+        <i class="bx bx-chevron-down" id="arrow"></i>
+    </button>
+    
+    <div class="dropdown" id="dropdown">
+    </div>
+    </div>
 <div id="player-controls">
     <!-- <iframe src="http://online-3.gkvr.ru:8000/status.xsl" frameborder="0"></iframe> -->
     
@@ -159,4 +167,4 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src="./config.js"></script>
 <script src="./list.js"></script>
-<script src="./ver2.js"></script>
+<script src="./ver3.js"></script>

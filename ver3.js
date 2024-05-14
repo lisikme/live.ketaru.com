@@ -23,8 +23,6 @@ document.documentElement.addEventListener("click", function () {
 
 
 
-
-
 $(function() {
   var fontSize = 12;
   var imgScales = { small: 0.25, normal: 0.50, large: 1.00 }
@@ -52,12 +50,37 @@ $(function() {
   });
 });
 
+
+function doSomething(x) {
+  // Действия, которые выполняются при клике
+  // alert('Кнопка нажата!');
+  var currIndex = (x * 5)-6
+  var fff = document.querySelector('.number').innerHTML
+  console.log(`Нажмите ${x} ${fff}`)
+  if (x < fff){
+    // document.querySelector('#play-previous').click()
+    var i = 0
+    var rt = (fff-x)
+    for (i=0; i<rt; i++) {
+      document.querySelector('#play-previous').click()
+    }
+  }
+  if (x > fff){
+    var i = 0
+    var rt = (x-fff)
+    console.log(rt)
+    for (i=0; i<rt; i++) {
+      document.querySelector('#play-next').click()
+    }
+  }
+
+}
 $(function () {
   // var img = document.createElement("img");
   // img.src = `${fm_list[5]}`;
   // img.textContent = `${fm_list[5]}`;
   // document.body.appendChild(img);
-
+  
   var result = ''; var i = -4; do {i += 5; {
     // var img = document.createElement("img");
     // img.src = `${fm_list[i]}`;
@@ -66,17 +89,18 @@ $(function () {
     // document.head.appendChild(img);
     
     var sell = document.createElement('a');
+    sell.setAttribute("onclick",`event.preventDefault(); doSomething(${((i-1)/5)+1})`);
     sell.innerHTML = (`<img id=immm src="./${fm_list[i]}"><span id=names>${fm_list[i-1]}</span><span id=stat>${fm_list[i+2]}</span> <span id=nums>${((i-1)/5)+1}</span>`)
     const box = document.getElementById('dropdown');
     box.appendChild(sell);
     // document.head.appendChild(sell);
-
+    
   }
-  } while (i < (fm_list.length-5));
-  
-  // document.write(result);
+} while (i < (fm_list.length-5));
 
-  var playerTrack=$("#player-track"),
+// document.write(result);
+
+var playerTrack=$("#player-track"),
     bgback=$("#bg-artwork"),
     bglogo=$("#album-art"),
     bglogobg=$("#album-art-bg"),
@@ -109,47 +133,47 @@ $(function () {
     else {
       var currIndex = (select * 5)-6
     }
-
-  function playPause() {
-    setTimeout(function () {
-      audio.volume = document.querySelector('.range-input .value div').textContent/100
-      if (audio.paused) {
-        playerTrack.addClass("active");
-        albumArt.addClass("active");
-        idfm.addClass("active");
-        checkBuffering();
-        i.attr("class", "fas fa-pause");
-        audio.play();
-        // audio.volume=0.50;
-      } else {
-        playerTrack.removeClass("active");
-        albumArt.removeClass("active");
-        idfm.removeClass("active");
-        clearInterval(buffInterval);
-        albumArt.removeClass("buffering");
-        i.attr("class", "fas fa-play");
-        audio.pause();
-      }
-    }, 300);
-  }
-  function showHover(event) {
-    seekBarPos = sArea.offset();
-    seekT = event.clientX - seekBarPos.left;
-    seekLoc = audio.duration * (seekT / sArea.outerWidth());
-    sHover.width(seekT);
-    cM = seekLoc / 60;
-    ctMinutes = Math.floor(cM);
-    ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
-    if (ctMinutes < 0 || ctSeconds < 0) return;
-    if (ctMinutes < 0 || ctSeconds < 0) return;
-    if (ctMinutes < 10) ctMinutes = "0" + ctMinutes;
-    if (ctSeconds < 10) ctSeconds = "0" + ctSeconds;
-    if (isNaN(ctMinutes) || isNaN(ctSeconds)) insTime.text("--:--");
-    else insTime.text(ctMinutes + ":" + ctSeconds);
-    insTime.css({ left: seekT, "margin-left": "-21px" }).fadeIn(0);
-  }
-  function hideHover() {
-    sHover.width(0);
+    
+    function playPause() {
+      setTimeout(function () {
+        audio.volume = document.querySelector('.range-input .value div').textContent/100
+        if (audio.paused) {
+          playerTrack.addClass("active");
+          albumArt.addClass("active");
+          idfm.addClass("active");
+          checkBuffering();
+          i.attr("class", "fas fa-pause");
+          audio.play();
+          // audio.volume=0.50;
+        } else {
+          playerTrack.removeClass("active");
+          albumArt.removeClass("active");
+          idfm.removeClass("active");
+          clearInterval(buffInterval);
+          albumArt.removeClass("buffering");
+          i.attr("class", "fas fa-play");
+          audio.pause();
+        }
+      }, 300);
+    }
+    function showHover(event) {
+      seekBarPos = sArea.offset();
+      seekT = event.clientX - seekBarPos.left;
+      seekLoc = audio.duration * (seekT / sArea.outerWidth());
+      sHover.width(seekT);
+      cM = seekLoc / 60;
+      ctMinutes = Math.floor(cM);
+      ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
+      if (ctMinutes < 0 || ctSeconds < 0) return;
+      if (ctMinutes < 0 || ctSeconds < 0) return;
+      if (ctMinutes < 10) ctMinutes = "0" + ctMinutes;
+      if (ctSeconds < 10) ctSeconds = "0" + ctSeconds;
+      if (isNaN(ctMinutes) || isNaN(ctSeconds)) insTime.text("--:--");
+      else insTime.text(ctMinutes + ":" + ctSeconds);
+      insTime.css({ left: seekT, "margin-left": "-21px" }).fadeIn(0);
+    }
+    function hideHover() {
+      sHover.width(0);
   }
   function playFromClickedPos() {
     audio.currentTime = seekLoc;
@@ -233,7 +257,7 @@ $(function () {
   function initPlayer() {
     audio = new Audio();
     selectTrack(0);
-    audio.loop = false;
+    audio.loop = true;
     playPauseButton.on("click", playPause);
     sArea.mousemove(function (event) {
       showHover(event);
@@ -254,10 +278,10 @@ $(function () {
         for (; i < g; i++) {
           selectTrack(1);
         }};
-    });
-  }
-  initPlayer();
-});
+      });
+    }
+    initPlayer();
+  });
 // ---------------------------------------------------------------------------------------
 document.querySelector('.range-input .value div').innerHTML = default_vol
 document.querySelector(".range-input input").value = default_vol;
@@ -282,15 +306,16 @@ let end = parseFloat(rangeInput.max);
 let step = parseFloat(rangeInput.step);
 let value = parseFloat(rangeInput.value);
 rangeInput.addEventListener("input",function(){
-    let val = parseFloat(rangeInput.value);
-    audio.volume = val/100
-    
+  let val = parseFloat(rangeInput.value);
+  audio.volume = val/100
+  
     document.querySelector('.range-input .value div').innerHTML = val
     
-});
-
-sliderEl.addEventListener("input", (event) => {
-  let tempSliderValue = event.target.value; 
-  let progress = (tempSliderValue / sliderEl.max) * 100;
-  sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
-})
+  });
+  
+  sliderEl.addEventListener("input", (event) => {
+    let tempSliderValue = event.target.value; 
+    let progress = (tempSliderValue / sliderEl.max) * 100;
+    sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
+  })
+  
