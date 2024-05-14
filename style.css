@@ -101,7 +101,6 @@
     right: 8px;
 }
 .btn {
-    font-size: 14px !important;
     bottom: 0px;
     background-color: #1a2333;
     color: #7d97bb;
@@ -122,6 +121,7 @@
     left: 0;
     transition: all 0.1s;
     z-index: 1000;
+    font-size: 14px !important;
 }
 .btn:hover{
     background-color: #354661;
