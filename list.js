@@ -309,7 +309,7 @@ fm_list=[
 
     "Радио дача",
     "img/fm_rd.png",
-    "https://microit2.n340.ru:8443/VgMv0WV17ZVx1uuo_14_dacha_64",
+    "https://vdfm.ru:8000/dacha?type=.aac",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760284758671360.webp?size=96&quality=lossless",
 
