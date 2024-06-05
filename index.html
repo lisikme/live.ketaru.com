@@ -24,6 +24,12 @@
 <link rel="stylesheet" href="css/Root.css">                           <!-- Конфигурация -->
 <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
 <style>
+    @font-face {
+        font-family: onest;
+        font-style: normal;
+        font-weight: 500;
+        src: local('Onest'), url(https://fonts.cdnfonts.com/s/107279/Onest[wght].woff) format('woff')
+    }
     :root {
     --NamePage: "Radio";
     --VerPage: "KetaRu Web";
@@ -36,6 +42,36 @@
     .em-logo{
         background-image: url("https://ketaru.com/icon.png")
     }
+    #rel{
+        color: #fff;
+        background: #c22b4c;
+        padding: 2px 6px;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 900;
+        top: -8px;
+        font-family: 'onest';
+        position: absolute;
+        margin-left: 4px;
+    }
+    #nam{
+        font-family: 'onest';
+        position: absolute;
+        display:inline-block;
+        left: 0px;
+        font-size: 14px;
+        
+        width: 100%;
+        top: 16px;
+        color: #ffef5b;
+    }
+    #page-name{
+        font-size: 20px !important;
+        top: 5px;
+        position: absolute !important;
+        top: 18px !important;
+        font-family: 'onest' !important;
+    }
 </style>
 <!-- JavasCript -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
@@ -43,7 +79,7 @@
 <body id="site-bg">
     <link rel="stylesheet" href="./head.css">
     <header id="site-header">
-        <type id="page-name">Radio KetaRu</type>
+        <type id="page-name">Radio KetaRu <span id="nam">Web приложение</span> <span id="rel">BETA</span></type>
         <div id="site-header-box">
             <a href="https://ketaru.com"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
                 <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
@@ -59,6 +95,8 @@
 <meta name="description" content="Слушать радиостанции онлайн">
 <meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
 </head>
+
+<button id="ff" onclick="Ret('q')">kk</button>
 
 <body onLoad="Redirect()">
     <script>
@@ -84,6 +122,35 @@
                 window.history.pushState({}, '', url);
             }
         }
+        // function Red(){
+        //     const queryString = window.location.search;
+        //     // document.getElementById('q').src=`./page.html?id=${select}`;
+        //     if (`${select}` === `null`) {
+        //         const url = new URL(window.location);
+        //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+        //         window.history.pushState({}, '', url);
+        //     }
+        //     if (select > 50 || select < 1) {
+        //         if (select > 50){var sell = 50}
+        //         if (select < 1){var sell = 1}
+        //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+        //         const url = new URL(window.location);
+        //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+        //         window.history.pushState({}, '', url);
+        //     }
+        // }
+        
+        
+        function Ret(frameID){
+            let frameObj = document.getElementById(frameID);
+            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+            console.log(frameContent);
+            
+        }
+        // setInterval(function() {
+        //     Ret('q')
+        // }, 0 * 1000);
+        
     </script>
     <iframe id="q"
     src="./page.html"

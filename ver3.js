@@ -120,7 +120,10 @@ var playerTrack=$("#player-track"),
     tProgress=$("#current-time"),
     tTime=$("#track-length"),
     seekT,seekLoc,seekBarPos,cM,ctMinutes,ctSeconds,curMinutes,curSeconds,durMinutes,durSeconds,playProgress,bTime,nTime=0,buffInterval=null,tFlag=false,
-    playPreviousTrackButton=$("#play-previous"),playNextTrackButton=$("#play-next"),currIndex=-1;
+    
+    playPreviousTrackButton=$("#play-previous")
+    playNextTrackButton=$("#play-next")
+    currIndex=-1;
     
     let url = new URL(window.location.href)
     let par = new URLSearchParams(url.search);

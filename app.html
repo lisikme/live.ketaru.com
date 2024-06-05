@@ -15,9 +15,15 @@
 <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
 <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
 <style>
+    @font-face {
+        font-family: onest;
+        font-style: normal;
+        font-weight: 500;
+        src: local('Onest'), url(https://fonts.cdnfonts.com/s/107279/Onest[wght].woff) format('woff')
+    }
     :root {
-    --NamePage: "Radio"!important;
-    --VerPage: "KetaRu App"!important;
+    --NamePage: "Radio";
+    --VerPage: "KetaRu Web";
     }
     .em{
         font-size: 16.6px;
@@ -25,7 +31,37 @@
         bottom: 2.4px;
     }
     .em-logo{
-        background-image: url("https://i.imgur.com/K98MRfw.png")
+        background-image: url("https://ketaru.com/icon.png")
+    }
+    #rel{
+        color: #fff;
+        background: #c22b4c;
+        padding: 2px 6px;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 900;
+        top: -8px;
+        font-family: 'onest';
+        position: absolute;
+        margin-left: 4px;
+    }
+    #nam{
+        font-family: 'onest';
+        position: absolute;
+        display:inline-block;
+        left: 0px;
+        font-size: 14px;
+        
+        width: 100%;
+        top: 16px;
+        color: #ffef5b;
+    }
+    #page-name{
+        font-size: 20px !important;
+        top: 5px;
+        position: absolute !important;
+        top: 18px !important;
+        font-family: 'onest' !important;
     }
 </style>
 <!-- JavasCript -->
@@ -34,7 +70,7 @@
 <body id="site-bg">
     <link rel="stylesheet" href="./head.css">
     <header id="site-header">
-        <type id="page-name">Radio KetaRu</type>
+        <type id="page-name">Radio KetaRu <span id="nam">Приложение</span> <span id="rel">BETA</span></type>
         <div id="site-header-box">
             <a onclick="window.open('https://ketaru.com', '_blank');"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
                 <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
@@ -127,7 +163,9 @@
         window.onload = function() {
             document.getElementById('rel1').addEventListener('click', function() {
                 var ifr = document.getElementsByName('rel')[0];
-                ifr.src = ifr.src;
+                let frameObj = document.getElementById('q');
+                let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+                ifr.src = `page_app.html?id=${frameContent}`;
         });}
     </script>
     <iframe id="q" name="rel" src="./page_app.html">
