@@ -6,22 +6,6 @@
 
 // Список радиостанций
 
-// "FlyFox",
-// "img/flyfox.png",
-// "https://s0.radioheart.ru:8000/ketaruweb",
-// "Онлайн Beta",
-
-// "МУЗ радио",
-// "img/muz.png",
-// "https://s0.radioheart.ru:8000/muzradio", 
-// "Онлайн",
-
-// "Like FM",
-// "img/fm_like.png",
-// "https://pub0301.101.ru:8443/stream/air/mp3/256/219",
-// "Онлайн",
-// "https://cdn.discordapp.com/emojis/1232725721714000033.webp?size=96&quality=lossless",
-
 fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
@@ -175,9 +159,6 @@ fm_list=[
 
 
 
-
-
-
     "Radio Record",
     "img/fm_rc.png",
     "https://radiorecord.hostingradio.ru/rr_main96.aacp",
@@ -238,9 +219,6 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760380359573584.webp?size=96&quality=lossless",
 
-
-
-
     "Record На Хайпе",
     "img/fm_rcnh.png",
     "https://radiorecord.hostingradio.ru/hype96.aacp",
@@ -289,18 +267,6 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238696072340308049.webp?size=96&quality=lossless",
 
-
-
-
-
-
-
-
-
-
-
-
-
     "Дорожное радио",
     "img/fm_dor.png",
     "https://dorognoe.hostingradio.ru/dorognoe",
@@ -327,7 +293,7 @@ fm_list=[
 
     "Радио Юнитон",
     "img/fm_ur.png",
-    "https://online.uniton.ru/uniton",
+    "https://online.uniton.ru/uniton?st=ae58f77c-18fc-5139-b9a8-91c4a6f28d6a&gts=1717701443",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760192001642616.webp?size=96&quality=lossless",
 
@@ -342,6 +308,8 @@ fm_list=[
     "https://pub0101.101.ru/stream/air/aac/64/100?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIwN2FjZmRlNTUxMzA5MGM4Yzk4MGFmNTI4YjQ4YmJmYyIsIklQIjoiMjMuMTA1LjI1My4xOTciLCJVQSI6Im5vZGUtZmV0Y2gvMS4wICgraHR0cHM6Ly9naXRodWIuY29tL2JpdGlubi9ub2RlLWZldGNoKSIsIlJlZiI6IiIsInVpZF9jaGFubmVsIjoiMTAwIiwidHlwZV9jaGFubmVsIjoiY2hhbm5lbCIsInR5cGVEZXZpY2UiOiJQQyIsIkJyb3dzZXIiOiIiLCJCcm93c2VyVmVyc2lvbiI6IiIsIlN5c3RlbSI6IlVua25vd24iLCJleHAiOjE2OTk1NzA5NDR9.U0FYDnZLuaHJk7wAudUqMKtRLj5o-ZB5tJ92cG0GCAI",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760167846776892.webp?size=96&quality=lossless",
+
+
 
     "Радио Шоколад",
     "img/fm_cr.png",
@@ -366,7 +334,7 @@ fm_list=[
     "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
     "Онлайн Kids",
     "https://cdn.discordapp.com/emojis/1232759810148012184.webp?size=96&quality=lossless",
-    
+
     "Радио MAXIMUM",
     "img/fm_max.png",
     "https://maximum.hostingradio.ru/maximum96.aacp",
@@ -391,11 +359,6 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759775708708895.webp?size=96&quality=lossless",
 
-
-
-
-
-
     "Радио СИ",
     "img/fm_ci.png",
     "https://online.radioc.ru/radioc?v=1715386418941",
@@ -419,4 +382,10 @@ fm_list=[
     "https://icecast-vgtrk.cdnvideo.ru/mayakfm_mp3_128kbps?st=51504ea3-fb3c-5d54-92d7-f5955c9a53ed&gts=1715387325",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238702247349850212.webp?size=96&quality=lossless",
+
+    "Радио MonteCarlo",
+    "img/fm_mc.png",
+    "https://montecarlo.hostingradio.ru/montecarlo96.aacp",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1248360521841770608.webp?size=96&quality=lossless",
 ]
