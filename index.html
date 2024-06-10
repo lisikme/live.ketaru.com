@@ -1,0 +1,205 @@
+<!-- Форматирование -->
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <head>
+        <meta charset="utf-8">
+        <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+<!-- Интеграция Embed -->
+<title>Radio KetaRu Web</title>
+<script src="https://raw.githubusercontent.com/lisikme/live.ketaru.com/web/serv.js"></script>
+<meta property="og:title" content="Radio KetaRu Web">
+<meta property="og:site_name" content="KetaRu">
+<meta property="og:url" content="https://live.ketaru.com">
+<meta property="og:description" content="Наше онлайн версия радио бота">
+<link rel="shortcut icon" href="./icon.png">
+<meta property="og:image" content="https://live.ketaru.com/9a0117600caea4fdbffe7384807802af.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<meta name="theme-color" content="#e43f79">
+<!-- beta -->
+<link rel="stylesheet" href="https://ketaru.com/css/Page.css">        <!-- Дизайн фона сайта --> 
+<link rel="stylesheet" href="https://ketaru.com/css/Header.css">      <!-- Дизайн шапки сайта --> 
+<link rel="stylesheet" href="css/Root.css">                           <!-- Конфигурация -->
+<link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+<style>
+    @font-face {
+        font-family: onest;
+        font-style: normal;
+        font-weight: 500;
+        src: local('Onest'), url(https://fonts.cdnfonts.com/s/107279/Onest[wght].woff) format('woff')
+    }
+    :root {
+    --NamePage: "Radio";
+    --VerPage: "KetaRu Web";
+    }
+    .em{
+        font-size: 16.6px;
+        position: relative;
+        bottom: 2.4px;
+    }
+    .em-logo{
+        background-image: url("https://ketaru.com/icon.png")
+    }
+    #rel{
+        color: #fff;
+        background: #c22b4c;
+        padding: 2px 6px;
+        border-radius: 50px;
+        font-size: 10px;
+        font-weight: 900;
+        top: -8px;
+        font-family: 'onest';
+        position: absolute;
+        margin-left: 4px;
+    }
+    #nam{
+        font-family: 'onest';
+        position: absolute;
+        display:inline-block;
+        left: 0px;
+        font-size: 14px;
+        
+        width: 100%;
+        top: 16px;
+        color: #ffef5b;
+    }
+    #page-name{
+        font-size: 20px !important;
+        top: 5px;
+        position: absolute !important;
+        top: 18px !important;
+        font-family: 'onest' !important;
+    }
+    #stats_app{
+        font-family: onest;
+        font-weight: 900;
+        width: 430px;
+        padding: 10px 0;
+        text-align: center;
+        position: relative;
+        background: #00000050;
+        border-radius: 5px;
+        left: -1px;
+        border: #2c3a5000 solid 1px;
+        margin: 0 auto;
+        top: 40px;
+        /* left: 50%; */
+    }
+    #stats_app::before{
+        color: #98d6ff;
+        content: 'Серверов: ';
+        /* left: 50%; */
+    }
+</style>
+<!-- JavasCript -->
+<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<body id="site-bg">
+    <link rel="stylesheet" href="./head.css">
+    <header id="site-header">
+        <type id="page-name">Radio KetaRu <span id="nam">Web приложение</span> <span id="rel">BETA</span></type>
+        <div id="site-header-box">
+            <a href="https://ketaru.com"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
+                <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
+            </div>
+            <div id="stats_app"></div>
+        </header>
+    </body>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="yandex-verification" content="bef8770f64b65879" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Слушать радиостанции онлайн">
+<meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
+</head>
+
+<!-- <button id="ff" onclick="Ret('q')">kk</button> -->
+
+<body onLoad="Redirect()">
+    <script>
+        let url = new URL(window.location.href)
+        let par = new URLSearchParams(url.search);
+        const select = par.get(bo);
+        
+        
+        function Redirect(){
+            document.getElementById('stats_app').innerText = bot_guilds
+            const queryString = window.location.search;
+            document.getElementById('q').src=`./page.html?id=${select}`;
+            if (`${select}` === `null`) {
+                const url = new URL(window.location);
+                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+            if (select > 50 || select < 1) {
+                if (select > 50){var sell = 50}
+                if (select < 1){var sell = 1}
+                document.getElementById('q').src=`./page.html?id=${sell}`;
+                const url = new URL(window.location);
+                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+        }
+        // function Red(){
+        //     const queryString = window.location.search;
+        //     // document.getElementById('q').src=`./page.html?id=${select}`;
+        //     if (`${select}` === `null`) {
+        //         const url = new URL(window.location);
+        //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+        //         window.history.pushState({}, '', url);
+        //     }
+        //     if (select > 50 || select < 1) {
+        //         if (select > 50){var sell = 50}
+        //         if (select < 1){var sell = 1}
+        //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+        //         const url = new URL(window.location);
+        //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+        //         window.history.pushState({}, '', url);
+        //     }
+        // }
+        
+        
+        function Ret(frameID){
+            let frameObj = document.getElementById(frameID);
+            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+            // console.log(frameContent);
+            
+        }
+        // setInterval(function() {
+        //     Ret('q')
+        // }, 0 * 1000);
+        
+    </script>
+    <iframe id="q"
+    src="./page.html"
+    width="100%"
+    height="100%">
+    </iframe>
+
+    <style>
+        #q{
+            height: calc(100% - 58px);
+        }
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            background: #222;
+            padding: 0px;
+            height: 100%;
+            overflow: hidden;
+            overflow-x: hidden;
+        }
+        iframe {
+            border-radius: 0px;
+            border: none;
+        }
+    </style>
+</body>
+<html>
+<head>
