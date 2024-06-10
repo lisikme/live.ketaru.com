@@ -12,6 +12,12 @@ fm_list=[
     "https://s0.radioheart.ru:8000/ketaruweb",
     "Онлайн - От создателей KR.Corp",
     "https://cdn.discordapp.com/emojis/1232726173470163067.webp?size=96&quality=lossless",
+    
+    "Radio PlusVibe",
+    "img/fm_pv.png",
+    "https://myradio24.org/69034",
+    "Онлайн - Партнёр KR.Corp",
+    "https://cdn.discordapp.com/emojis/1235656097075826780.webp?size=96&quality=lossless",
 
     "TNT Music",
     "img/fm_tnt.png",
@@ -150,12 +156,6 @@ fm_list=[
     "https://retro.hostingradio.ru:8043/retro256.mp3",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232754777335529492.webp?size=96&quality=lossless",
-
-    "Radio PlusVibe",
-    "img/fm_pv.png",
-    "https://myradio24.org/69034",
-    "Онлайн - Партнёр KR.Corp",
-    "https://cdn.discordapp.com/emojis/1235656097075826780.webp?size=96&quality=lossless",
 
 
 
