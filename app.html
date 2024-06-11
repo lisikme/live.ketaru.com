@@ -63,10 +63,28 @@
         top: 18px !important;
         font-family: 'onest' !important;
     }
+    #guilds{
+        background: #ffffff25;
+        font-family: onest;
+        width: 430px;
+        margin: 0 auto;
+        top: 40px;
+        left: -4px;
+        font-weight: 600;
+        padding: 5px 0px;
+        text-align: center;
+        border-radius: 3px;
+        position: relative;
+    }
+    #guilds:before{
+        content: 'Серверов: ';
+        color: #7bcfff;
+    }
 </style>
 <!-- JavasCript -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+<script src="./serv.js"></script>
 <body id="site-bg">
     <link rel="stylesheet" href="./head.css">
     <header id="site-header">
@@ -75,6 +93,7 @@
             <a onclick="window.open('https://ketaru.com', '_blank');"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
                 <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
             </div>
+            <div id="guilds"></div>
         </header>
     </body>
 <html>
@@ -139,6 +158,7 @@
     <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord</button>
     <button id="rel1" onclick="rel()">Перезагрузить</button>
     <script>
+        document.getElementById('guilds').innerText = bot_guilds
         var discord = 'https://ketaru.com/join'
         var site = 'https://ketaru.com'
         function NewTab(){

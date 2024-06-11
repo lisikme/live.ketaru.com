@@ -67,7 +67,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Onest", sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
     --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
         rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
     --color: #354661;
@@ -112,6 +112,7 @@
     /* padding: 5px 10px; */
     padding-bottom: 3px;
     line-height: 20px;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 0px 0px 2px 2px;
     border: none;
