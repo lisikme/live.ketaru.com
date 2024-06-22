@@ -393,5 +393,5 @@ fm_list=[
     "img/fm_ultra.png",
     "https://nashe1.hostingradio.ru/ultra-256",
     "Онлайн",
-    "none",
+    "https://cdn.discordapp.com/emojis/1254116441477615616.webp?size=96&quality=lossless",
 ]
