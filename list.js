@@ -390,8 +390,8 @@ fm_list=[
     "https://cdn.discordapp.com/emojis/1248360521841770608.webp?size=96&quality=lossless",
 
     "Radio Ultra (beta)",
-    "img/fm_mc.png",
-    "https://montecarlo.hostingradio.ru/montecarlo96.aacp",
+    "img/fm_ult.png",
+    "https://nashe1.hostingradio.ru/ultra-256",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1248360521841770608.webp?size=96&quality=lossless",
 ]
