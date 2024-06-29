@@ -36,13 +36,14 @@ fm_list=[
     "https://dfm.hostingradio.ru/dfm96.aacp?st=be86f20b-2211-56ac-ac97-648f95b28025&gts=1710570240",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725729276461056.webp?size=96&quality=lossless",
-    
+
+
     "Like FM",
     "img/fm_like.png",
     "https://ic7.101.ru:8000/v12_1",
     "Онлайн",
-    "https://cdn.discordapp.com/emojis/1232725721714000033.webp?size=96&quality=lossless",
-    
+    "https://cdn.discordapp.com/emojis/1256486667674587207.webp?size=96&quality=lossless",
+
     "Хайп FM",
     "img/fm_hype.png",
     "https://hfm.amgradio.ru/HypeFM",
@@ -66,6 +67,7 @@ fm_list=[
     "https://europaplus.hostingradio.ru:8014/ep-new128.mp3",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725671424299080.webp?size=96&quality=lossless",
+
 
     "EuropaPlus Lisht",
     "img/fm_eplight.png",
@@ -97,6 +99,7 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725609713762365.webp?size=96&quality=lossless",
 
+
     "Хит FM",
     "img/fm_hit.png",
     "https://hitfm.hostingradio.ru/hitfm96.aacp",
@@ -126,6 +129,7 @@ fm_list=[
     "https://rusradio.hostingradio.ru/rusradio96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725551626850394.webp?size=96&quality=lossless",
+
 
     "Юмор FM",
     "img/fm_umor.png",
@@ -159,6 +163,8 @@ fm_list=[
 
 
 
+
+
     "Radio Record",
     "img/fm_rc.png",
     "https://radiorecord.hostingradio.ru/rr_main96.aacp",
@@ -188,6 +194,7 @@ fm_list=[
     "https://radiorecord.hostingradio.ru/lofi96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760969239855104.webp?size=96&quality=lossless",
+
 
     "Record Rock",
     "img/fm_rcrock.png",
@@ -219,6 +226,7 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760380359573584.webp?size=96&quality=lossless",
 
+
     "Record На Хайпе",
     "img/fm_rcnh.png",
     "https://radiorecord.hostingradio.ru/hype96.aacp",
@@ -249,6 +257,7 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238696074869477396.webp?size=96&quality=lossless",
 
+
     "Record Gold",
     "img/fm_rcg.png",
     "https://radiorecord.hostingradio.ru/gold96.aacp",
@@ -278,6 +287,7 @@ fm_list=[
     "https://vdfm.ru:8000/dacha?type=.aac",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760284758671360.webp?size=96&quality=lossless",
+
 
     "Радио Хит",
     "img/fm_rx.png",
@@ -311,6 +321,8 @@ fm_list=[
 
 
 
+
+
     "Радио Шоколад",
     "img/fm_cr.png",
     "https://choco.hostingradio.ru:10010/fm",
@@ -340,6 +352,7 @@ fm_list=[
     "https://maximum.hostingradio.ru/maximum96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759803273547869.webp?size=96&quality=lossless",
+
 
     "Ника FM",
     "img/fm_nika.png",
@@ -371,6 +384,7 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238702235651936376.webp?size=96&quality=lossless",
 
+
     "Красная Армия",
     "img/fm_ka.png",
     "https://live.rzs.ru/ka.128.mp3?st=0adaed21-acf5-5440-a015-edaa08483823&gts=1715387188",
@@ -394,4 +408,29 @@ fm_list=[
     "https://nashe1.hostingradio.ru/ultra-256",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1254119383282749481.webp?size=96&quality=lossless",
+
+    "Хорошее Радио",
+    "img/fm_hor.png",
+    "https://hr.amgradio.ru/Horoshee",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1256479877222236212.webp?size=96&quality=lossless",
+
+
+    "Радио Ваня",
+    "img/fm_van.png",
+    "https://icecast-radiovanya.cdnvideo.ru/radiovanya",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1256481475453259868.webp?size=96&quality=lossless",
+
+    "Радиола",
+    "img/fm_rad.png",
+    "https://radiola.hostingradio.ru/radiola_eka_128.mp3",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1256483821105446922.webp?size=96&quality=lossless",
+
+    "STUDIO 21",
+    "img/fm_stu21.png",
+    "https://radiola.hostingradio.ru/radiola_eka_128.mp3",
+    "Онлайн",
+    "https://cdn.discordapp.com/emojis/1256492796261564436.webp?size=96&quality=lossless",
 ]
