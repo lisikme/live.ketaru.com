@@ -430,7 +430,7 @@ fm_list=[
 
     "STUDIO 21",
     "img/fm_stu21.png",
-    "https://radiola.hostingradio.ru/radiola_eka_128.mp3",
+    "https://stream.studio21.ru/studio2196.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256492796261564436.webp?size=96&quality=lossless",
 ]
