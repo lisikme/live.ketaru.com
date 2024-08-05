@@ -17,7 +17,7 @@ fm_list=[
     "img/fm_pv.png",
     "https://myradio24.org/69034",
     "Онлайн - Партнёр KR.Corp",
-    "https://cdn.discordapp.com/emojis/1235656097075826780.webp?size=96&quality=lossless",
+    "https://cdn.discordapp.com/emojis/1270098196273692672.webp?size=96&quality=lossless",
 
     "TNT Music",
     "img/fm_tnt.png",
