@@ -14,7 +14,7 @@ fm_list=[
     "https://cdn.discordapp.com/emojis/1232726173470163067.webp?size=96&quality=lossless",
     
     "Radio PlusVibe",
-    "img/fm_pv.png",
+    "img/fm_pvibe.png",
     "https://myradio24.org/69034",
     "Онлайн - Партнёр KR.Corp",
     "https://cdn.discordapp.com/emojis/1270102092517867520.webp?size=96&quality=lossless",
