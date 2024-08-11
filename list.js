@@ -434,4 +434,10 @@ fm_list=[
     "https://stream.studio21.ru/studio2196.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256492796261564436.webp?size=96&quality=lossless",
+
+    "RFM",
+    "img/fm_rf.png",
+    "https://radio-holding.ru/rfm",
+    "Онлайн",
+    "---",
 ]
