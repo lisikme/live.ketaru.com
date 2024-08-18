@@ -128,8 +128,8 @@
                 url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
                 window.history.pushState({}, '', url);
             }
-            if (select > 50 || select < 1) {
-                if (select > 50){var sell = 50}
+            if (select > 75 || select < 1) {
+                if (select > 75){var sell = 75}
                 if (select < 1){var sell = 1}
                 document.getElementById('q').src=`./page.html?id=${sell}`;
                 const url = new URL(window.location);
