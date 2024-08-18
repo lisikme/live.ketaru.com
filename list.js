@@ -7,18 +7,18 @@
 // Список радиостанций
 // "https://s0.radioheart.ru:8000/ketaruweb",
 
+// "Radio PlusVibe",
+// "img/fm_pvibe.png",
+// "https://myradio24.org/69034",
+// "Онлайн - Партнёр KR.Corp",
+// "https://cdn.discordapp.com/emojis/1270102092517867520.webp?size=96&quality=lossless",
+
 fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
     "https://s0.radioheart.ru:8000/ketaruweb",
     "Онлайн - От создателей KR.Corp",
     "https://cdn.discordapp.com/emojis/1232726173470163067.webp?size=96&quality=lossless",
-    
-    "Radio PlusVibe",
-    "img/fm_pvibe.png",
-    "https://myradio24.org/69034",
-    "Онлайн - Партнёр KR.Corp",
-    "https://cdn.discordapp.com/emojis/1270102092517867520.webp?size=96&quality=lossless",
 
     "TNT Music",
     "img/fm_tnt.png",
