@@ -142,7 +142,7 @@
     visibility: hidden;
     opacity: 0;
     transform: translateY(0.5rem);
-    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+    /* transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1); */
     height: 222px;
     overflow: hidden;
     left: 0;

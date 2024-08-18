@@ -19,16 +19,29 @@
         <meta property="og:image:height" content="512">
         <meta name="theme-color" content="#e43f79">
         <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script>
-<!-- beta -->
-<link rel="stylesheet" href="https://ketaru.com/css/Page.css">        <!-- Дизайн фона сайта --> 
-<link rel="stylesheet" href="https://ketaru.com/css/Header.css">      <!-- Дизайн шапки сайта --> 
-<link rel="stylesheet" href="css/Root.css">                           <!-- Конфигурация -->
-<link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+        <!-- beta -->
+        <link rel="stylesheet" href="https://ketaru.com/css/Page.css">        <!-- Дизайн фона сайта --> 
+        <link rel="stylesheet" href="https://ketaru.com/css/Header.css">      <!-- Дизайн шапки сайта --> 
+        <link rel="stylesheet" href="css/Root.css">                           <!-- Конфигурация -->
+        <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
     :root {
     --NamePage: "Radio";
     --VerPage: "KetaRu Web";
+    }
+    @keyframes ani {
+    0%   {left: calc(50% - 280.5px)}
+    100% {left: calc(50% - 216px)}
+    }
+    @keyframes buff {
+        0%   {opacity: 0;}
+        30%   {opacity: 0;}
+        100% {opacity: 1;}
+    }
+    @keyframes bg {
+        0%   {opacity: .0; transform: scale(1);}
+        100% {opacity: 1;}
     }
     .em{
         font-size: 16.6px;
@@ -70,6 +83,7 @@
     }
     #inf{
         background: #ffffff25;
+        animation: buff 1s ease;
         font-family: onest;
         width: 430px;
         font-size: 18px;
@@ -100,6 +114,7 @@
         margin-bottom: 0;
     }
     #errr{
+        animation: bg 1s ease;
         position: absolute;
         height: 50px;
         bottom: 22px;
@@ -109,6 +124,7 @@
         -webkit-mask-size: contain;
     }
     #df{
+        animation: bg 1s ease;
         font-family: onest;
         position: absolute;
         font-size: 25px;
@@ -116,6 +132,7 @@
         bottom: 25px;
     }
     #df1{
+        animation: bg 1s ease;
         font-family: onest;
         color: #999;
         position: absolute;
@@ -217,10 +234,8 @@
     height="100%">
 </iframe>
 <!-- <div id="ssa">Radio Ketaru</div> -->
-<div style="border-top: #374758 1px solid; border-bottom: #374758 1px solid; position: absolute; top: 100%; height: 56px; width: 100%; background: #151c24;"></div>
-<div id="site-header-box" class="logs_page">
-    <a href="https://ketaru.com"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
-        <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
+<!-- <div style="border-top: #374758 1px solid; border-bottom: #374758 1px solid; position: absolute; top: 100%; height: 56px; width: 100%; background: #151c24;"></div> -->
+<div id="site-header" class="logs_page">
         <!-- <div style="text-align: right;">Пр</div> -->
         <div id="ddf">
         <div id="d"></div>
@@ -228,11 +243,12 @@
             💖 Наши партнёры<hr id="err">
             <li class="footer-link mb-10"><a href="https://akisearch.com/">AkiSearth <span id="tags">Мониторинг ботов Discord</span></a></li>
             <li class="footer-link mb-10"><a href="https://discord.gg/inferno-house">Inferno House <span id="tags">Discord сервер</span></a></li>
-            <li class="footer-link mb-10"><a href="https://discord.gg/QRXjDMawKg">Radio PlusVibe <span id="tags">Интернет радио</span></a></li>
+            <!-- <li class="footer-link mb-10"><a href="https://discord.gg/QRXjDMawKg">Radio PlusVibe <span id="tags">Интернет радио</span></a></li> -->
             <li class="footer-link mb-10"><a href="https://voicy.site/">Voicy <span id="tags">Радио бот Discord</span></a></li>
+            <li class="footer-link mb-10"><a href="https://live.ketaru.com/">Radio KetaRu <span id="tags">Радио приложение web</span></a></li>
         </div>
         <div id="boxe2">
-            🪄 Наши проекты в Discord<hr id="err">
+            ✨ Наши проекты в Discord<hr id="err">
             <li class="footer-link mb-10"><a href="https://live.ketaru.com">Radio KetaRu <span id="tags">Радио бот</span></a></li>
             <li class="footer-link mb-10"><a href="https://discord.com/oauth2/authorize?client_id=487246091939479553&scope=bot&scope=applications.commands%20bot&permissions=8">Shavermik <span id="tags">Унивесальный бот</span></a></li>
             <li class="footer-link mb-10"><a href="https://discord.com/oauth2/authorize?client_id=897818365836550144&scope=bot&scope=applications.commands%20bot&permissions=8">Biskvit Music <span id="tags">Музыкальный бот</span></a></li>
@@ -276,9 +292,11 @@
         width: 100%;
         position: absolute;
         right: 0px;
-        top: 48px;
+        /* top: 48px; */
         padding: 30px;
         width: 100%;
+        top: -10px;
+
         background-image: linear-gradient(-180deg, #191923 0%, #14141E 100%);
         box-shadow: 0 -10px 20px 0 rgba(20, 20, 30, .2);
     }
@@ -286,14 +304,15 @@
         color: #ff7235 !important;
         opacity: .7;
         -webkit-transition: .3s;
-        transition: .3s;
+        transition: .3s all;
     }
     a, a:hover {
         text-decoration: none;
         color: #fff;
     }
-    a:hover{
+    .footer-link a:hover{
         opacity: 1;
+        transition: .3s all;
         padding-left: 10px;
         position: relative !important;
     }
@@ -318,10 +337,12 @@
         margin-bottom: 10px !important;
     }
     #boxe1, #boxe2{
+        margin: 0 auto;
+        max-width: 1315px;
         font-size: 16px;
         border-radius: 10px;
         z-index: 1000 !important;
-        width: 450px;
+        /* width: 450px; */
         background: rgba(255, 255, 255, 0.03);
         border: rgba(255, 255, 255, 0.05) solid 1px;
         padding: 10px 10px 5px 10px;
