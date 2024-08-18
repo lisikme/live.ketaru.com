@@ -38,12 +38,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725729276461056.webp?size=96&quality=lossless",
 
-
     "Like FM",
     "img/fm_like.png",
     "https://ic7.101.ru:8000/v12_1",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256486667674587207.webp?size=96&quality=lossless",
+
+
 
     "Хайп FM",
     "img/fm_hype.png",
@@ -69,12 +70,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725671424299080.webp?size=96&quality=lossless",
 
-
     "EuropaPlus Lisht",
     "img/fm_eplight.png",
     "https://europaplus.hostingradio.ru:8014/ep-light128.mp3",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725661672800377.webp?size=96&quality=lossless",
+
+
 
     "EuropaPlus Top40",
     "img/fm_eptop40.png",
@@ -100,12 +102,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725609713762365.webp?size=96&quality=lossless",
 
-
     "Хит FM",
     "img/fm_hit.png",
     "https://hitfm.hostingradio.ru/hitfm96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725593150328873.webp?size=96&quality=lossless",
+
+
 
     "Energy FM",
     "img/fm_nrg.png",
@@ -131,12 +134,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725551626850394.webp?size=96&quality=lossless",
 
-
     "Юмор FM",
     "img/fm_umor.png",
     "https://ic5.101.ru:8000/v5_1",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725542076416130.webp?size=96&quality=lossless",
+
+
 
     "Новое радио",
     "img/fm_new.png",
@@ -161,6 +165,13 @@ fm_list=[
     "https://retro.hostingradio.ru:8043/retro256.mp3",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232754777335529492.webp?size=96&quality=lossless",
+
+    "Детское радио",
+    "img/fm_kids.png",
+    "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
+    "Онлайн Kids",
+    "https://cdn.discordapp.com/emojis/1232759810148012184.webp?size=96&quality=lossless",
+
 
 
 
@@ -197,6 +208,7 @@ fm_list=[
     "https://cdn.discordapp.com/emojis/1232760969239855104.webp?size=96&quality=lossless",
 
 
+
     "Record Rock",
     "img/fm_rcrock.png",
     "https://radiorecord.hostingradio.ru/rock96.aacp",
@@ -226,6 +238,7 @@ fm_list=[
     "https://radiorecord.hostingradio.ru/fbass96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760380359573584.webp?size=96&quality=lossless",
+
 
 
     "Record На Хайпе",
@@ -259,6 +272,7 @@ fm_list=[
     "https://cdn.discordapp.com/emojis/1238696074869477396.webp?size=96&quality=lossless",
 
 
+
     "Record Gold",
     "img/fm_rcg.png",
     "https://radiorecord.hostingradio.ru/gold96.aacp",
@@ -288,6 +302,7 @@ fm_list=[
     "https://vdfm.ru:8000/dacha?type=.aac",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760284758671360.webp?size=96&quality=lossless",
+
 
 
     "Радио Хит",
@@ -324,6 +339,7 @@ fm_list=[
 
 
 
+
     "Радио Шоколад",
     "img/fm_cr.png",
     "https://choco.hostingradio.ru:10010/fm",
@@ -342,24 +358,19 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759959381606530.webp?size=96&quality=lossless",
 
-    "Детское радио",
-    "img/fm_kids.png",
-    "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
-    "Онлайн Kids",
-    "https://cdn.discordapp.com/emojis/1232759810148012184.webp?size=96&quality=lossless",
-
     "Радио MAXIMUM",
     "img/fm_max.png",
     "https://maximum.hostingradio.ru/maximum96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759803273547869.webp?size=96&quality=lossless",
 
-
     "Ника FM",
     "img/fm_nika.png",
     "https://stream06.pcradio.ru/nika_fm-med",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232759795027804181.webp?size=96&quality=lossless",
+
+
 
     "Восток FM",
     "img/fm_vostok.png",
@@ -385,12 +396,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238702235651936376.webp?size=96&quality=lossless",
 
-
     "Красная Армия",
     "img/fm_ka.png",
     "https://live.rzs.ru/ka.128.mp3?st=0adaed21-acf5-5440-a015-edaa08483823&gts=1715387188",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238702248947617833.webp?size=96&quality=lossless",
+
+
 
     "Маяк",
     "img/fm_m.png",
@@ -416,12 +428,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256479877222236212.webp?size=96&quality=lossless",
 
-
     "Радио Ваня",
     "img/fm_van.png",
     "https://icecast-radiovanya.cdnvideo.ru/radiovanya",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256481475453259868.webp?size=96&quality=lossless",
+
+
 
     "Радиола",
     "img/fm_rad.png",
