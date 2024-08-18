@@ -77,8 +77,8 @@ function doSomething(x) {
 }
 $(function () {
   // var img = document.createElement("img");
-  // img.src = `${fm_list[5]}`;
-  // img.textContent = `${fm_list[5]}`;
+  // img.src = `icons.png`;
+  // img.textContent = `g`;
   // document.body.appendChild(img);
   
   var result = ''; var i = -4; do {i += 5; {
@@ -239,6 +239,7 @@ var playerTrack=$("#player-track"),
         checkBuffering();
       }
       $("#album-name").hide(200, function() {
+        console.log(currAlbum)
         $(this).html(currAlbum).show(200);
       });
       $("#track-name").hide(200, function() {
@@ -300,7 +301,7 @@ let tempSliderValue = default_vol;
 let progress = (tempSliderValue / sliderEl.max) * 100;
 sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
 // ---------------------------------------------------------------------------------------
-
+fm_list.length/5
 
 let rangeInput = document.querySelector(".range-input input");
 let rangeValue = document.querySelector(".range-input .value div");

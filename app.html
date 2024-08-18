@@ -58,22 +58,36 @@
         top: 18px !important;
         font-family: 'onest' !important;
     }
-    #guilds{
+    #inf{
         background: #ffffff25;
         font-family: onest;
         width: 430px;
+        font-size: 18px;
         margin: 0 auto;
-        top: 40px;
-        left: -4px;
+        top: calc(50% - 170px);
+        left:  calc(50% - 216px);
+        /* left: -4px; */
         font-weight: 600;
         padding: 5px 0px;
         text-align: center;
         border-radius: 3px;
         position: relative;
+        position: absolute;
     }
     #guilds:before{
         content: 'Серверов: ';
-        color: #7bcfff;
+        color: #7bf0ff;
+    }
+    #radiolist:before{
+        content: 'Радиостанций: ';
+        color: #a0ff7b;
+    }
+    #space{
+        margin: 20px;
+        background: #ffe881;
+        border-radius: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 </style>
 <!-- JavasCript -->
@@ -88,7 +102,6 @@
             <a onclick="window.open('https://ketaru.com', '_blank');"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
                 <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
             </div>
-            <div id="guilds"></div>
         </header>
     </body>
 <html>
@@ -96,6 +109,7 @@
 <meta name="yandex-verification" content="bef8770f64b65879" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script>
 </head>
 
 <body>
@@ -152,8 +166,11 @@
     </style>
     <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord</button>
     <button id="rel1" onclick="rel()">Перезагрузить</button>
+    <div id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
     <script>
+        var global_list = fm_list.length/5
         document.getElementById('guilds').innerText = bot_guilds
+        document.getElementById('radiolist').innerText = global_list
         var discord = 'https://ketaru.com/join'
         var site = 'https://ketaru.com'
         function NewTab(){

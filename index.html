@@ -7,17 +7,18 @@
         <meta charset="utf-8">
         <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-<!-- Интеграция Embed -->
-<title>Radio KetaRu Web</title>
-<meta property="og:title" content="Radio KetaRu Web">
-<meta property="og:site_name" content="KetaRu">
-<meta property="og:url" content="https://live.ketaru.com">
-<meta property="og:description" content="Наше онлайн версия радио бота">
-<link rel="shortcut icon" href="./icon.png">
-<meta property="og:image" content="https://live.ketaru.com/9a0117600caea4fdbffe7384807802af.png">
-<meta property="og:image:width" content="512">
-<meta property="og:image:height" content="512">
-<meta name="theme-color" content="#e43f79">
+        <!-- Интеграция Embed -->
+        <title>Radio KetaRu Web</title>
+        <meta property="og:title" content="Radio KetaRu Web">
+        <meta property="og:site_name" content="KetaRu">
+        <meta property="og:url" content="https://live.ketaru.com">
+        <meta property="og:description" content="Наше онлайн версия радио бота">
+        <link rel="shortcut icon" href="./icon.png">
+        <meta property="og:image" content="https://live.ketaru.com/9a0117600caea4fdbffe7384807802af.png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta name="theme-color" content="#e43f79">
+        <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script>
 <!-- beta -->
 <link rel="stylesheet" href="https://ketaru.com/css/Page.css">        <!-- Дизайн фона сайта --> 
 <link rel="stylesheet" href="https://ketaru.com/css/Header.css">      <!-- Дизайн шапки сайта --> 
@@ -67,24 +68,38 @@
         top: 18px !important;
         font-family: 'onest' !important;
     }
-    #guilds{
+    #inf{
         background: #ffffff25;
         font-family: onest;
         width: 430px;
+        font-size: 18px;
         margin: 0 auto;
-        top: 40px;
-        left: -4px;
+        top: calc(50% - 170px);
+        left:  calc(50% - 216px);
+        /* left: -4px; */
         font-weight: 600;
         padding: 5px 0px;
         text-align: center;
         border-radius: 3px;
         position: relative;
+        position: absolute;
     }
     #guilds:before{
         content: 'Серверов: ';
-        color: #7bcfff;
+        color: #7bf0ff;
     }
-</style>
+    #radiolist:before{
+        content: 'Радиостанций: ';
+        color: #a0ff7b;
+    }
+    #space{
+        margin: 20px;
+        background: #ffe881;
+        border-radius: 5px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    </style>
 <!-- JavasCript -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -97,101 +112,104 @@
             <a href="https://ketaru.com"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
                 <name id="site-logo-name">Ketaru <span style="color: #ffef5b">Corp</span></name></div></a>
             </div>
-            <div id="guilds"></div>
         </header>
     </body>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="yandex-verification" content="bef8770f64b65879" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Слушать радиостанции онлайн">
-<meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
-</head>
-
-<!-- <button id="ff" onclick="Ret('q')">kk</button> -->
-
-<body onLoad="Redirect()">
-    <script>
-        document.getElementById('guilds').innerText = bot_guilds
-        let url = new URL(window.location.href)
-        let par = new URLSearchParams(url.search);
-        const select = par.get("id");
-        console.log(select)
-
-        function Redirect(){
-            const queryString = window.location.search;
-            document.getElementById('q').src=`./page.html?id=${select}`;
-            if (`${select}` === `null`) {
-                const url = new URL(window.location);
-                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
-                window.history.pushState({}, '', url);
-            }
-            if (select > 75 || select < 1) {
-                if (select > 75){var sell = 75}
-                if (select < 1){var sell = 1}
-                document.getElementById('q').src=`./page.html?id=${sell}`;
-                const url = new URL(window.location);
-                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
-                window.history.pushState({}, '', url);
-            }
-        }
-        // function Red(){
-        //     const queryString = window.location.search;
-        //     // document.getElementById('q').src=`./page.html?id=${select}`;
-        //     if (`${select}` === `null`) {
-        //         const url = new URL(window.location);
-        //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
-        //         window.history.pushState({}, '', url);
-        //     }
-        //     if (select > 50 || select < 1) {
-        //         if (select > 50){var sell = 50}
-        //         if (select < 1){var sell = 1}
-        //         // document.getElementById('q').src=`./page.html?id=${sell}`;
-        //         const url = new URL(window.location);
-        //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
-        //         window.history.pushState({}, '', url);
-        //     }
-        // }
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="yandex-verification" content="bef8770f64b65879" />
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Слушать радиостанции онлайн">
+            <meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
+        </head>
         
+        <!-- <button id="ff" onclick="Ret('q')">kk</button> -->
         
-        function Ret(frameID){
-            let frameObj = document.getElementById(frameID);
-            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
-            console.log(frameContent);
-            
-        }
-        // setInterval(function() {
-        //     Ret('q')
-        // }, 0 * 1000);
-        
-    </script>
+        <body onLoad="Redirect()">
+    <div id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
+            <script>
+                var global_list = fm_list.length/5
+                document.getElementById('guilds').innerText = bot_guilds
+                document.getElementById('radiolist').innerText = global_list
+                let url = new URL(window.location.href)
+                let par = new URLSearchParams(url.search);
+                const select = par.get("id");
+                console.log(select)
+                
+                function Redirect(){
+                    const queryString = window.location.search;
+                    document.getElementById('q').src=`./page.html?id=${select}`;
+                    if (`${select}` === `null`) {
+                        const url = new URL(window.location);
+                        url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                        window.history.pushState({}, '', url);
+                    }
+                    if (select > global_list || select < 1) {
+                        if (select > global_list){var sell = global_list}
+                        if (select < 1){var sell = 1}
+                        document.getElementById('q').src=`./page.html?id=${sell}`;
+                        const url = new URL(window.location);
+                        url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                        window.history.pushState({}, '', url);
+                    }
+                }
+                // function Red(){
+                    //     const queryString = window.location.search;
+                    //     // document.getElementById('q').src=`./page.html?id=${select}`;
+                    //     if (`${select}` === `null`) {
+                        //         const url = new URL(window.location);
+                        //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                        //         window.history.pushState({}, '', url);
+                        //     }
+                        //     if (select > 50 || select < 1) {
+                            //         if (select > 50){var sell = 50}
+                            //         if (select < 1){var sell = 1}
+                            //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+                            //         const url = new URL(window.location);
+                            //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                            //         window.history.pushState({}, '', url);
+                            //     }
+                            // }
+                            
+                            
+                            function Ret(frameID){
+                                let frameObj = document.getElementById(frameID);
+                                let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+                                console.log(frameContent);
+                                
+                            }
+                            // setInterval(function() {
+                                //     Ret('q')
+                                // }, 0 * 1000);
+                                
+                                </script>
     <iframe id="q"
     src="./page.html"
     width="100%"
     height="100%">
-    </iframe>
+</iframe>
 
-    <style>
-        #q{
-            height: calc(100% - 58px);
-        }
-        html, body {
-            margin: 0px;
-            padding: 0px;
-            border: 0px;
-            background: #222;
-            padding: 0px;
-            height: 100%;
-            overflow: hidden;
-            overflow-x: hidden;
-        }
-        iframe {
-            border-radius: 0px;
-            border: none;
-        }
+<style>
+    #q{
+        height: calc(100% - 58px);
+    }
+    html, body {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        background: #222;
+        padding: 0px;
+        height: 100%;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    iframe {
+        border-radius: 0px;
+        border: none;
+    }
     </style>
 </body>
 <html>
-<head> 
+    <head> 
+        
