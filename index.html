@@ -14,7 +14,7 @@
         <meta property="og:url" content="https://live.ketaru.com">
         <meta property="og:description" content="Наше онлайн версия радио бота">
         <link rel="shortcut icon" href="./icon.png">
-        <meta property="og:image" content="https://live.ketaru.com/9a0117600caea4fdbffe7384807802af.png">
+        <meta property="og:image" content="https://live.ketaru.com/icon.png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         <meta name="theme-color" content="#e43f79">
@@ -82,7 +82,9 @@
         font-family: 'onest' !important;
     }
     #inf{
+        backdrop-filter: blur(2vh);
         background: #ffffff25;
+        border: 1px solid #ffffff25;
         animation: ani 1s ease;
         font-family: onest;
         width: 430px;
@@ -121,6 +123,7 @@
         left: 20px;
         -webkit-mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
         mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
+        mask-size: contain;
         -webkit-mask-size: contain;
     }
     #df{
@@ -196,6 +199,9 @@
                         const url = new URL(window.location);
                         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
                         window.history.pushState({}, '', url);
+                        const meta = document.getElementsByTagName('meta')  
+                        meta.keywords.content = "My new page keywords";  
+                        meta.description.content = "My new page description"
                     }
                 }
                 // function Red(){

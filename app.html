@@ -74,8 +74,10 @@
         100% {opacity: 1;}
     }
     #inf{
+        backdrop-filter: blur(2vh);
         animation: ani 1s ease;
         background: #ffffff25;
+        border: 1px solid #ffffff25;
         font-family: onest;
         width: 430px;
         font-size: 18px;
@@ -113,6 +115,7 @@
         left: 20px;
         -webkit-mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
         mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
+        mask-size: contain;
         -webkit-mask-size: contain;
     }
     #df{
