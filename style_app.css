@@ -891,8 +891,50 @@ a{
     color: #ffffff !important;
 }
 #box-play{
+    border: 0 !important;
+}
+#album-art, #album-arts {
+    animation: art .5s forwards;
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 71px;
+    height: 71px;
+    margin-left: 40px;
+    transform: rotateZ(0);
+    transition: 0.2s linear all;
+    /* box-shadow: 0 0px 40px 0px #141c24; */
     border: 0;
+    background: #0c1116;
+    border-radius: 5px;
+}
+#album-art-bg, #album-arts-bg {
+    animation: buff 1s forwards;
+    top: 10px;
+    left: -30px;
+    width: 71px;
+    height: 71px;
+    border-radius: 5px;
 }
 #boz{
     background: #00000030;
+}
+.button i{
+    color: #8abdff;
+}
+.btn{
+    transition: 0.2s linear all !important;
+    /* margin: 9px !important; */
+    margin-left: 9px;
+    /* top: 66px; */
+    bottom: 0px;
+    position: absolute !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: calc(100% - 17px);
+    background: #ffffff30 !important;
+    color: #ffffff !important;
+}
+.btn:hover{
+    background: #22222285 !important;
 }
