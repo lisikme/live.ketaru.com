@@ -1,4 +1,5 @@
 <!-- Форматирование -->
+
 <!DOCTYPE html>
 <html lang="ru" class="no-js">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,9 +71,14 @@
                                     <div id="bg-artwork"></div>
                                     <!-- <div id="bg-layer"></div> -->
                                     <div id="player">
+                                        <div class="container">
+                                            <button class="btn" id="btn">Выбрать радиостанцию из списка<i class="bx bx-chevron-down"></i></button>
+                                            <div class="dropdown" id="dropdown"></div>
+                                        </div>
                                         <div id="player-track">
                                             <div id="s-area">
                                             </div>
+                                            
                                         </div>
                                         <div id="player-content">
                                             <div id="box_apps">
@@ -133,16 +139,6 @@
     
     </style>
 
-<div class="container">
-    <button class="btn" id="btn">
-        Выбрать радиостанцию из списка
-        <i class="bx bx-chevron-down" id="arrow"></i>
-    </button>
-    
-    <div class="dropdown" id="dropdown">
-    </div>
-    </div>
-
 <div id="player-controls">
     <!-- <iframe src="http://online-3.gkvr.ru:8000/status.xsl" frameborder="0"></iframe> -->
     
@@ -172,7 +168,8 @@
 </html>
 <!-- <script  src="./script.js"></script> -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script>
+<!-- <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script> -->
+<script src="list.js"></script>
 <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/config.js"></script>
 <!-- <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/error.js"></script>   -->
 <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/ver3.js"></script>  

@@ -453,4 +453,10 @@ fm_list=[
     "https://radio-holding.ru/rfm",
     "Онлайн",
     "---",
+
+    "Unistar",
+    "img/fm_us.png",
+    "https://stream02.pcradio.ru/rad_nstrb-med",
+    "Онлайн",
+    "---",
 ]
