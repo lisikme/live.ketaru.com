@@ -5,13 +5,13 @@ const toggleArrow = document.getElementById("arrow");
 // Toggle dropdown function
 const toggleDropdown = function () {
   dropdownMenu.classList.toggle("show");
-  toggleArrow.classList.toggle("arrow");
 };
 
 // Toggle dropdown open/close when dropdown button is clicked
 dropdownBtn.addEventListener("click", function (e) {
   e.stopPropagation();
   toggleDropdown();
+  new Audio(selectsounds).play();
 });
 
 // Close dropdown when dom element is clicked
@@ -50,27 +50,43 @@ $(function() {
   });
 });
 
+var buttonvol = '0.1'
+var buttonsounds = './sounds/sfx4.mp3'
+var selectsounds = './sounds/sfx3.mp3'
+var selectsfx = './sounds/sfx4.mp3'
 
+function button() {
+    var sfx = Audio()
+    sfx.url = buttonsounds
+    sfx.play()
+}
+var sfxsel = new Audio(selectsfx);
 function doSomething(x) {
+  var PREV = document.querySelector('#play-previous');
+  var NEXT = document.querySelector('#play-next');
   // Действия, которые выполняются при клике
   // alert('Кнопка нажата!');
   var currIndex = (x * 5)-6
   var fff = document.querySelector('.number').innerHTML
-  console.log(`Нажмите ${x} ${fff}`)
+  // console.log(`Нажмите ${x} ${fff}`)
   if (x < fff){
-    // document.querySelector('#play-previous').click()
     var i = 0
     var rt = (fff-x)
     for (i=0; i<rt; i++) {
-      document.querySelector('#play-previous').click()
+      PREV.removeAttribute("onclick");
+      PREV.click()
+      PREV.setAttribute("onclick", 'new Audio(buttonsounds).play();')
+      sfxsel.play()
     }
   }
   if (x > fff){
     var i = 0
     var rt = (x-fff)
-    console.log(rt)
     for (i=0; i<rt; i++) {
-      document.querySelector('#play-next').click()
+      NEXT.removeAttribute("onclick");
+      NEXT.click()
+      NEXT.setAttribute("onclick", 'new Audio(buttonsounds).play();')
+      sfxsel.play()
     }
   }
 
@@ -90,6 +106,7 @@ $(function () {
     
     var sell = document.createElement('a');
     sell.setAttribute("onclick",`event.preventDefault(); doSomething(${((i-1)/5)+1})`);
+    sell.setAttribute("id",`${((i-1)/5)+1}`);
     sell.innerHTML = (`<img id=immm src="./${fm_list[i]}"><span id=names>${fm_list[i-1]}</span><span id=stat>${fm_list[i+2]}</span> <span id=nums>${((i-1)/5)+1}</span>`)
     const box = document.getElementById('dropdown');
     box.appendChild(sell);
@@ -159,22 +176,6 @@ var playerTrack=$("#player-track"),
         }
       }, 300);
     }
-    function showHover(event) {
-      seekBarPos = sArea.offset();
-      seekT = event.clientX - seekBarPos.left;
-      seekLoc = audio.duration * (seekT / sArea.outerWidth());
-      sHover.width(seekT);
-      cM = seekLoc / 60;
-      ctMinutes = Math.floor(cM);
-      ctSeconds = Math.floor(seekLoc - ctMinutes * 60);
-      if (ctMinutes < 0 || ctSeconds < 0) return;
-      if (ctMinutes < 0 || ctSeconds < 0) return;
-      if (ctMinutes < 10) ctMinutes = "0" + ctMinutes;
-      if (ctSeconds < 10) ctSeconds = "0" + ctSeconds;
-      if (isNaN(ctMinutes) || isNaN(ctSeconds)) insTime.text("--:--");
-      else insTime.text(ctMinutes + ":" + ctSeconds);
-      insTime.css({ left: seekT, "margin-left": "-21px" }).fadeIn(0);
-    }
     function hideHover() {
       sHover.width(0);
   }
@@ -224,6 +225,7 @@ var playerTrack=$("#player-track"),
       currImage = fm_list[currIndex+Number("1")]; // Radio Image
       audio.src = fm_list[currIndex+Number("2")]; // Radio Server
       currTrack = fm_list[currIndex+Number("3")]; // Radio Status
+      // new Audio(buttonsounds).play();
       currID = (currIndex/5)+1;                   // Radio ID
       
       
@@ -249,6 +251,16 @@ var playerTrack=$("#player-track"),
       
       trackName.text(currTrack);
       idfm.text(currID);
+      var fff = ~~(document.querySelector('.number').innerHTML)
+      // while(elem.attributes.length > 0)
+      //   elem.removeAttribute(elem.attributes[0].name);
+      try{
+        document.getElementById(fff-1).removeAttribute('class');
+      } catch (e) {console.log(e);}
+      try{
+      document.getElementById(fff+1).removeAttribute('class');
+      } catch (e) {console.log(e);}
+      document.getElementById(fff).setAttribute('class', 'PlaySelect')
       // document.querySelector('img.active').src = './'+currImage;
       bgback.css({ "background-image": "url(" + './'+currImage + ")" });
       bglogo.css({ "background-image": "url(" + './'+currImage + ")" });
@@ -258,7 +270,7 @@ var playerTrack=$("#player-track"),
       else ++currIndex;
     }
   }
-  function initPlayer() {
+  function initPlayer() { // Создаём новый элемент Audio
     audio = new Audio();
     selectTrack(0);
     audio.loop = true;
@@ -322,4 +334,3 @@ rangeInput.addEventListener("input",function(){
     let progress = (tempSliderValue / sliderEl.max) * 100;
     sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
   })
-  

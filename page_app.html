@@ -57,7 +57,8 @@
                         <html>
                             <head>
                                 <meta charset="UTF-8">
-                                <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'><link rel="stylesheet" href="./style_app.css">
+                                <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+                                <link rel="stylesheet" href="./style_app.css">
                                 <meta name="yandex-verification" content="bef8770f64b65879" />
                                 <meta charset="utf-8">
                                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -140,13 +141,13 @@
 <div id="player-controls">
     <!-- <iframe src="http://online-3.gkvr.ru:8000/status.xsl" frameborder="0"></iframe> -->
     
-    <div class="control"><div class="button" id="play-previous" conf="1">
+    <div class="control"><div class="button" id="play-previous" conf="1" onclick="new Audio(buttonsounds).play();">
         <i class="fas fa-backward"></i></div></div>
-    
-    <div class="control"><div class="button" id="play-pause-button" conf="1">
-        <i class="fas fa-play"></i></div></div>
         
-    <div class="control"><div class="button" id="play-next" conf="1">
+    <div class="control"><div class="button" id="play-pause-button" conf="1" onclick="new Audio(buttonsounds).play();">
+        <i class="fas fa-play"></i></div></div>
+            
+    <div class="control"><div class="button" id="play-next" conf="1" onclick="new Audio(buttonsounds).play();">
         <i class="fas fa-forward" id="true"></i></div></div>
                 
                 <!-- <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a> -->

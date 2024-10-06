@@ -174,14 +174,47 @@
     margin: 6px;
     border-radius: 3px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: #00000033 !important;
     border: 1px solid rgba(255, 255, 255, 0) !important;
     backdrop-filter: blur(2vh) !important;
     box-shadow: none !important;
     }
-
+    
+.dropdown a > #nums{
+    background: #3f3c3c75 !important;
+}
+.dropdown a:hover > #nums{
+    background: #0e795375 !important;
+}
+.dropdown .PlaySelect{
+    /* pointer-events: none; */
+    background: #e74e4e75 !important;
+}
+.dropdown .PlaySelect > #nums{
+    background: #e74e4e75 !important;
+}
+.dropdown .PlaySelect > #nums::before{
+    content: 'Выбрано';
+    background: #e74e4e75 !important;
+    left: -74px;
+    border-radius: 3px;
+    /* width: 180px; */
+    padding: 6px 7px;
+    /* top: -15px; */
+    font-size: 13px;
+    height: 30px;
+    line-height: normal;
+    position: absolute;
+}
+.dropdown .PlaySelect:hover{
+    /* pointer-events: none; */
+    background: #e74e4e55 !important;
+}
+.dropdown .PlaySelect:hover > #nums{
+    background: #e74e4e75 !important;
+}
 .dropdown a:hover {
-    background-color: #555 !important;
+    background: #0e795375 !important;
     border-radius: var(--radius);
     color: white;
     }
