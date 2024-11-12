@@ -1,5 +1,5 @@
 <div id="logo" align="center">
-<img src="https://cdn.discordapp.com/emojis/1232726173470163067.webp" alt="logo" style="width:300px;height:auto; border-radius: 50px;"> 
+<img src="https://cdn.discordapp.com/emojis/1232726173470163067.webp" alt="logo" style="width:120px;height:auto; border-radius: 50px;"> 
 
 # <p align="center" style="font-size:320px">Radio KetaRu</p>
 <p align="center" style="font-size:30px">Powered by KetaruCorp ✨</p>
