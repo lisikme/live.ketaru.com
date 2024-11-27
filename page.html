@@ -99,13 +99,19 @@
                                                     position: relative;
                                                     top: -20px;
                                                 }
+                                                #info{
+                                                    color: rgb(107, 255, 174);
+                                                    font-size: 10px;
+                                                    position: relative;
+                                                    top: -20px;
+                                                }
                                             </style>
                                             <a target ='additional'>
                                             <div class="addbuttonn">
-                                                <!-- <a target ='additional' onclick="NewTab('https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8')"> -->
+                                                <a target ='additional' onclick="NewTab('https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8')">
                                                 <a target ='additional'>
                                                     <div id="item1">Добавить в Discord
-                                                        <br><span id="errors">Временно недоступно!</span>
+                                                        <!-- <br><span id="errors">Временно недоступно!</span> -->
                                                     </div></a>
                                             <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
                                             <!-- <div class="range-input">
@@ -176,6 +182,10 @@
 <div class="range-input">
     <input type="range" id="range" min="0" max="100" value="0" step="1">
     <div class="value"><div>
+
+        <audio autoplay loop  id="playAudio">
+            <source src="sounds/sfx.mp3">
+        </audio>
 
 </div>
 </div>

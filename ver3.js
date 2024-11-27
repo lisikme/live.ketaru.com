@@ -56,7 +56,7 @@ var selectsounds = './sounds/sfx3.mp3'
 var selectsfx = './sounds/sfx4.mp3'
 
 function button() {
-    var sfx = Audio()
+    var sfx = new Audio()
     sfx.url = buttonsounds
     sfx.play()
 }
@@ -145,9 +145,8 @@ var playerTrack=$("#player-track"),
     let url = new URL(window.location.href)
     let par = new URLSearchParams(url.search);
     const select = par.get("id");
-    console.log(select)
+    var currtrc = fm_list[currIndex+Number("0")]
     if (`${select}` === `null`) {
-      console.log(`${select}`.replace('null', '1'))
       var currIndex = (1 * 5)-6;
     }
     else {
@@ -221,45 +220,48 @@ var playerTrack=$("#player-track"),
       }
       seekBar.width(0);
       trackTime.removeClass("active");
-      currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
-      currImage = fm_list[currIndex+Number("1")]; // Radio Image
-      audio.src = fm_list[currIndex+Number("2")]; // Radio Server
-      currTrack = fm_list[currIndex+Number("3")]; // Radio Status
-      // new Audio(buttonsounds).play();
-      currID = (currIndex/5)+1;                   // Radio ID
       
       
       nTime = 0;
       bTime = new Date();
       bTime = bTime.getTime();
+      if (Number(currIndex/5+1) === parseInt(currIndex/5+1)) {
+        currAlbum = fm_list[currIndex+Number("0")]; // Radio Name
+        currImage = fm_list[currIndex+Number("1")]; // Radio Image
+        audio.src = fm_list[currIndex+Number("2")]; // Radio Server
+        currTrack = fm_list[currIndex+Number("3")]; // Radio Status
+        currID = (currIndex/5)+1;                   // Radio ID
+        console.log({RadioID:Number(currIndex/5+1), RadioName:currAlbum})
+      }
       if (flag != 0) {
-        audio.play();
+        if (Number(currIndex/5+1) === parseInt(currIndex/5+1)) {
+        audio.play().catch(error => {
+          null
+        });}
         playerTrack.addClass("active");
         albumArt.addClass("active");
         idfm.addClass("active");
         clearInterval(buffInterval);
         checkBuffering();
       }
+
       $("#album-name").hide(200, function() {
-        console.log(currAlbum)
         $(this).html(currAlbum).show(200);
       });
       $("#track-name").hide(200, function() {
         $(this).html(currTrack).show(200);
       });
-      // albumName.text(currAlbum);
-      
+
+      albumName.text(currAlbum);
       trackName.text(currTrack);
       idfm.text(currID);
       var fff = ~~(document.querySelector('.number').innerHTML)
       // while(elem.attributes.length > 0)
       //   elem.removeAttribute(elem.attributes[0].name);
-      try{
-        document.getElementById(fff-1).removeAttribute('class');
-      } catch (e) {console.log(e);}
-      try{
-      document.getElementById(fff+1).removeAttribute('class');
-      } catch (e) {console.log(e);}
+      try{document.getElementById(fff-1).removeAttribute('class');
+      } catch (e) {console.log();}
+      try{document.getElementById(fff+1).removeAttribute('class');
+      } catch (e) {console.log();}
       document.getElementById(fff).setAttribute('class', 'PlaySelect')
       // document.querySelector('img.active').src = './'+currImage;
       bgback.css({ "background-image": "url(" + './'+currImage + ")" });
