@@ -102,13 +102,19 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725609713762365.webp?size=96&quality=lossless",
 
+    "ResiDANCE",
+    "img/fm_epresi.png",
+    "https://epdop.hostingradio.ru:8033/ep-residance128.mp3",
+    "Онлайн",
+    "---",
+
+
+
     "Хит FM",
     "img/fm_hit.png",
     "https://hitfm.hostingradio.ru/hitfm96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725593150328873.webp?size=96&quality=lossless",
-
-
 
     "Energy FM",
     "img/fm_nrg.png",
@@ -134,13 +140,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725551626850394.webp?size=96&quality=lossless",
 
+
+
     "Юмор FM",
     "img/fm_umor.png",
     "https://ic5.101.ru:8000/v5_1",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232725542076416130.webp?size=96&quality=lossless",
-
-
 
     "Новое радио",
     "img/fm_new.png",
@@ -166,16 +172,16 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232754777335529492.webp?size=96&quality=lossless",
 
+
+
+
+
+
     "Детское радио",
     "img/fm_kids.png",
     "https://pub0301.101.ru:8443/stream/air/mp3/256/199",
     "Онлайн Kids",
-    "https://cdn.discordapp.com/emojis/1232759810148012184.webp?size=96&quality=lossless",
-
-
-
-
-
+    "https://cdn.discordapp.com/emojis/1232759810148012184.webp?size=96&quality=lossless",    
 
     "Radio Record",
     "img/fm_rc.png",
@@ -201,13 +207,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760987640266894.webp?size=96&quality=lossless",
 
+
+
     "Record Lo-Fi",
     "img/fm_rclofi.png",
     "https://radiorecord.hostingradio.ru/lofi96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760969239855104.webp?size=96&quality=lossless",
-
-
 
     "Record Rock",
     "img/fm_rcrock.png",
@@ -233,13 +239,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760935010013184.webp?size=96&quality=lossless",
 
+
+
     "Record FutureBass",
     "img/fm_rcfuturebass.png",
     "https://radiorecord.hostingradio.ru/fbass96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760380359573584.webp?size=96&quality=lossless",
-
-
 
     "Record На Хайпе",
     "img/fm_rcnh.png",
@@ -265,13 +271,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238696078853931049.webp?size=96&quality=lossless",
 
+
+
     "Record Progressive",
     "img/fm_rcp.png",
     "https://radiorecord.hostingradio.ru/progr96.aacp",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1238696074869477396.webp?size=96&quality=lossless",
-
-
 
     "Record Gold",
     "img/fm_rcg.png",
@@ -297,13 +303,13 @@ fm_list=[
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760296066650162.webp?size=96&quality=lossless",
 
+
+
     "Радио дача",
     "img/fm_rd.png",
     "https://vdfm.ru:8000/dacha?type=.aac",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760284758671360.webp?size=96&quality=lossless",
-
-
 
     "Радио Хит",
     "img/fm_rx.png",
@@ -316,12 +322,6 @@ fm_list=[
     "https://microit.n340.ru:8443/VgMv0WV17ZVx1uuo_19_ruhit_64_reg_1",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760201900200017.webp?size=96&quality=lossless",
-
-    "Радио Юнитон",
-    "img/fm_ur.png",
-    "https://online.uniton.ru/uniton?st=ae58f77c-18fc-5139-b9a8-91c4a6f28d6a&gts=1717701443",
-    "Онлайн",
-    "https://cdn.discordapp.com/emojis/1232760192001642616.webp?size=96&quality=lossless",
 
     "Макс FM",
     "img/fm_mf.png",
@@ -345,13 +345,13 @@ fm_list=[
     "https://choco.hostingradio.ru:10010/fm",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760060996751471.webp?size=96&quality=lossless",
-
+    
     "Радио SRP",
     "img/fm_srp.png",
     "https://a7.radioheart.ru:8066/RH6629",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1232760047273115762.webp?size=96&quality=lossless",
-
+    
     "Жара FM",
     "img/fm_jr.png",
     "https://live1.zharafm.ru/internet",
@@ -438,7 +438,7 @@ fm_list=[
 
     "Радиола",
     "img/fm_rad.png",
-    "https://radiola.hostingradio.ru/radiola_eka_128.mp3",
+    "https://online-1.gkvr.ru:8000/radiola_blk_96.aac",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256483821105446922.webp?size=96&quality=lossless",
 
@@ -451,6 +451,12 @@ fm_list=[
     "RFM",
     "img/fm_rf.png",
     "https://radio-holding.ru/rfm",
+    "Онлайн",
+    "---",
+
+    "Эльдорадио",
+    "img/fm_eldo.png",
+    "https://emgspb.hostingradio.ru/eldoradio128.mp3",
     "Онлайн",
     "---",
 ]
