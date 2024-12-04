@@ -26,7 +26,7 @@ class Help(commands.Cog):
         self.client = client
 
 
-    @cmd.slash_command(description='Radio KetaRu ➔ Информация о боте')
+    @cmd.slash_command(description='KetaMeRadio ➔ Информация о боте')
     async def help(self, inter: disnake.ApplicationCommandInteraction):
         EFX = self.client.get_emoji(sitker.EFFECT)
         AR1 = self.client.get_emoji(sitker.STATS)
@@ -92,7 +92,7 @@ f'''
             disnake.ui.Button(
                 style=disnake.ButtonStyle.link,
                 url=url.web,
-                label='Radio KetaRu Web',
+                label='KetaMeRadio Web',
                 emoji=BU4),
             ]
         ]
