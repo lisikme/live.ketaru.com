@@ -23,9 +23,9 @@
         <link rel="stylesheet" href="./css/Page.css">        <!-- Дизайн фона сайта --> 
         <link rel="stylesheet" href="./css/Header.css">      <!-- Дизайн шапки сайта --> 
         <link rel="stylesheet" href="./css/Root.css">        <!-- Конфигурация -->
-<!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Page.css">        <!-- Дизайн фона сайта -->
-<!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Header.css">      <!-- Дизайн шапки сайта -->
-<!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Root.css">        <!-- Конфигурация -->
+        <!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Page.css">        <!-- Дизайн фона сайта -->
+        <!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Header.css">      <!-- Дизайн шапки сайта -->
+        <!--         <link rel="stylesheet" href="https://raw.githack.com/lisikme/live.ketaru.com/web/css/Root.css">        <!-- Конфигурация -->
         <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
         <style>
             :root {
@@ -40,8 +40,11 @@
             .em-logo{
                 background-image: url("https://i.imgur.com/K98MRfw.png")
             }
-</style>
+            </style>
 <!-- JavasCript -->
+<style>
+</style>
+
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <!-- Шапка страницы -->
@@ -79,6 +82,9 @@
                                             <button class="btn" id="btn">Выбрать радиостанцию из списка<i class="bx bx-chevron-down"></i></button>
                                             <div class="dropdown" id="dropdown"></div>
                                         </div>
+                                        <div id="err">
+                                            <strong>Ошибка:</strong> Радиостанция недоступна.
+                                        </div>
                                         <div id="player-track">
                                             <div id="s-area">
                                             </div>
@@ -88,68 +94,104 @@
                                             <div id="box_apps">
                                                 <div id="boxs"><a rel="noopener noreferrer" href="./app/radio.apk"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
                                                     >Android</div></a></div>
-                                                <div id="boxs"><a rel="noopener noreferrer" href="./app/radio.exe"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
-                                                    >Windows</div></a></div>
-                                            </div>
-                                            <!-- <div id="boz"></div> -->
-                                            <style>
-                                                #errors{
-                                                    color: rgb(255, 107, 169);
-                                                    font-size: 10px;
-                                                    position: relative;
-                                                    top: -20px;
-                                                }
-                                                #info{
-                                                    color: rgb(107, 255, 174);
-                                                    font-size: 10px;
-                                                    position: relative;
-                                                    top: -20px;
-                                                }
-                                            </style>
+                                                    <div id="boxs"><a rel="noopener noreferrer" href="./app/radio.exe"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
+                                                        >Windows</div></a></div>
+                                                    </div>
+                                                    <!-- <div id="boz"></div> -->
+                                                    <style>
+                                                        @keyframes fadeOut {
+                                                            0% {opacity: 1;}
+                                                            100% {opacity: 0;}
+                                                        }
+                                                        @keyframes fadeIn {
+                                                            0% {opacity: 0;}
+                                                            100% {opacity: 1;}
+                                                        }
+                                                        #err {
+                                                            opacity: 0;
+                                                            /* display: none;  */
+                                                            background: #ff333370;
+                                                            border: 1px solid #ff333370;
+                                                            color: #ffced2; 
+                                                            font-size: 18px;
+                                                            padding: 5px 20px; 
+                                                            border-radius: 3px;
+                                                            position: absolute;
+                                                            top: 207px;
+                                                            left: 0;
+                                                            width: 430px;
+                                                        }
+                                                        .errbuffa {
+                                                            animation: fadeOut 0.3s forwards;
+                                                        }
+                                                        .errbuff {
+                                                            animation: fadeIn 0.3s forwards;
+                                                        }
+                                                        #errors{
+                                                            color: rgb(255, 107, 169);
+                                                            font-size: 10px;
+                                                            position: relative;
+                                                            top: -20px;
+                                                        }
+                                                        #info{
+                                                            color: rgb(107, 255, 174);
+                                                            font-size: 10px;
+                                                            position: relative;
+                                                            top: -20px;
+                                                        }
+                                                        </style>
                                             <a target ='additional'>
-                                            <div class="addbuttonn">
-                                                <a target ='additional' onclick="NewTab('https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8')">
-                                                <a target ='additional'>
-                                                    <div id="item1">Добавить в Discord
-                                                        <!-- <br><span id="errors">Временно недоступно!</span> -->
-                                                    </div></a>
-                                            <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
-                                            <!-- <div class="range-input">
-                                                <input type="range" id="range" min="0" max="100" value="0" step="1">
-                                                <div class="value"><div> -->
-                                                </div>
-                                                <div id="box-play">
-                                                    <div id="album-art-bg" style="background-image: url(load.gif); background-size: cover;"></div>
-                                                    <div id="album-art" style="background-image: url(load.gif); background-size: cover;"></div>
-                                                    <div id="album-name" class="buffa"></div>
-                                                    <span id="idfm" class="number">-1</span>
-                                            <div id="track-name"></div>
-                                            <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
-                                                
-                                            </div>
-                                            <div class="addbutton">
-                                            </div>
-            <script>
-                function NewTab(url){
-                    var options={
-                        height: 820, // устанавливает высоту окна в пикселях.
-                        width: 680, // устанавливает ширину окна в пикселях.
-                        toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
-                        scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
-                        status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
-                        resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
-                        left: (screen.width-680)/2, // левое положение при появлении окна.
+                                                <div class="addbuttonn">
+                                                    <a target ='additional' onclick="NewTab('https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8')">
+                                                        <a target ='additional'>
+                                                            <div id="item1">Добавить в Discord
+                                                                <!-- <br><span id="errors">Временно недоступно!</span> -->
+                                                            </div></a>
+                                                            <!-- <a href="https://ketaru.com/join" id="item2" target="_blank">Сервер</a> -->
+                                                            <!-- <div class="range-input">
+                                                                <input type="range" id="range" min="0" max="100" value="0" step="1">
+                                                                <div class="value"><div> -->
+                                                                </div>
+                                                                <div id="box-play">
+                                                                    <div id="album-art-bg" style="background-image: url(load.gif); background-size: cover;"></div>
+                                                                    <div id="album-art" style="background-image: url(load.gif); background-size: cover;"></div>
+                                                                    <div id="album-name" class="buffa"></div>
+                                                                    <span id="idfm" class="number">-1</span>
+                                                                    <div id="track-name"></div>
+                                                                    <!-- <img class="active" onerror="this.style.visibility='hidden'" src="img/flyfox.png" height="10px" style="display:  none;"> -->
+                                                                    
+                                                                </div>
+                                                                <div class="addbutton">
+                                                                </div>
+                                                                <script>
+                                                                    function NewTab(url){
+                                                                        var options={
+                                                                            height: 820, // устанавливает высоту окна в пикселях.
+                                                                            width: 680, // устанавливает ширину окна в пикселях.
+                                                                            toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
+                                                                            scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
+                                                                            status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
+                                                                            resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
+                                                                            left: (screen.width-680)/2, // левое положение при появлении окна.
                         top: (screen.height-890)/2, // верхнее положение при появлении окна.
                         center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
                         createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
                         location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
                         menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
                     };
-                var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
-                var target = arguments[0] 
-                window.open(target, 'popup', parameters)
-            }
-            </script>
+                    var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
+                    var target = arguments[0] 
+                    window.open(target, 'popup', parameters)
+                }
+                var buttonvol = '0.1'
+                var buttonsounds = './sounds/sfx10.mp3'
+                var selectsounds = './sounds/sfx3.mp3'
+                var selectsfx = './sounds/sfx4.mp3'
+                function playSound() {
+                    var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+                    sound.play(); // Воспроизводим звук
+                }
+                </script>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
@@ -162,17 +204,28 @@
     
     </style>
 
+<script>
+    function playSound() {
+        var buttonvol = 0.1
+        var buttonsounds = './sounds/sfx11.mp3'
+        var selectsounds = './sounds/sfx3.mp3'
+        var selectsfx = './sounds/sfx4.mp3'
+        var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+        sound.volume = buttonvol
+        sound.play(); // Воспроизводим звук
+    }
+</script>
 
 <div id="player-controls">
     <!-- <iframe src="http://online-3.gkvr.ru:8000/status.xsl" frameborder="0"></iframe> -->
-    
-    <div class="control"><div class="button" id="play-previous" conf="1" onclick="new Audio(buttonsounds).play();">
+
+    <div class="control"><div class="button" id="play-previous" conf="1" onclick="playSound();">
         <i class="fas fa-backward"></i></div></div>
         
-    <div class="control"><div class="button" id="play-pause-button" conf="1" onclick="new Audio(buttonsounds).play();">
+    <div class="control"><div class="button" id="play-pause-button" conf="1" onclick="playSound();">
         <i class="fas fa-play"></i></div></div>
             
-    <div class="control"><div class="button" id="play-next" conf="1" onclick="new Audio(buttonsounds).play();">
+    <div class="control"><div class="button" id="play-next" conf="1" onclick="playSound();">
         <i class="fas fa-forward" id="true"></i></div></div>
                 
                 <!-- <a target ='additional' onclick="NewTab()"><div id="item1">Добавить бота</div></a> -->

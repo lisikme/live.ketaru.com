@@ -2,19 +2,19 @@ const dropdownBtn = document.getElementById("btn");
 const dropdownMenu = document.getElementById("dropdown");
 const toggleArrow = document.getElementById("arrow");
 
-// Toggle dropdown function
+// Переключить функцию раскрывающегося списка
 const toggleDropdown = function () {
   dropdownMenu.classList.toggle("show");
 };
 
-// Toggle dropdown open/close when dropdown button is clicked
+// Переключить открытие/закрытие раскрывающегося списка при нажатии кнопки раскрывающегося списка
 dropdownBtn.addEventListener("click", function (e) {
   e.stopPropagation();
   toggleDropdown();
   new Audio(selectsounds).play();
 });
 
-// Close dropdown when dom element is clicked
+// Закрыть раскрывающийся список при нажатии элемента dom
 document.documentElement.addEventListener("click", function () {
   if (dropdownMenu.classList.contains("show")) {
     toggleDropdown();
@@ -192,20 +192,25 @@ var playerTrack=$("#player-track"),
     }
   }
   var rl1 = $("#album-name")
+  var rl2 = $("#err")
   function checkBuffering(){
     clearInterval(buffInterval);
     buffInterval = setInterval(function () {
       if (nTime == 0 || bTime - nTime > 1000){
-        rl1.addClass("buff");
-        rl1.removeClass("buffa");
+        // rl1.addClass("buff");
+        // rl1.removeClass("buffa");
+        rl2.addClass("errbuff");
+        rl2.removeClass("errbuffa");
       }
       else {
-        rl1.removeClass("buff");
-        rl1.addClass("buffa");
+        // rl1.removeClass("buff");
+        // rl1.addClass("buffa");
+        rl2.removeClass("errbuff");
+        rl2.addClass("errbuffa");
         bTime = new Date();
         bTime = bTime.getTime();
       }
-    }, 1000);
+    }, 2000);
   }
   function selectTrack(flag) {
     if (flag == 0 || flag == 1) currIndex++;
@@ -216,6 +221,7 @@ var playerTrack=$("#player-track"),
       }
       else {
         rl1.removeClass("buff");
+        rl1.removeClass("errbuff");
         i.attr("class", "fa fa-pause");
       }
       seekBar.width(0);
@@ -246,10 +252,10 @@ var playerTrack=$("#player-track"),
       }
 
       $("#album-name").hide(200, function() {
-        $(this).html(currAlbum).show(200);
+        $(this).html(currAlbum).show(300);
       });
       $("#track-name").hide(200, function() {
-        $(this).html(currTrack).show(200);
+        $(this).html(currTrack).show(300);
       });
 
       albumName.text(currAlbum);

@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 
 
@@ -57,11 +57,16 @@
     background-color: var(--ColorCursor);
 }
 
+*, *::after{
+    font-family: Rubik, serif;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Onest", sans-serif;
+    /* font-family: "Onest", sans-serif; */
+    /* font-family: Rubik, serif; */
     /* font-weight: 400; */
     --shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px 0px,
         rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
@@ -268,7 +273,7 @@ body {
 }
 
 .buff::after{
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
     content: 'Offline';
     font-size: 10px;
@@ -283,9 +288,9 @@ body {
     position: relative !important;
     animation: buff .9s forwards;
 }
-.buffa::after{
+/* .buffa::after{
     animation: buff 1s forwards;
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
     font-weight: 500;
     content: 'Live';
     font-size: 10px;
@@ -297,7 +302,7 @@ body {
     background: #2f3e56 !important;
     outline: 1px solid #00000000;
     position: relative !important;
-}
+} */
 
 #app-cover {
     animation: ani .9s forwards;
@@ -373,34 +378,44 @@ body {
     box-shadow: 0 0px 10px 0px #000000;
 }
 #idfm {
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
     color: #c9e74e !important;
     position: absolute;
-    width: 30px;
+    width: 32px;
     text-align: center;
-    background: #33333370;
-    box-shadow: 0 0 10px 0px #33333370;
+    border: #53fbc920 1px solid;
+    /* background: #22222299; */
+    /* background: #00000099; */
+    background: #ffffff20;
     /* border: #364758 1px solid; */
-    bottom: 5px;
-    right: 5px;
+    bottom: 10px;
+    right: 10px;
     line-height: 1;
     font-size: 10px;
     font-weight: 700;
-    padding: 3px 0px;
+    padding: 2px 0px;
     /* padding-top: 2px; */
-    border-radius: 2px;
+    border-radius: 3px;
     z-index: 1000;
     /* box-shadow: 0 0px 10px 0px #000000; */
 }
 #album-name {
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: #53fbc920 1px solid;
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
-    top: 15px;
+    top: 9.5px;
     left: 90px;
-    font-size: 23px;
+    font-size: 28px;
+    border-radius: 3px;
     position: absolute;
     color: #53fbc9;
+    background: #22222299;
+    background: #00000099;
+    backdrop-filter: blur(20px);  
+    padding: 2px 14px 1px 14px;
     /* font-size: 22px; */
     /* font-weight: 700; */
     transition: 0.3s ease top;
@@ -408,12 +423,16 @@ body {
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: #53fbc920 1px solid;
+    padding-bottom: 5px;
+    background: #22222299;
+    background: #00000099;
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
-    background: #00000070;
     top: 15px;
     left: 90px;
-    top: 45px;
+    top: 47px;
     position: absolute;
     color: #ff9de1;
     position: absolute;
@@ -421,46 +440,22 @@ body {
     font-weight: 700;
     line-height: normal;
     border-radius: 3px;
-    padding: 1px 6px;
-    margin: 0px 0 13px 0;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding: 1px 15px 2px 15px !important;
 }
 #track-name::before{
     content: "Играет ➔ ";
     color: #76a2e0;
 }
 
-#album-art, #album-arts {
-    animation: art .5s forwards;
-    position: absolute;
-    top: 10px;
-    left: -30px;
-    width: 70px;
-    height: 70px;
-    margin-left: 40px;
-    transform: rotateZ(0);
-    transition: 0.2s linear all;
-    /* box-shadow: 0 0px 40px 0px #141c24; */
-    border: 1px solid #111;
-    background: #0c1116;
-    border-radius: 5px;
-    /* transform: scale(0.7); */
-    overflow: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 #album-art-bg, #album-arts-bg {
     animation: buff 1s forwards;
-    filter: blur(60px) saturate(5) contrast(100%);
+    filter: blur(50px) saturate(5) contrast(100%);
     /* backdrop-filter: blur(30px); */
     position: absolute;
     /* border-radius: 10px; */
@@ -473,7 +468,6 @@ body {
     margin-left: 40px;
     transform: rotateZ(0);
     transition: 0.3s linear all;
-    border: #2c3a50 solid 1px;
     background: #0c1116;
     border-radius: 5px;
     /* transform: scale(0.7); */
@@ -486,36 +480,6 @@ body {
     user-select: none;
 }
 
-/* #album-art.active, #album-arts.active {
-    transform: scale(1.0);
-    top: -69px;
-    border-radius: 3px;
-    background: #10161d;
-    box-shadow: 0 0px 20px 0px #ffffff;
-    border: 1px solid #ffffff;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-} */
-/* 
-#album-art img {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    z-index: -1;
-}
-
-#album-art img.active {
-    opacity: 1;
-    z-index: 1100;
-} */
 
 
 @-webkit-keyframes rotateAlbumArt {
@@ -618,18 +582,43 @@ body {
     height: 92px;
     width: calc(100% - 17px);
     position: absolute;
-    background: #111111;
+    background: rgb(2,0,36);
+    background: linear-gradient(41deg, #111111 0%, #5a2c5e 100% 100%);
+    /* background: #fff; */
+    background: url(https://cdn1.ozone.ru/s3/multimedia-v/6430244203.jpg);
+    /* background: url(https://cdn.prod.website-files.com/5f9072399b2640f14d6a2bf4/6124024934aa8718da9fb6fd_1_4YkOfk2dNswnXU0t1rNAvA.png); */
+    /* background: url(https://i.pinimg.com/originals/a6/3d/3d/a63d3d239c13bc2e31de7eb285639fc6.jpg); */
+    /* background: url(https://images.freecreatives.com/wp-content/uploads/2016/01/Grunge-Blue-Snowy-Pattern-Background.jpg); */
+    /* background: url(https://bogatyr.club/uploads/posts/2023-03/1679350526_bogatyr-club-p-temnii-fon-muzhskoi-krasivo-1.jpg); */
+    /* background: url(https://images.wallpaperscraft.ru/image/single/fon_nebo_tochki_83482_2560x1600.jpg); */
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: round auto; /* Height: auto is to keep aspect ratio */
+    background-repeat: repeat;
+    background-position: 50% 0%;
     /* border: 1px solid #fff; */
     margin: 9px;
     border: 1px solid #0f151b;
     border-radius: 3px;
+}
+#box-play::before{
+    position: absolute;
+    height: 92px;
+    width: calc(100%);
+    content: '';
+    position: absolute;
+    background: #00000050;
+    /* background: #ffffff20; */
 }
 
 #item1, #item2{
     transition: 0.3s ease all;
     /* animation: arr .9s forwards; */
     /* font-family: 'Quicksand', "Comfortaa"; */
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
     background: #2c3a50;
     color: #7f97bb;
@@ -685,7 +674,8 @@ a:hover {
 }
 #boxs{
     transition: 0.3s ease all;
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
     /* background: #2c3a50; */
     color: #7f97bb;
@@ -730,7 +720,8 @@ a:hover {
 }
 #boz{
     transition: 0.3s ease all;
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     font-weight: 500;
     /* background: #2c3a50; */
     color: #7f97bb;
@@ -877,7 +868,8 @@ a:hover {
 
 .range-input .value {
     /* font-family: 'Manrope', sans-serif; */
-    font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* font-family: Rubik, serif; */
+    /* font-family: Onest, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
     color: #c9e74e;
     text-align: center;
     font-weight: 600;
@@ -981,7 +973,7 @@ a{
     /* box-shadow: 0 0px 40px 0px #141c24; */
     border: 0;
     background: #0c1116;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 #album-art-bg, #album-arts-bg {
     animation: buff 1s forwards;
