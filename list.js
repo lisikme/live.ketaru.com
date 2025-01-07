@@ -459,4 +459,10 @@ fm_list=[
     "https://emgspb.hostingradio.ru/eldoradio128.mp3",
     "Онлайн",
     "---",
+
+    "Радио Кабриолет",
+    "img/fm_cabri.png",
+    "https://listen2.myradio24.com/8144",
+    "Онлайн",
+    "---",
 ]
