@@ -17,7 +17,7 @@
 fm_list=[
     "Biskvit Live",
     "img/fm_biskvit.png",
-    "https://cast.ketaru.com/listen/biskvitlive/radio.mp3",
+    "https://cast.ketaru.com/hls/biskvitlive/live.m3u8",
     "Онлайн - От создателей KR.Corp",
     "https://cdn.discordapp.com/emojis/1232726173470163067.webp?size=96&quality=lossless",
 
