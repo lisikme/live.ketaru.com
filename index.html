@@ -92,7 +92,7 @@
         width: 430px;
         font-size: 18px;
         margin: 0 auto;
-        top: calc(50% - 170px);
+        top: 110px;
         left:  calc(50% - 216px);
         /* left: -4px; */
         font-weight: 600;
@@ -120,8 +120,8 @@
     #errr{
         animation: bg 1s ease;
         position: absolute;
-        height: 50px;
-        bottom: 22px;
+        height: 40px;
+        bottom: 19px;
         left: 20px;
         -webkit-mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
         mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
@@ -132,28 +132,28 @@
         animation: bg 1s ease;
         font-family: onest;
         position: absolute;
-        font-size: 25px;
-        left: 80px;
-        bottom: 25px;
+        font-size: 15px;
+        left: 70px;
+        bottom: 15px;
     }
     #df1{
         animation: bg 1s ease;
         font-family: onest;
         color: #999;
         position: absolute;
-        font-size: 14px;
-        left: 81px;
-        bottom: 5px;
+        font-size: 12px;
+        left: 88px;
+        bottom: 0px;
     }
     </style>
 <!-- JavasCript -->
 <img src="https://i.imgur.com/h1N0lX7.png" alt="" id="errr">
-<h1 id="df">BiskvitMusic</h1>
-<h1 id="df1">Официальный поставшик музыки</h1>
+<h1 id="df">KR.Corp - Music</h1>
+<h1 id="df1">Организатор</h1>
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script src="https://krcorpserver.github.io/db-ketaru/serv.js"></script>
-<body id="site-bg">
+<body id="site-bg" >
     <link rel="stylesheet" href="./head.css">
     <header id="site-header">
         <type id="page-name">KetaMeRadio <span id="nam">Web приложение</span> <span id="rel">BETA</span></type>
@@ -176,226 +176,178 @@
         <!-- <button id="ff" onclick="Ret('q')">kk</button> -->
         
         <body onLoad="Redirect()">
-    <div id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
+    <div style="display: none;" id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
             
-            <script>
-                var global_list = fm_list.length/5
-                document.getElementById('guilds').innerText = bot_guilds
-                document.getElementById('radiolist').innerText = global_list
-                let url = new URL(window.location.href)
-                let par = new URLSearchParams(url.search);
-                const select = par.get("id");
-                console.log(select)
+    <script>
+        var global_list = fm_list.length/5
+        document.getElementById('guilds').innerText = bot_guilds
+        document.getElementById('radiolist').innerText = global_list
+        let url = new URL(window.location.href)
+        let par = new URLSearchParams(url.search);
+        const select = par.get("id");
+        console.log(select)
+        
+        function Redirect(){
+            const queryString = window.location.search;
+            document.getElementById('q').src=`./page.html?id=${select}`;
+            if (`${select}` === `null`) {
+                const url = new URL(window.location);
+                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+            if (select > global_list || select < 1) {
+                if (select > global_list){var sell = global_list}
+                if (select < 1){var sell = 1}
+                document.getElementById('q').src=`./page.html?id=${sell}`;
+                const url = new URL(window.location);
+                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+                const meta = document.getElementsByTagName('meta')  
+                meta.keywords.content = "My new page keywords";  
+                meta.description.content = "My new page description"
+            }
+        }
+    // function Red(){
+        //     const queryString = window.location.search;
+        //     // document.getElementById('q').src=`./page.html?id=${select}`;
+        //     if (`${select}` === `null`) {
+            //         const url = new URL(window.location);
+            //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+            //         window.history.pushState({}, '', url);
+            //     }
+            //     if (select > 50 || select < 1) {
+                //         if (select > 50){var sell = 50}
+                //         if (select < 1){var sell = 1}
+                //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+                //         const url = new URL(window.location);
+                //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                //         window.history.pushState({}, '', url);
+                //     }
+                // }
                 
-                function Redirect(){
-                    const queryString = window.location.search;
-                    document.getElementById('q').src=`./page.html?id=${select}`;
-                    if (`${select}` === `null`) {
-                        const url = new URL(window.location);
-                        url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
-                        window.history.pushState({}, '', url);
-                    }
-                    if (select > global_list || select < 1) {
-                        if (select > global_list){var sell = global_list}
-                        if (select < 1){var sell = 1}
-                        document.getElementById('q').src=`./page.html?id=${sell}`;
-                        const url = new URL(window.location);
-                        url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
-                        window.history.pushState({}, '', url);
-                        const meta = document.getElementsByTagName('meta')  
-                        meta.keywords.content = "My new page keywords";  
-                        meta.description.content = "My new page description"
-                    }
-                }
-                // function Red(){
-                    //     const queryString = window.location.search;
-                    //     // document.getElementById('q').src=`./page.html?id=${select}`;
-                    //     if (`${select}` === `null`) {
-                        //         const url = new URL(window.location);
-                        //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
-                        //         window.history.pushState({}, '', url);
-                        //     }
-                        //     if (select > 50 || select < 1) {
-                            //         if (select > 50){var sell = 50}
-                            //         if (select < 1){var sell = 1}
-                            //         // document.getElementById('q').src=`./page.html?id=${sell}`;
-                            //         const url = new URL(window.location);
-                            //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
-                            //         window.history.pushState({}, '', url);
-                            //     }
-                            // }
-                            
-                            
-                            function Ret(frameID){
-                                let frameObj = document.getElementById(frameID);
-                                let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
-                                console.log(frameContent);
-                                
-                            }
-                            // setInterval(function() {
-                                //     Ret('q')
-                                // }, 0 * 1000);
-                                
-                                </script>
-    <iframe id="q"
-    src=""
-    width="100%"
-    height="100%">
-</iframe>
-<!-- <div id="ssa">KetaMeRadio</div> -->
-<!-- <div style="border-top: #374758 1px solid; border-bottom: #374758 1px solid; position: absolute; top: 100%; height: 56px; width: 100%; background: #151c24;"></div> -->
-<div id="site-header" class="logs_page">
-        <!-- <div style="text-align: right;">Пр</div> -->
-        <div id="ddf">
-        <div id="d"></div>
-        <div id="boxe1">
-            💖 Наши партнёры<hr id="err">
-            <li class="footer-link mb-10"><a href="https://akisearch.com/">AkiSearth <span id="tags">Мониторинг ботов Discord</span></a></li>
-            <li class="footer-link mb-10"><a href="https://discord.gg/inferno-house">Inferno House <span id="tags">Discord сервер</span></a></li>
-            <!-- <li class="footer-link mb-10"><a href="https://discord.gg/QRXjDMawKg">Radio PlusVibe <span id="tags">Интернет радио</span></a></li> -->
-            <li class="footer-link mb-10"><a href="https://voicy.site/">Voicy <span id="tags">Радио бот Discord</span></a></li>
-            <li class="footer-link mb-10"><a href="https://live.ketaru.com/">KetaMeRadio <span id="tags">Радио приложение web</span></a></li>
-        </div>
-        <div id="boxe2">
-            ✨ Наши проекты в Discord<hr id="err">
-            <li class="footer-link mb-10"><a href="https://live.ketaru.com">KetaMeRadio <span id="tags">Радио бот</span></a></li>
-            <li class="footer-link mb-10"><a href="https://discord.com/oauth2/authorize?client_id=487246091939479553&scope=bot&scope=applications.commands%20bot&permissions=8">Shavermik <span id="tags">Унивесальный бот</span></a></li>
-            <li class="footer-link mb-10"><a href="https://discord.com/oauth2/authorize?client_id=897818365836550144&scope=bot&scope=applications.commands%20bot&permissions=8">Biskvit Music <span id="tags">Музыкальный бот</span></a></li>
-        </div>
-    </div>
-    </div>
-<style>
-    #site-logo-box{
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-    html, body{
-        background-image: linear-gradient(-180deg, #191923 0%, #14141E 100%) !important;
-        box-shadow: 0 -10px 20px 0 rgba(20, 20, 30, .2) !important;
-    }
-    #d{
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        padding: 30px;
-        height: 100%;
-        width: 100%;
-        background-size: 10px 10px;
-        background-image: radial-gradient(rgba(26, 26, 41, 1) 15%, transparent 0), radial-gradient(rgba(26, 26, 41, 1) 15%, transparent 0);
-    }
-    li.footer-link.mb-10{
-        height: 28px !important;
-    }
-    li {
-        list-style-type: none;
-    }
-    ul {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    #tags{
-        color: #ffffff;
-        background: #ffffff25;
-        padding: 2px 10px;
-        font-size: 12px;
-        opacity: 1 !important;
-        border-radius: 3px;
-    }
-    #ddf{
-        width: 100%;
-        position: absolute;
-        right: 0px;
-        /* top: 48px; */
-        padding: 30px;
-        width: 100%;
-        top: -10px;
+                
+        function Ret(frameID){
+            let frameObj = document.getElementById(frameID);
+            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+            console.log(frameContent);
+            
+        }
+    </script>
+    <iframe id="q" src="" width="100%" height="100%">
+    </iframe>
+    <style>
+        li.footer-link.mb-10{
+            height: 28px !important;
+        }
+        li {
+            list-style-type: none;
+        }
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        #tags{
+            color: #ffffff;
+            background: #ffffff25;
+            padding: 2px 10px;
+            font-size: 12px;
+            opacity: 1 !important;
+            border-radius: 3px;
+        }
+        #ddf{
+            width: 100%;
+            position: absolute;
+            right: 0px;
+            /* top: 48px; */
+            padding: 30px;
+            width: 100%;
+            top: -10px;
 
-        background-image: linear-gradient(-180deg, #191923 0%, #14141E 100%);
-        box-shadow: 0 -10px 20px 0 rgba(20, 20, 30, .2);
-    }
-    .footer-link a {
-        color: #ff7235 !important;
-        opacity: .7;
-        -webkit-transition: .3s;
-        transition: .3s all;
-    }
-    a, a:hover {
-        text-decoration: none;
-        color: #fff;
-    }
-    .footer-link a:hover{
-        opacity: 1;
-        transition: .3s all;
-        padding-left: 10px;
-        position: relative !important;
-    }
-    /* .footer-link {
-        margin-bottom: 5px;
-    } */
-    p, li, a, blockquote {
-        margin: 0;
-        font-family: onest, sans-serif;
-        font-size: 16px;
-        letter-spacing: 1px;
-    }
-    hr {
-        background-color: rgba(235, 235, 240, .2) !important;
-        margin: 0 !important;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border: 0;
-        border-top: 1px solid rgba(0, 0, 0, .1);
-    }
-    #err {
-        margin-bottom: 10px !important;
-    }
-    #boxe1, #boxe2{
-        margin: 0 auto;
-        max-width: 1315px;
-        font-size: 16px;
-        border-radius: 10px;
-        z-index: 1000 !important;
-        /* width: 450px; */
-        background: rgba(255, 255, 255, 0.03);
-        border: rgba(255, 255, 255, 0.05) solid 1px;
-        padding: 10px 10px 5px 10px;
-    }
-    #boxe1{
-        margin-bottom: 15px;
-    }
-    .logs_page{
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
-        position: relative;
-        /* position: absolute; */
-        left: 0px !important;
-    }
-    *{
-        font-family: onest !important;
-    }
-    ::-webkit-scrollbar { /* chrome based */
-    width: 0px;  /* ширина scrollbar'a */
-    background: transparent;  /* опционально */
-}
-    #q{
-        height: calc(100% - 58px);
-    }
-    html, body {
-        margin: 0px;
-        padding: 0px;
-        border: 0px;
-        background: #222;
-        padding: 0px;
-        height: 100%;
-        /* overflow: hidden; */
-        /* overflow-x: hidden; */
-    }
-    iframe {
-        border-radius: 0px;
-        border: none;
-    }
+            background-image: linear-gradient(-180deg, #191923 0%, #14141E 100%);
+            box-shadow: 0 -10px 20px 0 rgba(20, 20, 30, .2);
+        }
+        .footer-link a {
+            color: #ff7235 !important;
+            opacity: .7;
+            -webkit-transition: .3s;
+            transition: .3s all;
+        }
+        a, a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer-link a:hover{
+            opacity: 1;
+            transition: .3s all;
+            padding-left: 10px;
+            position: relative !important;
+        }
+        /* .footer-link {
+            margin-bottom: 5px;
+        } */
+        p, li, a, blockquote {
+            margin: 0;
+            font-family: onest, sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        hr {
+            background-color: rgba(235, 235, 240, .2) !important;
+            margin: 0 !important;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+        #err {
+            margin-bottom: 10px !important;
+        }
+        #boxe1, #boxe2{
+            margin: 0 auto;
+            max-width: 1315px;
+            font-size: 16px;
+            border-radius: 10px;
+            z-index: 1000 !important;
+            /* width: 450px; */
+            background: rgba(255, 255, 255, 0.03);
+            border: rgba(255, 255, 255, 0.05) solid 1px;
+            padding: 10px 10px 5px 10px;
+        }
+        #boxe1{
+            margin-bottom: 15px;
+        }
+        .logs_page{
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            position: relative;
+            /* position: absolute; */
+            left: 0px !important;
+        }
+        ::-webkit-scrollbar { /* chrome based */
+            width: 0px;  /* ширина scrollbar'a */
+            background: transparent;  /* опционально */
+        }
+        #q{
+            height: calc(100% - 58px);
+        }
+        html, body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            background: #222;
+            padding: 0px;
+            height: 100%;
+            overflow: hidden;
+            overflow-x: hidden;
+        }
+        iframe {
+            border-radius: 0px;
+            border: none;
+        }
+        *{
+            font-family: onest !important;
+        }
     </style>
 </body>
 <html>
-    <head> 
-        
+<head>
