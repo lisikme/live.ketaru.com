@@ -80,10 +80,6 @@
                 </div>
                 <div id="player-content">
                     <div id="box_apps">
-                        <div id="boxs"><a rel="noopener noreferrer" href="./app/radio.apk"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
-                            >Android</div></a></div>
-                            <div id="boxs"><a rel="noopener noreferrer" href="./app/radio.exe"><div style="height: 100%; width: 100%; position: absolute; border-radius: 2px;"
-                                >Windows</div></a></div>
                             </div>
                             <!-- <div id="boz"></div> -->
                             <style>
@@ -366,7 +362,8 @@
                     font-family: Onest, sans-serif;
                     /* font-family: Rubik, sans-serif; */
                     font-weight: 600;
-                    color: #ffffff !important;
+                    /* color: #ffffff !important; */
+                    color: #8abdff !important;
                     transition: 0.3s ease all;
                     background-color: #00000085;
                     color: #fff;
@@ -429,15 +426,12 @@
             <div class="grid-item">
                 <div class="range-input">
                     <input type="range" id="range" min="0" max="100" value="0" step="1">
-                    <div class="value"><div></div></div></div>
+                    <div class="value"><div>
+                </div></div></div>
             </div>
             <div class="grid-item">
-                <button onclick="window.open('./app/radio.apk', '_blank')" class="buttonlink">
-                    Android
-                </button>
-                <button onclick="window.open('./app/radio.exe', '_blank')" class="buttonlink">
-                    Windows
-                </button>
+                <button onclick="window.open('./app/radio.apk', '_blank')" class="buttonlink">Android</button>
+                <button onclick="window.open('./app/radio.exe', '_blank')" class="buttonlink">Windows</button>
             </div>
         </div>
 
