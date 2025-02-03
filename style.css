@@ -584,9 +584,9 @@ body {
 
 #box-play{
     overflow: hidden;
-    height: 92px;
-    width: calc(100% - 18px);
-    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: relative;
     background: rgb(2,0,36);
     background: linear-gradient(41deg, #111111 0%, #5a2c5e 100% 100%);
     /* background: #fff; */
@@ -604,7 +604,7 @@ body {
     background-repeat: repeat;
     background-position: 50% 0%;
     /* border: 1px solid #fff; */
-    margin: 9px;
+    /* margin: 9px; */
     border: 1px solid #0f151b;
     border-radius: 3px;
 }
