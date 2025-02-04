@@ -498,3 +498,9 @@ A, A:visited, A:active{
     /* position: relative; */
     position: absolute;
 }
+/* Запрет выделения текста */
+:root, a, u{text-decoration: none; overflow-x: hidden;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+} 
