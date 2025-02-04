@@ -107,7 +107,8 @@ $(function () {
     var sell = document.createElement('a');
     sell.setAttribute("onclick",`event.preventDefault(); doSomething(${((i-1)/5)+1})`);
     sell.setAttribute("id",`${((i-1)/5)+1}`);
-    sell.innerHTML = (`<img id=immm src="./${fm_list[i]}" loading="lazy"><span id=names>${fm_list[i-1]}</span><span id=stat>${fm_list[i+2]}</span> <span id=nums>${((i-1)/5)+1}</span>`)
+    sell.innerHTML = (`<img id=immm src="./${fm_list[i]}"><span id=names>${fm_list[i-1]}</span><span id=stat>${fm_list[i+2]}</span> <span id=nums>${((i-1)/5)+1}</span>`)
+    // sell.innerHTML = (`<img id=immm src="./${fm_list[i]}" loading="lazy"><span id=names>${fm_list[i-1]}</span><span id=stat>${fm_list[i+2]}</span> <span id=nums>${((i-1)/5)+1}</span>`)
     const box = document.getElementById('dropdown');
     box.appendChild(sell);
     // document.head.appendChild(sell);
