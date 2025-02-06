@@ -95,7 +95,7 @@
     <header id="site-header">
         <type id="page-name">
             <span id="namm">KetaMeRadio<span id="rel">БЕТА</span></span>
-            <span id="nam">Download APP</span></type>
+            <span id="nam">Приложение - v2.0</span></type>
         <div id="site-header-box">
             <a onclick="window.open('./', '_blank');">
                 <div id="site-logo-box">
@@ -124,148 +124,64 @@
         <body onLoad="Redirect()">
     <div style="display: none;" id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
             
-    <div id="q">
-        <div id="grid-buttons">
-            <div class="g-title">
-                <h1 id="m-text">Революция в мире радио.</h1>
-                <h1 id="s-text">Плеер, который полностью меняет представление о музыке.</h1>
-            </div>
-            <div class="g-apps">
-                <button class="buttons">
-                    <svg id="sv" height="2.5vw" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Download-3">
-                                <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-                                <line x1="12" y1="5" x2="12" y2="15" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
-                                <path d="M17,11 L12.7071,15.2929 C12.3166,15.6834 11.6834,15.6834 11.2929,15.2929 L7,11" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></path>
-                                <line x1="19" y1="20" x2="5" y2="20" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
-                            </g>
-                        </g>
-                    </svg>
-                    Загрузить для Android
-                </button>
-                <button class="buttons">
-                    <svg id="sv" height="2.5vw" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Download-3">
-                                <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
-                                <line x1="12" y1="5" x2="12" y2="15" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
-                                <path d="M17,11 L12.7071,15.2929 C12.3166,15.6834 11.6834,15.6834 11.2929,15.2929 L7,11" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></path>
-                                <line x1="19" y1="20" x2="5" y2="20" id="Path" stroke="#0C0310" stroke-width="2" stroke-linecap="round"></line>
-                            </g>
-                        </g>
-                    </svg>
-                    Загрузить для ПК
-                </button>
-            </div>
-            <div id="hr"></div>
-        </div>
-    </div>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Rubik:700" rel="stylesheet"> -->
+    <script>
+        var global_list = fm_list.length/5
+        document.getElementById('guilds').innerText = bot_guilds
+        document.getElementById('radiolist').innerText = global_list
+        let url = new URL(window.location.href)
+        let par = new URLSearchParams(url.search);
+        const select = par.get("id");
+        console.log(select)
+        
+        function Redirect(){
+            const queryString = window.location.search;
+            document.getElementById('q').src=`./pageapp.html?id=${select}`;
+            if (`${select}` === `null`) {
+                const url = new URL(window.location);
+                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+            if (select > global_list || select < 1) {
+                if (select > global_list){var sell = global_list}
+                if (select < 1){var sell = 1}
+                document.getElementById('q').src=`./pageapp.html?id=${sell}`;
+                const url = new URL(window.location);
+                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+                const meta = document.getElementsByTagName('meta')  
+                // meta.keywords.content = "My new page keywords";  
+                // meta.description.content = "My new page description"
+            }
+        }
+    // function Red(){
+        //     const queryString = window.location.search;
+        //     // document.getElementById('q').src=`./page.html?id=${select}`;
+        //     if (`${select}` === `null`) {
+            //         const url = new URL(window.location);
+            //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+            //         window.history.pushState({}, '', url);
+            //     }
+            //     if (select > 50 || select < 1) {
+                //         if (select > 50){var sell = 50}
+                //         if (select < 1){var sell = 1}
+                //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+                //         const url = new URL(window.location);
+                //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                //         window.history.pushState({}, '', url);
+                //     }
+                // }
+                
+                
+        function Ret(frameID){
+            let frameObj = document.getElementById(frameID);
+            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+            console.log(frameContent);
+            
+        }
+    </script>
+    <iframe id="q" src="" width="100%" height="100%">
+    </iframe>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-        .save{
-            fill: black;
-            stroke: black;
-        }
-        #hr{
-            top: 25vw;
-            height: .1vw;
-            background: #ff7395;
-            position: absolute;
-            left: 0;
-            right: 0;
-        }
-        #sv{
-            padding-right: 1vw;
-        }
-        :root{
-            --gaps: 2vw;
-        }
-        #grid-buttons{
-            display: grid;
-            grid-template-columns: 60% auto;
-            /* grid-template-rows: 30px 90px 40px 28px 30px; */
-            grid-template-areas:
-                't-title t-title'
-                "t-apps t-apps";
-            gap: var(--gaps);
-            row-gap: var(--gaps);
-            /* max-width: 100%; */
-            /* min-width: 50%; */
-            top: 10px;
-            position: relative;
-            /* padding: 8px 8px; */
-            box-sizing: border-box;
-        }
-        .grid-item{
-            display: flex;
-            gap: var(--gaps);
-            row-gap: var(--gaps);
-        }
-        .g-title{
-            display: block;
-            gap: var(--gaps);
-            row-gap: var(--gaps);
-            justify-content: center;
-            align-items: center;
-            grid-area: t-title;
-        }
-        .g-apps{
-            display: flex;
-            width: 100%;
-            height: 100%;
-            gap: var(--gaps);
-            row-gap: var(--gaps);
-            justify-content: center;
-            /* align-items: center; */
-            grid-area: t-apps;
-        }
-        .buttons{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 0;
-            border-radius: .7vw;
-            /* padding: .5vw 1vw; */
-            padding: 1.2vw 2vw;
-            padding-left: 1vw;
-            font-size: 3vw;
-        }
-        .buttons:hover{
-            background: #e2e2e2;
-        }
-        #m-text{
-            /* background: #ffd9c8; */
-            line-height: normal;
-            font-size: 7vw;
-            /* position: relative; */
-            font-family: 'Rubik', sans-serif !important;
-            font-weight: 500 !important;
-            /* height: 100%; */
-            top: 6.5vw;
-            width: 100%;
-            margin: 0;
-        }
-        #s-text{
-            margin: 0;
-            line-height: normal;
-            /* background: #ff7235; */
-            font-size: 3.1vw;
-            /* position: relative; */
-            font-family: 'Rubik', sans-serif !important;
-            font-weight: 400 !important;
-            /* height: 100%; */
-            top: 12.5vw;
-            width: 100%;
-            color: rgb(161, 161, 170) !important;
-        }
-        #q{
-            background: #09090b;
-            height: 100%;
-            width: 100%;
-            text-align: center;
-        }
         li.footer-link.mb-10{
             height: 28px !important;
         }
