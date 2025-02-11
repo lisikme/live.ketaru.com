@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 
@@ -292,13 +292,14 @@ body {
     }
 }
 #idfm {
+    backdrop-filter: blur(20px);  
     font-weight: 500;
     color: #c9e74e !important;
     position: absolute;
     width: 32px;
     text-align: center;
-    border: #53fbc920 1px solid;
-    background: #ffffff20;
+    /* border: #ffffff20 1px solid; */
+    background: #00000099;
     bottom: 10px;
     right: 10px;
     line-height: 1;
@@ -349,28 +350,29 @@ body {
     }
 }
 #album-name {
-    border: #53fbc920 1px solid;
-    font-weight: 500;
+    /* border: #53fbc920 1px solid; */
+    /* border: #ffffff20 1px solid; */
+    font-weight: 600;
     top: 9.5px;
     left: 90px;
-    font-size: 28px;
+    font-size: 25px;
     border-radius: 3px;
     position: absolute;
     color: #53fbc9;
-    background: #22222299;
+    /* background: #22222299; */
     background: #00000099;
     backdrop-filter: blur(20px);  
     padding: 2px 14px 1px 14px;
     transition: 0.3s ease top;
-    font-weight: bold;
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    border: #53fbc920 1px solid;
+    /* border: #53fbc920 1px solid; */
+    /* border: #ffffff20 1px solid; */
     padding-bottom: 5px;
     background: #22222299;
     background: #00000099;
-    font-weight: 500;
+    font-weight: 600;
     top: 15px;
     left: 90px;
     top: 47px;
@@ -378,9 +380,9 @@ body {
     color: #ff9de1;
     position: absolute;
     font-size: 10px;
-    font-weight: 700;
     line-height: normal;
     border-radius: 3px;
+    backdrop-filter: blur(20px);  
     padding: 2px 15px !important;
 }
 #album-art {

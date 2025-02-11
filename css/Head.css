@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /* Фон для страницы */
 body {
     background: var(--PageColor); /* Чёрный фон */
@@ -232,7 +232,6 @@ img, svg {
 @import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 #site-bg{
     background: #0d1218;
 }
