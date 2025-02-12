@@ -14,7 +14,6 @@ body {
 }
 body {
     background-color: var(--PageColor);
-    font-family: "IBM Plex Sans", sans-serif;
 }
 
 a {
