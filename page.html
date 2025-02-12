@@ -347,59 +347,7 @@
                             grid-template-rows: 28px;
                             grid-template-columns: auto 1fr;
                         }
-                        
-                        @media (max-width: 362px) {
-                            .grid-container {
-                                grid-template-rows: 28px 70px 40px 28px auto;
-                            }
-                            #album-name{
-                                font-size: 20px;
-                                top: 5px;
-                                left: 70px;
-                            }
-                            #track-name{
-                                top: 43px;
-                                font-size: 8px;
-                                left: 70px;
-                            }
-                            #idfm{
-                                bottom: 7px;
-                                right: 7px;
-                            }
-                            #album-art{
-                                opacity: 1;
-                                background: #0c1116;
-                                position: absolute;
-                                top: 7px;
-                                left: -30px;
-                                width: 56px;
-                                height: 56px;
-                                margin-left: 38px;
-                                border-radius: 3px;
-                                border: 0;
-                                transform: rotateZ(0);
-                                transition: 0.2s linear all;
-                                animation: art .5s forwards;
-                            }
-                            #info-app{
-                                font-size: 12px !important;
-                            }
-                            .button, .buttonlink {
-                                font-size: 10px !important;
-                            }
-                            .btn2{
-                                font-size: 12px !important;
-                                border: 0;
-                                font-family: Onest, sans-serif;
-                                font-weight: 600;
-                                border-radius: 3px;
-                                width: 100%;
-                                height: 100%;
-                                transition: 0.2s linear all !important;
-                                background: #ffffff30 !important;
-                                color: #ffffff !important;
-                            }
-                        }
+                    
                         
 
                         .button, .buttonlink {
@@ -472,6 +420,8 @@
                             font-size: 14px;
                             color: #fff;
                             text-align: center;
+                            align-content: center;
+                            line-height: normal;
                             font-weight: 500;
                             height: 100%;
                             width: 100%;
@@ -490,13 +440,72 @@
                             display: inline-block;
                             margin: 0 10px;
                             height: 18px;
-                            top: 5px;
+                            /* top: -1px; */
                             width: 4px;
                             color: #00000000;
                             background: #ffe881;
                             border-radius: 5px;
                             margin-top: 0;
                             margin-bottom: 0;
+                        }
+                        #guilds, #radiolist{
+                            top: 1px;
+                            position: relative;
+                        }
+                        @media (max-width: 362px) {
+                            #guilds, #radiolist{
+                                top: 1.8px;
+                            }
+                            .grid-container {
+                                grid-template-rows: 28px 70px 40px 28px auto;
+                            }
+                            #album-name{
+                                font-size: 20px;
+                                top: 5px;
+                                left: 70px;
+                            }
+                            #track-name{
+                                top: 36px !important;
+                                font-size: 8px;
+                                left: 70px;
+                            }
+                            #idfm{
+                                bottom: 7px;
+                                right: 7px;
+                            }
+                            #album-art{
+                                opacity: 1;
+                                background: #0c1116;
+                                position: absolute;
+                                top: 7px;
+                                left: -30px;
+                                width: 56px;
+                                height: 56px;
+                                margin-left: 38px;
+                                border-radius: 3px;
+                                border: 0;
+                                transform: rotateZ(0);
+                                transition: 0.2s linear all;
+                                animation: art .5s forwards;
+                            }
+                            #info-app{
+                                font-size: 12px !important;
+                            }
+                            .button, .buttonlink {
+                                font-size: 10px !important;
+                            }
+                            .btn2{
+                                font-size: 12px !important;
+                                border: 0;
+                                font-family: Onest, sans-serif;
+                                font-weight: 600;
+                                border-radius: 3px;
+                                width: 100%;
+                                height: 100%;
+                                transition: 0.2s linear all !important;
+                                background: #ffffff30 !important;
+                                color: #ffffff !important;
+                            }
                         }
 
                     </style>
