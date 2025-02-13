@@ -8,58 +8,30 @@
         <meta name="robots" content="noyaca" />
         <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-<!-- Интеграция Embed --> 
-<meta name="theme-color" content="#e43f79">
-<!-- beta -->
-<link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
-<link rel="stylesheet" href="css/HeaderApp.css">      <!-- Дизайн шапки сайта --> 
-<link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
-<link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
-<script src="./list.js"></script>
-<style>
-
-    @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+        <!-- Интеграция Embed -->
+        <title>KetaMeRadio Web</title>
+        <meta property="og:title" content="KetaMeRadio Web">
+        <meta property="og:site_name" content="KetaRu">
+        <meta property="og:url" content="https://live.ketaru.com">
+        <meta property="og:description" content="Наше онлайн версия радио бота">
+        <link rel="shortcut icon" href="./icon.png">
+        <meta property="og:image" content="https://live.ketaru.com/icon.png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta name="theme-color" content="#e43f79">
+        <!-- <script src="https://raw.githack.com/lisikme/live.ketaru.com/web/list.js"></script> -->
+        <script src="./list.js"></script>
+        <!-- beta -->
+        <link rel="stylesheet" href="css/Page.css">        <!-- Дизайн фона сайта --> 
+        <link rel="stylesheet" href="css/Head.css">        <!-- Дизайн шапки сайта --> 
+        <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
+        <link rel="stylesheet" href="css/Root.css">        <!-- Конфигурация -->
+        <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
     :root {
     --NamePage: "Radio";
     --VerPage: "KetaRu Web";
-    }
-    .em{
-        font-size: 16.6px;
-        position: relative;
-        bottom: 2.4px;
-    }
-    .em-logo{
-        background-image: url("https://ketaru.com/icon.png")
-    }
-    #rel{
-        color: #fff;
-        background: #c22b4c;
-        padding: 2px 6px;
-        border-radius: 50px;
-        font-size: 10px;
-        font-weight: 900;
-        top: -8px;
-        font-family: 'onest';
-        position: absolute;
-        margin-left: 4px;
-    }
-    #nam{
-        font-family: 'onest';
-        position: absolute;
-        display:inline-block;
-        left: 0px;
-        font-size: 14px;
-        
-        width: 100%;
-        top: 16px;
-        color: #ffef5b;
-    }
-    #page-name{
-        font-size: 20px !important;
-        top: 5px;
-        position: absolute !important;
-        top: 18px !important;
-        font-family: 'onest' !important;
     }
     @keyframes ani {
     0%   {left: calc(50% - 280.5px)}
@@ -74,45 +46,19 @@
         0%   {opacity: .0; transform: scale(1);}
         100% {opacity: 1;}
     }
-    #inf{
-        backdrop-filter: blur(2vh);
-        animation: ani 1s ease;
-        background: #ffffff30;
-        border: 1px solid #ffffff30;
-        font-family: onest;
-        width: 430px;
-        font-size: 18px;
-        margin: 0 auto;
-        top: calc(50% - 170px);
-        left:  calc(50% - 216px);
-        /* left: -4px; */
-        font-weight: 600;
-        padding: 5px 0px;
-        text-align: center;
-        border-radius: 3px;
+    .em{
+        font-size: 16.6px;
         position: relative;
-        position: absolute;
+        bottom: 2.4px;
     }
-    #guilds:before{
-        content: 'Серверов: ';
-        color: #7bf0ff;
-    }
-    #radiolist:before{
-        content: 'Радиостанций: ';
-        color: #a0ff7b;
-    }
-    #space{
-        margin: 20px;
-        background: #ffe881;
-        border-radius: 5px;
-        margin-top: 0;
-        margin-bottom: 0;
+    .em-logo{
+        background-image: url("https://ketaru.com/icon.png")
     }
     #errr{
         animation: bg 1s ease;
         position: absolute;
-        height: 50px;
-        bottom: 22px;
+        height: 40px;
+        bottom: 19px;
         left: 20px;
         -webkit-mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
         mask: url(https://static.nuum.ru/assets/fe-new/images/hashtag/hashtag-mask.svg) no-repeat;
@@ -123,128 +69,211 @@
         animation: bg 1s ease;
         font-family: onest;
         position: absolute;
-        font-size: 25px;
-        left: 80px;
-        bottom: 25px;
+        font-size: 15px;
+        left: 70px;
+        bottom: 15px;
     }
     #df1{
         animation: bg 1s ease;
         font-family: onest;
         color: #999;
         position: absolute;
-        font-size: 14px;
-        left: 81px;
-        bottom: 5px;
+        font-size: 12px;
+        left: 88px;
+        bottom: 0px;
     }
-</style>
+    </style>
 <!-- JavasCript -->
-<img src="https://i.imgur.com/h1N0lX7.png" style="pointer-events: none;" id="errr">
-<h1 id="df" style="pointer-events: none;">BiskvitMusic</h1>
-<h1 id="df1" style="pointer-events: none;">Официальный поставшик музыки</h1>
+<img src="https://i.imgur.com/h1N0lX7.png" alt="" id="errr">
+<h1 id="df">KR.Corp - Music</h1>
+<h1 id="df1">Организатор</h1>
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script src="https://krcorpserver.github.io/db-ketaru/serv.js"></script>
-<body id="site-bg">
-    <link rel="stylesheet" href="./head.css">
+<body id="site-bg" >
+<!-- <link rel="stylesheet" href="./head.css"> -->
     <header id="site-header">
-        <type id="page-name">KetaMeRadio <span id="nam">Приложение</span> <span id="rel">BETA</span></type>
+        <type id="page-name">
+            <span id="namm">Radio KetaRu<span id="rel">БЕТА</span></span>
+            <span id="nam">Приложение APP</span></type>
         <div id="site-header-box">
-            <a onclick="window.open('https://live.ketaru.com', '_blank');"><div id="site-logo-box"><img id="site-logo-img" src="https://ketaru.com/corp.png">
-                <name id="site-logo-name">Ketaru<span style="color: #ffef5b">Corp</span></name></div></a>
-            </div>
-        </header>
-    </body>
-<html>
-<head>
-<meta name="yandex-verification" content="bef8770f64b65879" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-        #site-logo-box{
-        font-family: onest;
-        font-size: 20px;
-        letter-spacing: 1px;
-    }
-        #rel2{
-            right: 10px !important;
-            top: 10px !important;
-        }
-        #rel2:hover{
-            background: #31435e;
-        }
-        #rel3:hover{
-            background: #31435e;
-        }
-        .le{
-            position: absolute;
-            transition: ease all .3s;
-            font-family: 'Quicksand', "Comfortaa";
-            border: 0px solid #36475899;
-            background: #2c3a50;
-            color: #dfff53;
-            text-align: center;
-            border-radius: 5px;
-            padding: 9px 0px;
-            width: 100px;
-            font-weight: 600;
-            font-size: 16px;
-            z-index: 1000;
-        }
-    </style>
-    <button id="rel2" class="le" onclick="window.open(discord, '_blank');">Discord</button>
-    <div id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
+            <a href="https://ketaru.com">
+                <div id="site-logo-box">
+                    <img id="site-logo-img" src="https://ketaru.com/corp.png">
+                    <name id="site-logo-name">
+                        <span id="ketaru">Ketaru</span>
+                        <span id="corp">Corp</span>
+                    </name>
+                </div>
+            </a>
+        </div>
+    </header>
+</body>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="yandex-verification" content="bef8770f64b65879" />
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Слушать радиостанции онлайн">
+            <meta name="keywords" content="KetaRu, KetaruDev, KetaruDev, fist89, golive, radio, live, music, discord, bot, bots, ketaru.com">
+        </head>
+        
+        <!-- <button id="ff" onclick="Ret('q')">kk</button> -->
+        
+        <body onLoad="Redirect()">
+    <div style="display: none;" id="inf"><span id="guilds"></span><span id="space"> </span><span id="radiolist"></span></div>
+            
     <script>
         var global_list = fm_list.length/5
         document.getElementById('guilds').innerText = bot_guilds
         document.getElementById('radiolist').innerText = global_list
-        var discord = 'https://ketaru.com/join'
-        var site = 'https://ketaru.com'
-        function NewTab(){
-            var options={
-                height: 820, // устанавливает высоту окна в пикселях.
-                width: 680, // устанавливает ширину окна в пикселях.
-                toolbar: 0, // определяет, отображается ли панель инструментов (включая кнопки вперед и назад) {1 (ДА) или 0 (НЕТ)}.
-                scrollbars: 0, // определяет, появятся ли полосы прокрутки в окне {1 (ДА) или 0 (НЕТ)}.
-                status: 0, // отображается ли строка состояния внизу окна {1 (ДА) или 0 (НЕТ)}.
-                resizable: 0, // можно ли изменить размер окна {1 (ДА) или 0 (НЕТ)}. Также может быть перегружен с помощью resizable.
-                left: (screen.width-680)/2, // левое положение при появлении окна.
-                top: (screen.height-890)/2, // верхнее положение при появлении окна.
-                center: 1, // мы должны центрировать окно? {1 (ДА) или 0 (НЕТ)}. переопределяет верхний и левый
-                createnew: 0, // должны ли мы создавать новое окно для каждого события {1 (ДА) или 0 (НЕТ)}.
-                location: 0, // определяет, отображается ли адресная строка {1 (ДА) или 0 (НЕТ)}.
-                menubar: 0 // определяет, отображается ли строка меню {1 (ДА) или 0 (НЕТ)}.
-            };
-            var parameters="location="+options.location+",menubar="+options.menubar+",height="+options.height+",width="+options.width+",toolbar="+options.toolbar+",scrollbars="+options.scrollbars+",status="+options.status+",resizable="+options.resizable+",left="+options.left+",screenX="+options.left+",top="+options.top+",screenY="+options.top;
-            var target = 'https://discord.com/oauth2/authorize?client_id=921838038580084777&scope=bot&scope=applications.commands%20bot&permissions=8'  
-            window.open(target, 'popup', parameters)
+        let url = new URL(window.location.href)
+        let par = new URLSearchParams(url.search);
+        const select = par.get("id");
+        console.log(select)
+        
+        function Redirect(){
+            const queryString = window.location.search;
+            document.getElementById('q').src=`./page2.html?id=${select}`;
+            if (`${select}` === `null`) {
+                const url = new URL(window.location);
+                url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+            }
+            if (select > global_list || select < 1) {
+                if (select > global_list){var sell = global_list}
+                if (select < 1){var sell = 1}
+                document.getElementById('q').src=`./page2.html?id=${sell}`;
+                const url = new URL(window.location);
+                url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                window.history.pushState({}, '', url);
+                const meta = document.getElementsByTagName('meta')  
+                // meta.keywords.content = "My new page keywords";  
+                // meta.description.content = "My new page description"
+            }
+        }
+    // function Red(){
+        //     const queryString = window.location.search;
+        //     // document.getElementById('q').src=`./page.html?id=${select}`;
+        //     if (`${select}` === `null`) {
+            //         const url = new URL(window.location);
+            //         url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
+            //         window.history.pushState({}, '', url);
+            //     }
+            //     if (select > 50 || select < 1) {
+                //         if (select > 50){var sell = 50}
+                //         if (select < 1){var sell = 1}
+                //         // document.getElementById('q').src=`./page.html?id=${sell}`;
+                //         const url = new URL(window.location);
+                //         url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
+                //         window.history.pushState({}, '', url);
+                //     }
+                // }
+                
+                
+        function Ret(frameID){
+            let frameObj = document.getElementById(frameID);
+            let frameContent = frameObj.contentWindow.document.getElementById('idfm').textContent;
+            console.log(frameContent);
+            
         }
     </script>
-    <iframe id="q" name="rel" src="./page_app.html">
+    <iframe id="q" src="" width="100%" height="100%">
     </iframe>
     <style>
-        #ii{
-            position: relative;
-            top: -12px;
-            z-index: 1000;
-            color: #7e96bb;
-            background: #2c3a50;
-            border: 2px solid #31435e;
-            border-radius: 3px;
-            border-bottom: 0;
-            border-right: 0;
-            transition: 0.2s all !important;
+        li.footer-link.mb-10{
+            height: 28px !important;
         }
-        #ii:hover{
-            background: #31435e;
-            color: #f9f9fa;
+        li {
+            list-style-type: none;
+        }
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+        #tags{
+            color: #ffffff;
+            background: #ffffff25;
+            padding: 2px 10px;
+            font-size: 12px;
+            opacity: 1 !important;
+            border-radius: 3px;
+        }
+        #ddf{
+            width: 100%;
+            position: absolute;
+            right: 0px;
+            /* top: 48px; */
+            padding: 30px;
+            width: 100%;
+            top: -10px;
+
+            background-image: linear-gradient(-180deg, #191923 0%, #14141E 100%);
+            box-shadow: 0 -10px 20px 0 rgba(20, 20, 30, .2);
+        }
+        .footer-link a {
+            color: #ff7235 !important;
+            opacity: .7;
+            -webkit-transition: .3s;
+            transition: .3s all;
+        }
+        a, a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer-link a:hover{
+            opacity: 1;
+            transition: .3s all;
+            padding-left: 10px;
+            position: relative !important;
+        }
+        /* .footer-link {
+            margin-bottom: 5px;
+        } */
+        p, li, a, blockquote {
+            margin: 0;
+            font-family: onest, sans-serif;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+        hr {
+            background-color: rgba(235, 235, 240, .2) !important;
+            margin: 0 !important;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+        #err {
+            margin-bottom: 10px !important;
+        }
+        #boxe1, #boxe2{
+            margin: 0 auto;
+            max-width: 1315px;
+            font-size: 16px;
+            border-radius: 10px;
+            z-index: 1000 !important;
+            /* width: 450px; */
+            background: rgba(255, 255, 255, 0.03);
+            border: rgba(255, 255, 255, 0.05) solid 1px;
+            padding: 10px 10px 5px 10px;
+        }
+        #boxe1{
+            margin-bottom: 15px;
+        }
+        .logs_page{
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+            position: relative;
+            /* position: absolute; */
+            left: 0px !important;
+        }
+        ::-webkit-scrollbar { /* chrome based */
+            width: 0px;  /* ширина scrollbar'a */
+            background: transparent;  /* опционально */
         }
         #q{
-            width: 100%;
             height: calc(100% - 58px);
         }
         html, body {
@@ -262,7 +291,7 @@
             border: none;
         }
         *{
-        font-family: onest !important;
+            font-family: onest !important;
         }
     </style>
 </body>
