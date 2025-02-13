@@ -451,6 +451,9 @@
                         #guilds, #radiolist{
                             position: relative;
                         }
+                        .bt {
+                            font-size: 14px !important;
+                        }
                         @media (max-width: 362px) {
                             #guilds, #radiolist{
                                 top: 1.8px;
@@ -494,7 +497,7 @@
                                 font-size: 10px !important;
                             }
                             .btn2{
-                                font-size: 12px !important;
+                                /* font-size: 12px !important; */
                                 border: 0;
                                 font-family: Onest, sans-serif;
                                 font-weight: 600;
@@ -505,6 +508,9 @@
                                 background: #ffffff30 !important;
                                 color: #ffffff !important;
                             }
+                            .bt {
+                                font-size: 12px !important;
+                            }  
                         }                        
                         #nonebutton{
                             background: #00000030;
@@ -564,7 +570,7 @@
     </div>
     <div class="g-menu">
         <button style="width: 50px; background: #36003685; color: #ffc8f8 !important;" onclick="window.open('./downloads', '_blank')" class="buttonlink">APP</button>
-        <button class="btn2" id="btn">Выбрать радиостанцию из списка</button>
+        <button class="btn2 bt" id="btn">Выбрать радиостанцию из списка</button>
         <div class="dropdown" id="dropdown"></div>
     </div>
     </div>
