@@ -12,6 +12,6 @@
 
 
 <p float="left" align="center">
-<img src="https://raw.githubusercontent.com/lisikme/live.ketaru.com/main/Screenshot_20240622_155402.jpg" style="width:30%;"/>
-<img src="https://raw.githubusercontent.com/lisikme/live.ketaru.com/main/Screenshot_20240622_155417.jpg" style="width:30%;"/>
+<img src="./clientapp.jpg" style="width:30%;"/>
+<img src="./clientappmenu.jpg" style="width:30%;"/>
 </p>
