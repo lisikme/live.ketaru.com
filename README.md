@@ -4,7 +4,7 @@
 # <p align="center" style="font-size:320px">Radio KetaRu</p>
 <p align="center" style="font-size:30px">Powered by KetaruCorp ✨</p>
 
-[![Follow Mohamed El-Qassas GitHub](https://i.imgur.com/4SrMGvR.png)](https://live.ketaru.com/)
+[![Follow Mohamed El-Qassas GitHub](./webapp.png)](https://live.ketaru.com/)
 Приложение для Android/Windows
 
 ## Android: [Radio.apk](https://github.com/lisikme/live.ketaru.com/releases/download/Stable/radio.apk)
