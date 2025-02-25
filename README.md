@@ -7,8 +7,7 @@
 [![Follow Mohamed El-Qassas GitHub](./webapp.png)](https://live.ketaru.com/)
 Приложение для Android/Windows
 
-## Android: [Radio.apk](https://github.com/lisikme/live.ketaru.com/releases/download/Stable/radio.apk)
-## Windows: [Radio.exe](https://github.com/lisikme/live.ketaru.com/releases/download/Stable/radio.exe)
+## Скачать для Windows/Android: [Downloads](https://live.ketaru.com/downloads)
 
 
 <p float="left" align="center">
