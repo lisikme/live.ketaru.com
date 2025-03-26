@@ -107,7 +107,7 @@ fm_list=[
     "img/fm_epresi.png",
     "https://epdop.hostingradio.ru:8033/ep-residance128.mp3",
     "Онлайн",
-    "---",
+    "https://cdn.discordapp.com/emojis/1354365147774455859.webp?size=96&quality=lossless",
 
 
 
@@ -453,17 +453,17 @@ fm_list=[
     "img/fm_rf.png",
     "https://radio-holding.ru/rfm",
     "Онлайн",
-    "---",
+    "https://cdn.discordapp.com/emojis/1354365115473854554.webp?size=96&quality=lossless",
 
     "Эльдорадио",
     "img/fm_eldo.png",
     "https://emgspb.hostingradio.ru/eldoradio128.mp3",
     "Онлайн",
-    "---",
+    "https://cdn.discordapp.com/emojis/1354365106560958546.webp?size=96&quality=lossless",
 
     "Радио Кабриолет",
     "img/fm_cabri.png",
     "https://listen2.myradio24.com/8144",
     "Онлайн",
-    "---",
+    "https://cdn.discordapp.com/emojis/1354365081831608372.webp?size=96&quality=lossless",
 ]
