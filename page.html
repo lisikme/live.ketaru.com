@@ -359,7 +359,8 @@
                             align-items: center;
                             grid-area: t-menu;
                             grid-template-rows: 28px;
-                            grid-template-columns: auto 1fr;
+                            /* grid-template-columns: auto 1fr; */
+                            grid-template-columns: 1fr;
                         }
                     
                         
@@ -573,11 +574,13 @@
         </div></div></div>
     </div>
     <div class="g-apps">
-        <button onclick="window.open('./app/radio.apk', '_blank')" class="buttonlink">Android</button>
-        <button onclick="window.open('./app/radio.exe', '_blank')" class="buttonlink">Windows</button>
+        <!-- <button onclick="window.open('./app/radio.apk', '_blank')" class="buttonlink">Android</button> -->
+        <!-- <button onclick="window.open('./app/radio.exe', '_blank')" class="buttonlink">Windows</button> -->
+        <button onclick="window.open('./downloads', '_blank')" class="buttonlink">Скачать приложение</button>
+        <!-- <button style="width: 50px; background: #36003685; color: #ffc8f8 !important;" onclick="window.open('./downloads', '_blank')" class="buttonlink">APP</button> -->
     </div>
     <div class="g-menu">
-        <button style="width: 50px; background: #36003685; color: #ffc8f8 !important;" onclick="window.open('./downloads', '_blank')" class="buttonlink">APP</button>
+        <!-- <button style="width: 50px; background: #36003685; color: #ffc8f8 !important;" onclick="window.open('./downloads', '_blank')" class="buttonlink">APP</button> -->
         <button class="btn2 bt" id="btn">Выбрать радиостанцию из списка</button>
         <div class="dropdown" id="dropdown"></div>
     </div>
