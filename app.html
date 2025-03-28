@@ -135,7 +135,7 @@
         
         function Redirect(){
             const queryString = window.location.search;
-            document.getElementById('q').src=`./page2.html?id=${select}`;
+            document.getElementById('q').src=`./page4.html?id=${select}`;
             if (`${select}` === `null`) {
                 const url = new URL(window.location);
                 url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
@@ -144,7 +144,7 @@
             if (select > global_list || select < 1) {
                 if (select > global_list){var sell = global_list}
                 if (select < 1){var sell = 1}
-                document.getElementById('q').src=`./page2.html?id=${sell}`;
+                document.getElementById('q').src=`./page4.html?id=${sell}`;
                 const url = new URL(window.location);
                 url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
                 window.history.pushState({}, '', url);
