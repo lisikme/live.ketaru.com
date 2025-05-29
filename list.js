@@ -12,7 +12,7 @@
 // "https://myradio24.org/69034",
 // "Онлайн - Партнёр KR.Corp",
 // "https://cdn.discordapp.com/emojis/1270102092517867520.webp?size=96&quality=lossless",
-// "https://biskvitapi.ketaru.com/ketaruweb",
+// "https://biskvitapi.ketame.ru/ketaruweb",
 
 fm_list=[
     "Biskvit Live",
