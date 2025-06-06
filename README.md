@@ -4,10 +4,10 @@
 # <p align="center" style="font-size:320px">KetaMeFM</p>
 <p align="center" style="font-size:30px">Powered by KetaruCorp ✨</p>
 
-[![Follow Mohamed El-Qassas GitHub](./webapp.png)](https://live.ketaru.com/)
+[![Follow Mohamed El-Qassas GitHub](./webapp.png)](https://live.ketame.ru/)
 Приложение для Android/Windows
 
-## Скачать для Windows/Android: [Downloads](https://live.ketaru.com/downloads)
+## Скачать для Windows/Android: [Downloads](https://live.ketame.ru/downloads)
 
 
 <p float="left" align="center">
