@@ -135,7 +135,7 @@
         
         function Redirect(){
             const queryString = window.location.search;
-            document.getElementById('q').src=`./page6.html?id=${select}`;
+            document.getElementById('q').src=`./page4.html?id=${select}`;
             if (`${select}` === `null`) {
                 const url = new URL(window.location);
                 url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
