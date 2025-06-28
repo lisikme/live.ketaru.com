@@ -562,13 +562,87 @@
             document.getElementById('radiolist').innerText = global_list
         </script>
     </div>
+    <style>
+        #player-info-box {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            display: flex;
+            gap: 5px;
+            padding: 8px;
+        }
+        #player-info-live {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3px;
+        }
+        #album-art{
+            position: unset;
+            opacity: 1;
+            background: #0c1116;
+            position: unset;
+            width: unset;
+            aspect-ratio: 1;
+            height: 100%;
+            margin-left: 0px;
+            border-radius: 3px;
+            border: 0;
+            transform: rotateZ(0);
+            transition: 0.2s linear all;
+        }
+        #album-art-bg {
+            animation: buff 1s forwards;
+            filter: blur(50px) saturate(5) contrast(100%);
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            width: 70px;
+            height: 70px;
+            margin-left: 40px;
+            transform: rotateZ(0);
+            transition: 0.3s linear all;
+            background: #0c1116;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        #album-name {
+            font-weight: 600;
+            font-size: 22px;
+            border-radius: 3px;
+            color: #53fbc9;
+            background: #00000099;
+            backdrop-filter: blur(20px);
+            padding: 2px 8px 1px 8px;
+            transition: 0.3s ease top;
+            animation: topToBottom 25s infinite 20s;
+        }
+        #track-name {
+            padding-bottom: 5px;
+            background: #22222299;
+            background: #00000099;
+            font-weight: 600;
+            color: #ff9de1;
+            font-size: 10px;
+            line-height: normal;
+            border-radius: 3px;
+            backdrop-filter: blur(20px);
+            padding: 2px 8px !important;
+        }
+    </style>
     <div class="g-display">
         <div id="box-play">
-            <div id="album-art-bg" style="background-image: url(&quot;./img/fm_rts.png&quot;); background-size: cover;"></div>
-            <div id="album-art" style="background-image: url(&quot;./img/fm_rts.png&quot;); background-size: cover;" class="active"></div>
-            <div id="album-name" class="buffa">Радио Трансмит</div>
-            <span id="idfm" class="number active">23</span>
-            <div id="track-name">Онлайн</div>
+            <div id="player-info-box">
+                <div id="album-art-bg" style="background-image: url(&quot;./img/fm_rts.png&quot;); background-size: cover;"></div>
+                <div id="album-art" style="background-image: url(&quot;./img/fm_rts.png&quot;); background-size: cover;" class="active"></div>
+                <div id="player-info-live">
+                    <div id="album-name" class="buffa">Загрузка</div>
+                    <div id="track-name">Loading...</div>
+                </div>
+            </div>
+            <span id="idfm" class="number active">---</span>
             <div id="err">
                 Недоступно
             </div>

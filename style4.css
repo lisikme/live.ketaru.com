@@ -335,16 +335,13 @@ body {
     }
 }
 #album-name {
-    /* border: #53fbc920 1px solid; */
-    /* border: #ffffff20 1px solid; */
     font-weight: 600;
-    top: 9.5px;
-    left: 84px;
+    /* top: 9.5px; */
+    /* left: 84px; */
     font-size: 25px;
     border-radius: 3px;
-    position: absolute;
+    /* position: absolute; */
     color: #53fbc9;
-    /* background: #22222299; */
     background: #00000099;
     backdrop-filter: blur(20px);  
     padding: 2px 14px 1px 14px;
@@ -352,18 +349,16 @@ body {
     animation: topToBottom 25s infinite 20s;
 }
 #track-name {
-    /* border: #53fbc920 1px solid; */
-    /* border: #ffffff20 1px solid; */
     padding-bottom: 5px;
     background: #22222299;
     background: #00000099;
     font-weight: 600;
-    top: 15px;
+    /* top: 15px;
     left: 84px;
-    top: 47px;
-    position: absolute;
+    top: 47px; */
+    /* position: absolute; */
     color: #ff9de1;
-    position: absolute;
+    /* position: absolute; */
     font-size: 10px;
     line-height: normal;
     border-radius: 3px;
