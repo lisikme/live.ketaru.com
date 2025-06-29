@@ -81,25 +81,45 @@ function doSomething(x) {
   if (x < fff){
     var i = 0
     var rt = (fff-x)
-    playSound()
+    var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+    sound.volume = buttonvol
+    sound.play(); // Воспроизводим звук
     for (i=0; i<rt; i++) {
-      PREV.removeAttribute("onclick");
+      PREV.setAttribute("sound", 'false')
       PREV.click()
     }
-    PREV.setAttribute("onclick", 'playSound();')
+    PREV.setAttribute("sound", 'true')
   }
   if (x > fff){
     var i = 0
     var rt = (x-fff)
-    playSound()
+    var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+    sound.volume = buttonvol
+    sound.play(); // Воспроизводим звук
     for (i=0; i<rt; i++) {
-      NEXT.removeAttribute("onclick");
+      NEXT.setAttribute("sound", 'false')
       NEXT.click()
     }
-    NEXT.setAttribute("onclick", 'playSound();')
+    NEXT.setAttribute("sound", 'true')
   }
 
 }
+
+[
+  'play-pause-button',
+  'play-previous', 
+  'play-next'
+].forEach(id => {
+  var sund = document.getElementById(id)
+  sund.onclick = () => {
+    if (sund.getAttribute("sound") === "true") {
+      var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+      sound.volume = buttonvol
+      sound.play(); // Воспроизводим звук
+    };
+  };
+});
+
 $(function () {
   // var img = document.createElement("img");
   // img.src = `icons.png`;
