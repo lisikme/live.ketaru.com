@@ -118,6 +118,7 @@
         }
         &:hover {
             background: #e74e4e55 !important;
+            cursor: not-allowed;
         }
         & > #nums {
             background: #00000075 !important;
@@ -148,6 +149,7 @@
             & {
                 border-radius: var(--radius);
                 color: white;
+                cursor: pointer;
                 background: #0e795375 !important;
             }
             & > #nums {
@@ -517,6 +519,7 @@ a {
             box-shadow: 0px 0px 3px #0e141a;
         }
         &::-webkit-slider-thumb:hover {
+            cursor: pointer;
             background: var(--bar_color_marker_cur);
             box-shadow: 0 0px 20px 0px #ffffff;
         }
@@ -525,6 +528,9 @@ a {
     & .value div {
         transition: all 0ms ease-in-out;
     }
+}
+#btn{
+    cursor: pointer;
 }
 .value {
     background: var(--bar_color_value_bg);

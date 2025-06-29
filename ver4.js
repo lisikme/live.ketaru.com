@@ -12,7 +12,9 @@ const toggleDropdown = function () {
 dropdownBtn.addEventListener("click", function (e) {
   e.stopPropagation();
   toggleDropdown();
-  new Audio(selectsounds).play();
+  var aud = new Audio(selectsounds)
+  aud.volume = 0.5
+  aud.play();
 });
 
 // Закрыть раскрывающийся список при нажатии элемента dom
@@ -23,6 +25,11 @@ document.documentElement.addEventListener("click", function () {
 });
 
 
+function playSound() {
+  var sound = new Audio(buttonsounds); // Создаем новый объект Audio
+  sound.volume = buttonvol
+  sound.play(); // Воспроизводим звук
+}
 
 $(function() {
   var fontSize = 12;
@@ -51,15 +58,16 @@ $(function() {
   });
 });
 
-var buttonvol = '0.1'
+var buttonvol = '0.3'
 var buttonsounds = './sounds/sfx4.mp3'
 var selectsounds = './sounds/sfx3.mp3'
 var selectsfx = './sounds/sfx4.mp3'
 
 function button() {
-    var sfx = new Audio()
-    sfx.url = buttonsounds
-    sfx.play()
+  var sfx = new Audio()
+  sfx.url = buttonsounds
+  sfx.volume = buttonvol
+  sfx.play()
 }
 var sfxsel = new Audio(selectsfx);
 function doSomething(x) {
@@ -73,22 +81,22 @@ function doSomething(x) {
   if (x < fff){
     var i = 0
     var rt = (fff-x)
+    playSound()
     for (i=0; i<rt; i++) {
       PREV.removeAttribute("onclick");
       PREV.click()
-      PREV.setAttribute("onclick", 'new Audio(buttonsounds).play();')
-      sfxsel.play()
     }
+    PREV.setAttribute("onclick", 'playSound();')
   }
   if (x > fff){
     var i = 0
     var rt = (x-fff)
+    playSound()
     for (i=0; i<rt; i++) {
       NEXT.removeAttribute("onclick");
       NEXT.click()
-      NEXT.setAttribute("onclick", 'new Audio(buttonsounds).play();')
-      sfxsel.play()
     }
+    NEXT.setAttribute("onclick", 'playSound();')
   }
 
 }
@@ -198,23 +206,26 @@ var playerTrack=$("#player-track"),
   }
   var rl1 = $("#album-name")
   var rl2 = $("#err")
-  function checkBuffering(){
+  function checkBuffering() {
     clearInterval(buffInterval);
-    buffInterval = setInterval(function () {
-      if (nTime == 0 || bTime - nTime > 1000){
-        // rl1.addClass("buff");
-        // rl1.removeClass("buffa");
+    let lastErrState = false;
+    buffInterval = setInterval(function() {
+      if (nTime == 0 || bTime - nTime > 1000) {
         rl2.addClass("errbuff");
         rl2.removeClass("errbuffa");
-      }
-      else {
-        // rl1.removeClass("buff");
-        // rl1.addClass("buffa");
+        var errs = true;
+        if (errs && !lastErrState) {
+          var sound = new Audio('./sounds/sfx8.mp3');
+          sound.volume = buttonvol;
+          sound.play();
+        }
+      } else {
         rl2.removeClass("errbuff");
         rl2.addClass("errbuffa");
-        bTime = new Date();
-        bTime = bTime.getTime();
+        bTime = new Date().getTime();
+        var errs = false;
       }
+      lastErrState = errs;
     }, 2000);
   }
   function selectTrack(flag) {
@@ -285,6 +296,7 @@ var playerTrack=$("#player-track"),
       else ++currIndex;
     }
   }
+
   function initPlayer() { // Создаём новый элемент Audio
     audio = new Audio();
     selectTrack(0);
@@ -314,38 +326,47 @@ var playerTrack=$("#player-track"),
     initPlayer();
   });
 // ---------------------------------------------------------------------------------------
-document.querySelector('.range-input .value div').innerHTML = default_vol
+// Set initial values
+document.querySelector('.range-input .value div').innerHTML = default_vol;
 document.querySelector(".range-input input").value = default_vol;
 document.querySelector(".range-input input").step = step_vol;
 
-let css = getComputedStyle(document.documentElement)
-let bar_start = css.getPropertyValue('--bar_color_start')
-let bar_end = css.getPropertyValue('--bar_color_end')
+// Get CSS variables for the slider colors
+let css = getComputedStyle(document.documentElement);
+let bar_start = css.getPropertyValue('--bar_color_start');
+let bar_end = css.getPropertyValue('--bar_color_end');
 
-let sliderEl = document.querySelector("#range")
-let sliderValue = document.querySelector(".value")
+// Initialize slider elements
+let sliderEl = document.querySelector("#range");
+let sliderValue = document.querySelector(".value");
 let tempSliderValue = default_vol; 
 let progress = (tempSliderValue / sliderEl.max) * 100;
 sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
-// ---------------------------------------------------------------------------------------
-fm_list.length/5
 
+// Volume control event listeners
 let rangeInput = document.querySelector(".range-input input");
 let rangeValue = document.querySelector(".range-input .value div");
 let start = parseFloat(rangeInput.min);
 let end = parseFloat(rangeInput.max);
 let step = parseFloat(rangeInput.step);
 let value = parseFloat(rangeInput.value);
-rangeInput.addEventListener("input",function(){
+
+rangeInput.addEventListener("input", function() {
   let val = parseFloat(rangeInput.value);
-  audio.volume = val/100
-  
-    document.querySelector('.range-input .value div').innerHTML = val
-    
-  });
-  
-  sliderEl.addEventListener("input", (event) => {
-    let tempSliderValue = event.target.value; 
-    let progress = (tempSliderValue / sliderEl.max) * 100;
-    sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
-  })
+  audio.volume = val/100;
+  document.querySelector('.range-input .value div').innerHTML = val;
+});
+
+// Обновление прогресса слайдера при перемещении
+sliderEl.addEventListener("input", (event) => {
+  let tempSliderValue = event.target.value;
+  let progress = (tempSliderValue / sliderEl.max) * 100;
+  sliderEl.style.background = `linear-gradient(to right, ${bar_start} ${progress}%, ${bar_end} ${progress}%)`;
+});
+
+// Звук только при нажатии (не при перемещении)
+sliderEl.addEventListener("mousedown", () => {
+  var aud = new Audio(selectsounds);
+  aud.volume = 0.5;
+  aud.play();
+});
