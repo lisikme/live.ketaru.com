@@ -83,6 +83,34 @@
         bottom: 0px;
     }
     </style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+    *{
+        font-family: "Rubik"
+    }
+    #logo-text {
+        font-weight: 900;
+        /* font-size: 40px; */
+        color: #fff;
+    }
+    
+    #logo-text::after {
+        content: "|";
+        /* background: #f00; */
+        color: rgb(255, 255, 255);
+        animation: blink .8s infinite;
+    }
+    
+    @keyframes blink {
+        0%, 100% { opacity: .8; }
+        50% { opacity: 0; }
+    }
+    
+    .colored {
+        color: var(--color);
+    }
+</style>
 <!-- JavasCript -->
 <img src="./prom.png" alt="" id="errr">
 <h1 id="df">KR.Corp - Music</h1>
@@ -95,8 +123,125 @@
     <header id="site-header">
         <type id="page-name">
             <span id="namm">KetaMeRadio<span id="rel">БЕТА</span></span>
-            <span id="nam">WEB - Сервис</span></type>
-        <div id="site-header-box">
+            <span id="nam"><span id="logo-text"></span></span></type>
+
+            <script>
+                const phrases = [
+                    '{#ffe881:Радио} {#99ff99:онлайн}', 
+                    '{#ff9990:Всё бесплатно!}', 
+                    '{#53fbc9:Есть приложение!}', 
+                    '{#ffdb5c:Мы в Discord #1...}'
+                ];
+                let current = 0;
+                let isDeleting = false;
+                let text = '';
+                let index = 0;
+                let typingSpeed = 150; // скорость печати (мс)
+                
+                function parseFormattedText(phrase) {
+                    const regex = /{([^}]+):([^}]+)}/g;
+                    let match;
+                    let lastIndex = 0;
+                    const parts = [];
+                    
+                    while ((match = regex.exec(phrase)) !== null) {
+                        // Add text before the match
+                        if (match.index > lastIndex) {
+                            parts.push({
+                                text: phrase.substring(lastIndex, match.index),
+                                color: null
+                            });
+                        }
+                        
+                        // Add the colored part
+                        parts.push({
+                            text: match[2],
+                            color: match[1]
+                        });
+                        
+                        lastIndex = match.index + match[0].length;
+                    }
+                    
+                    // Add remaining text after last match
+                    if (lastIndex < phrase.length) {
+                        parts.push({
+                            text: phrase.substring(lastIndex),
+                            color: null
+                        });
+                    }
+                    
+                    return parts;
+                }
+                
+                function buildTextElement(parts, currentLength) {
+                    let result = '';
+                    let accumulatedLength = 0;
+                    
+                    for (const part of parts) {
+                        if (accumulatedLength >= currentLength) break;
+                        
+                        const partText = part.text;
+                        const availableLength = currentLength - accumulatedLength;
+                        const displayText = partText.substring(0, availableLength);
+                        
+                        if (part.color) {
+                            result += `<span class="colored" style="--color: ${part.color}">${displayText}</span>`;
+                        } else {
+                            result += displayText;
+                        }
+                        
+                        accumulatedLength += partText.length;
+                    }
+                    
+                    return result;
+                }
+                
+                function type() {
+                    const currentPhrase = phrases[current];
+                    const isFormatted = currentPhrase.includes('{');
+                    
+                    if (isDeleting) {
+                        // Удаление текста
+                        index--;
+                    } else {
+                        // Добавление текста
+                        index++;
+                    }
+                    
+                    if (isFormatted) {
+                        const parts = parseFormattedText(currentPhrase);
+                        text = buildTextElement(parts, index);
+                    } else {
+                        text = currentPhrase.substring(0, index);
+                    }
+                    
+                    document.getElementById('logo-text').innerHTML = text;
+                    
+                    if (!isDeleting && index === currentPhrase.length) {
+                        // Пауза после полного набора
+                        typingSpeed = 1000;
+                        isDeleting = true;
+                    } else if (isDeleting && index === 0) {
+                        // Переход к следующей фразе
+                        isDeleting = false;
+                        current = (current + 1) % phrases.length;
+                        typingSpeed = 500;
+                    } else if (isDeleting) {
+                        // Ускорение удаления
+                        typingSpeed = 50;
+                    } else {
+                        // Обычная скорость набора
+                        typingSpeed = 50;
+                    }
+                    
+                    setTimeout(type, typingSpeed);
+                }
+                
+                // Запускаем анимацию
+                setTimeout(type, 1000);
+            </script>
+
+            <div id="site-header-box">
             <a href="https://ketame.ru">
                 <div id="site-logo-box">
                     <img id="site-logo-img" src="https://ketame.ru/corp.png">
