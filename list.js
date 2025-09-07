@@ -41,7 +41,7 @@ fm_list=[
 
     "Like FM",
     "img/fm_like.png",
-    "https://ic7.101.ru:8000/v12_1",
+    "https://srv21.gpmradio.ru:8443/stream/air/aac/64/219",
     "Онлайн",
     "https://cdn.discordapp.com/emojis/1256486667674587207.webp?size=96&quality=lossless",
 
