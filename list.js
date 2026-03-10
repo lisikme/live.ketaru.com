@@ -15,10 +15,10 @@
 // "https://biskvitapi.ketame.ru/ketaruweb",
 
 fm_list=[
-    "Biskvit Live",
+    "Bisk-Live",
     "img/fm_biskvit.png",
     "https://drh-connect.dline-media.com/ketaruweb",
-    "Онлайн - От создателей KR.Corp",
+    "Онлайн - От KR.Corp",
     "https://cdn.discordapp.com/emojis/1232726173470163067.webp?size=96&quality=lossless",
 
     "TNT Music",

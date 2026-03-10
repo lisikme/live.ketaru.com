@@ -9,8 +9,8 @@
         <meta name="yandex-verification" content="2d8c1dcb18ad48b7"/>
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         <!-- Интеграция Embed -->
-        <title>KetaMeRadio Web</title>
-        <meta property="og:title" content="KetaMeRadio Web">
+        <title>KetaMeFM Web</title>
+        <meta property="og:title" content="KetaMeFM Web">
         <meta property="og:site_name" content="KetaRu">
         <meta property="og:url" content="https://live.ketame.ru">
         <meta property="og:description" content="Наше онлайн версия радио бота">
@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Onest&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
     :root {
     --NamePage: "Radio";
     --VerPage: "KetaRu Web";
@@ -68,54 +69,44 @@
     }
     #df{
         animation: bg 1s ease;
-        font-family: onest;
+        /* font-family: onest; */
+        font-family: "Unbounded", sans-serif !important;
         position: absolute;
-        font-size: 15px;
-        left: 70px;
-        bottom: 15px;
+        font-weight: 200;
+        font-size: 12px;
+        left: 0px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* background: #191923; */
+        right: 0px !important;
+        margin: auto 0 !important;
+        bottom: 5px;
+        gap: 5px;
+    }
+    #df > sp{
+        position: relative;
+        top: -1px;
+        color: #999;
     }
     #df1{
+        
         animation: bg 1s ease;
-        font-family: onest;
+        /* font-family: onest; */
         color: #999;
+        font-family: "Unbounded", sans-serif !important;
         position: absolute;
+        font-weight: 100;
         font-size: 12px;
         left: 88px;
         bottom: 0px;
     }
     </style>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
-    *{
-        font-family: "Rubik"
-    }
-    #logo-text {
-        /* font-weight: 900; */
-        /* font-size: 40px; */
-        color: #fff;
-    }
-    
-    #logo-text::after {
-        content: "|";
-        /* background: #f00; */
-        color: rgb(255, 255, 255);
-        animation: blink .8s infinite;
-    }
-    
-    @keyframes blink {
-        0%, 100% { opacity: .8; }
-        50% { opacity: 0; }
-    }
-    
-    .colored {
-        color: var(--color);
-    }
-</style>
 <!-- JavasCript -->
-<img src="./prom.png" alt="" id="errr">
-<h1 id="df">KR.Corp - Music</h1>
-<h1 id="df1">Организатор</h1>
+<!-- <img src="./prom.png" alt="" id="errr"> -->
+<div id="df">Bisk-Live<sp>x</sp>KetaMeFM</div>
+<!-- <div id="df1">Организатор</div> -->
 <script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 <script src="https://krcorpserver.github.io/db-ketaru/serv.js"></script>
@@ -123,101 +114,88 @@
 <!-- <link rel="stylesheet" href="./head.css"> -->
     <header id="site-header">
         <type id="page-name">
-            <span id="namm">KetaMeRadio<span id="rel">БЕТА</span></span>
-            <span id="nam"><span id="logo-text"></span></span></type>
-       
+            <span id="namm">KetaMeFM<span id="rel">BETA</span></span>
+            <style>
+                #logo-text {
+                    color: #fff;
+                }
+                
+                #logo-text::after {
+                    content: "|";
+                    color: rgb(255, 255, 255);
+                    animation: blink .8s infinite;
+                }
+                @keyframes blink {
+                    0%, 100% { opacity: .8; }
+                    50% { opacity: 0; }
+                }
+                
+                .colored {
+                    color: var(--color);
+                }
+                #logo-text, .colored{
+                    font-family: Unbounded, sans-serif !important;
+                }
+            </style>
+            <span id="nam"><span id="logo-text"></span></span>
+            <style>
+                cl{color: #91d7ff}
+            </style>
             <script>
                 const phrases = [
-                    '{#ffe881:Радио онлайн}', 
-                    '{#ff9990:Всё бесплатно!}', 
-                    '{#53fbc9:Есть приложение!}', 
-                    '{#ffdb5c:Мы в Discord #1...}'
+                    '{#000000::⚡}{#9e9e9e::Приложение}', 
+                    '{#000000::✨}{#99FF99::Бесплатно!}', 
+                    '{#000000::⚙️}{#FF6666::Работает 24/7}', 
+                    '{#000000::🏆}{#ffdb5c::Мы #1...}',
                 ];
                 let current = 0;
                 let isDeleting = false;
                 let text = '';
                 let index = 0;
                 let typingSpeed = 150; // скорость печати (мс)
-                
                 function parseFormattedText(phrase) {
-                    const regex = /{([^}]+):([^}]+)}/g;
+                    const regex = /{([^}]+)::([^}]+)}/g;
                     let match;
                     let lastIndex = 0;
                     const parts = [];
-                    
                     while ((match = regex.exec(phrase)) !== null) {
-                        // Add text before the match
                         if (match.index > lastIndex) {
-                            parts.push({
-                                text: phrase.substring(lastIndex, match.index),
-                                color: null
-                            });
+                            parts.push({text: phrase.substring(lastIndex, match.index), color: null});
                         }
-                        
-                        // Add the colored part
-                        parts.push({
-                            text: match[2],
-                            color: match[1]
-                        });
-                        
+                        parts.push({text: match[2], color: match[1]});
                         lastIndex = match.index + match[0].length;
                     }
-                    
-                    // Add remaining text after last match
                     if (lastIndex < phrase.length) {
-                        parts.push({
-                            text: phrase.substring(lastIndex),
-                            color: null
-                        });
+                        parts.push({text: phrase.substring(lastIndex), color: null});
                     }
-                    
                     return parts;
                 }
-                
                 function buildTextElement(parts, currentLength) {
                     let result = '';
                     let accumulatedLength = 0;
-                    
                     for (const part of parts) {
                         if (accumulatedLength >= currentLength) break;
-                        
                         const partText = part.text;
                         const availableLength = currentLength - accumulatedLength;
                         const displayText = partText.substring(0, availableLength);
-                        
                         if (part.color) {
                             result += `<span class="colored" style="--color: ${part.color}">${displayText}</span>`;
-                        } else {
-                            result += displayText;
-                        }
-                        
+                        } else {result += displayText;}
                         accumulatedLength += partText.length;
                     }
-                    
                     return result;
                 }
-                
                 function type() {
                     const currentPhrase = phrases[current];
                     const isFormatted = currentPhrase.includes('{');
-                    
-                    if (isDeleting) {
-                        // Удаление текста
-                        index--;
-                    } else {
-                        // Добавление текста
-                        index++;
-                    }
-                    
+                    if (isDeleting) {index--;} else {index++;}
                     if (isFormatted) {
                         const parts = parseFormattedText(currentPhrase);
                         text = buildTextElement(parts, index);
                     } else {
                         text = currentPhrase.substring(0, index);
                     }
-                    
                     document.getElementById('logo-text').innerHTML = text;
-                    
                     if (!isDeleting && index === currentPhrase.length) {
                         // Пауза после полного набора
                         typingSpeed = 1000;
@@ -229,19 +207,17 @@
                         typingSpeed = 500;
                     } else if (isDeleting) {
                         // Ускорение удаления
-                        typingSpeed = 50;
+                        typingSpeed = 40;
                     } else {
                         // Обычная скорость набора
-                        typingSpeed = 50;
+                        typingSpeed = 40;
                     }
-                    
                     setTimeout(type, typingSpeed);
                 }
-                
                 // Запускаем анимацию
                 setTimeout(type, 1000);
             </script>
-
+        </type>
             <div id="site-header-box">
             <a href="https://ketame.ru">
                 <div id="site-logo-box2">
@@ -283,7 +259,7 @@
         
         function Redirect(){
             const queryString = window.location.search;
-            document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page6.html?id=${select}`;
+            document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page6-v2.html?id=${select}`;
             if (`${select}` === `null`) {
                 const url = new URL(window.location);
                 url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
@@ -292,7 +268,7 @@
             if (select > global_list || select < 1) {
                 if (select > global_list){var sell = global_list}
                 if (select < 1){var sell = 1}
-                document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page6.html?id=${sell}`;
+                document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page6-v2.html?id=${sell}`;
                 const url = new URL(window.location);
                 url.searchParams.set('id', sell); // Устанавливаем новое значение параметра
                 window.history.pushState({}, '', url);
@@ -441,9 +417,6 @@
         /* *{
             font-family: onest !important;
         } */
-        #logo-text, .colored{
-            font-family: Unbounded, sans-serif !important;
-        }
     </style>
 </body>
 <html>
