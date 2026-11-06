@@ -1,0 +1,401 @@
+:root {
+    --bg: #000000;
+    --surface: #0a0a0a;
+    --surface-hi: #141414;
+    --line: #1c1c1c;
+    --line-hi: #2e2e2e;
+    --text: #ededed;
+    --text-2: #a1a1a1;
+    --text-3: #6b6b6b;
+    --radius: 5px;
+    --radius-sm: 3px;
+    --font: "Unbounded", "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --dur: 0.45s;
+    color-scheme: dark;
+}
+
+@keyframes dlFadeIn {
+    from {
+        opacity: 0;
+        filter: blur(2px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes dlFadePane {
+    from {
+        opacity: 0;
+        filter: blur(2px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.dl-wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 12px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.dl-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 18px 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    animation: dlFadeIn var(--dur) var(--ease) both;
+}
+
+.dl-title {
+    margin: 0;
+    font-family: var(--font);
+    font-size: 58px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    color: var(--text);
+}
+
+.dl-sub {
+    margin: 0 auto;
+    max-width: 640px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-2);
+}
+
+.dl-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+    margin: 4px auto 0;
+}
+
+.dl-host {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    width: 100%;
+}
+
+.dl-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 38px;
+    padding: 0 14px;
+    border: 1px solid #ffffff;
+    border-radius: var(--radius-sm);
+    background: #ffffff;
+    color: #0c0310;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    cursor: pointer;
+    transition: background 0.25s var(--ease), border-color 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.dl-btn:hover {
+    background: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.dl-btn:active {
+    background: #d4d4d4;
+    border-color: #d4d4d4;
+}
+
+.dl-btn svg {
+    width: auto;
+    height: 22px;
+    display: block;
+}
+
+#sv,
+#sv1 {
+    padding-right: 5px;
+    padding-left: 2px;
+}
+
+.dl-btn--discord {
+    position: relative;
+    grid-column: 1 / -1;
+    background: #5865f2;
+    border-color: #5865f2;
+    color: #ffffff;
+}
+
+.dl-btn--discord:disabled,
+.dl-btn--discord[aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 1;
+    background: #5865f2;
+    border-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.dl-btn--discord:disabled::after,
+.dl-btn--discord[aria-disabled="true"]::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(10, 10, 10, 0.55) 0,
+        rgba(10, 10, 10, 0.55) 6px,
+        rgba(40, 40, 40, 0.55) 6px,
+        rgba(40, 40, 40, 0.55) 12px
+    );
+}
+
+.dl-btn--discord:hover {
+    background: #4752c4;
+    border-color: #4752c4;
+}
+
+.dl-btn--discord:active {
+    background: #3c45a5;
+    border-color: #3c45a5;
+}
+
+.dl-btn--discord svg {
+    width: auto;
+    height: 22px;
+}
+
+.dl-card {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    overflow: hidden;
+    animation: dlFadeIn var(--dur) var(--ease) both;
+}
+
+.dl-card:nth-of-type(2) {
+    animation-delay: 0.08s;
+}
+
+.dl-card:nth-of-type(3) {
+    animation-delay: 0.16s;
+}
+
+.dl-card__head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 40px;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface-hi);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-2);
+}
+
+.dl-frame {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: 0;
+    background: var(--bg);
+}
+
+.dl-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px;
+    border-bottom: 1px solid var(--line);
+    background: var(--surface-hi);
+}
+
+.dl-tab {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 30px;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: #000000;
+    color: var(--text-2);
+    font-family: var(--font);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.2;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.25s var(--ease), background 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.dl-tab:hover {
+    color: var(--text);
+    background: var(--surface-hi);
+    border-color: var(--line-hi);
+}
+
+.dl-tab.active {
+    color: #0c0310;
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
+.dl-pane {
+    display: none;
+    padding: 16px;
+    text-align: center;
+}
+
+.dl-pane.active {
+    display: block;
+    animation: dlFadePane 0.3s var(--ease) both;
+}
+
+.dl-pane h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text);
+}
+
+.dl-pane h3 {
+    margin: 16px 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--text);
+}
+
+.dl-pane p {
+    margin: 0 0 8px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--text-2);
+}
+
+.dl-pane ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.dl-pane li {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.55;
+    color: var(--text-2);
+}
+
+.dl-pane h2 + p {
+    font-size: 11px;
+    color: var(--text-3);
+}
+
+@media (max-width: 480px) {
+    .dl-wrap {
+        padding: 10px 8px 28px;
+        gap: 10px;
+    }
+
+    .dl-hero {
+        padding: 14px 12px;
+    }
+
+    .dl-title {
+        font-size: 20px;
+    }
+
+    .dl-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .dl-btn {
+        font-size: 11px;
+    }
+
+    .dl-tab {
+        padding: 0 6px;
+        font-size: 10px;
+    }
+
+    .dl-pane {
+        padding: 12px;
+    }
+}
+
+.dl-wrap,
+.dl-wrap *,
+.dl-wrap *::before,
+.dl-wrap *::after {
+    font-family: "Unbounded", "Geist", system-ui, sans-serif !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dl-wrap *,
+    .dl-wrap *::before,
+    .dl-wrap *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
