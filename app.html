@@ -264,7 +264,7 @@
         
         function Redirect(){
             const queryString = window.location.search;
-            document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page4.html?id=${select}`;
+            document.getElementById('q').src=`https://lisikme.github.io/ketame-fm-webview/web/page4.html?id=${select === null ? 1 : select}`;
             if (`${select}` === `null`) {
                 const url = new URL(window.location);
                 url.searchParams.set('id', 1); // Устанавливаем новое значение параметра
@@ -281,7 +281,41 @@
                 // meta.keywords.content = "My new page keywords";  
                 // meta.description.content = "My new page description"
             }
+            const frame = document.getElementById('q');
+            if (frame) frame.setAttribute('data-src', frame.src);
         }
+
+        function applyStationToUrl(stationId) {
+            const current = new URL(window.location.href);
+            if (current.searchParams.get('id') === String(stationId)) return;
+            current.searchParams.set('id', String(stationId));
+            window.history.replaceState({}, '', current.pathname + current.search + current.hash);
+        }
+
+        function applySearchToUrl(search) {
+            const current = new URL(window.location.href);
+            if (current.search === search) return;
+            window.history.replaceState({}, '', current.pathname + search + current.hash);
+        }
+
+        window.addEventListener('message', function (event) {
+            const frame = document.getElementById('q');
+            if (!frame || event.source !== frame.contentWindow) return;
+            const data = event.data;
+            if (!data) return;
+            if (data.type === 'ketaru:sync') {
+                if (data.href) frame.setAttribute('data-src', String(data.href));
+                let search = String(data.search || '');
+                if (search && search.charAt(0) !== '?') search = '?' + search;
+                applySearchToUrl(search);
+                return;
+            }
+            if (data.type === 'ketaru:station') {
+                const stationId = parseInt(data.id, 10);
+                if (!stationId || stationId < 1) return;
+                applyStationToUrl(stationId);
+            }
+        });
     // function Red(){
         //     const queryString = window.location.search;
         //     // document.getElementById('q').src=`./page.html?id=${select}`;
